@@ -39,7 +39,7 @@ Secrets are not in this repository. Ask the previous owner for them, or create y
 
 ## Deploying
 
-The live site (kresilo.design-bakery.com) has run from the previous owner's own Mac as a launchd service: build the app (`pnpm build`), run `node .output/server/index.mjs` with the environment above, and put it behind your own domain. Pictures under `/assets` are served with their own cache rule; script and style bundles are fingerprinted and cached for a year.
+Until the move, the live site runs at kresilo.design-bakery.com on the previous owner's Mac and database. The product's own domain is `kresilo.com`: set up your own hosting, build the app (`pnpm build`), run `node .output/server/index.mjs` with the environment above, put it behind `kresilo.com`, and point the database variables at your own Octo workspace (run `db/migrations` in order). Pictures under `/assets` are served with their own cache rule; script and style bundles are fingerprinted and cached for a year. `HANDOVER_TERMS.md` says how long the old address keeps running.
 
 ## How changes are made
 
@@ -48,6 +48,10 @@ The live site (kresilo.design-bakery.com) has run from the previous owner's own 
 - Screens follow `BRAND_GUIDELINES.md` and `AI_RULES.md`: icon-led, no hint text, a visible way back, nothing that makes the site read like an audit, and no AI badge on posts or pictures (how much AI was used is told by the authorship record a maker chooses to show).
 - Scope lives on the GitHub issues. Open boards, idea cards, competitions, follows and moodboards each have a migration and tests; read those first when touching them.
 
-## Licences and credits
+## Ownership and licences
+
+Who owns what, and the licence back to the previous owner, is in `HANDOVER_TERMS.md` (a draft until both people sign) and `LICENSE`.
+
+## Third-party licences and credits
 
 `THIRD_PARTY_NOTICES.md` and `third-party/` carry the licences for bundled and referenced material (including a copy of Open Design's licence). Pictures in `public/assets` are AI-generated originals made for this project.

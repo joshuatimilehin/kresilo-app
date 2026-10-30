@@ -1,0 +1,9 @@
+Copyright (c) 2026 Kresilo. All rights reserved.
+
+This repository and everything in it is proprietary. No one may copy, modify, distribute, sell or use it, in whole or in part, except as the owner allows in writing. The name "Kresilo", its logo and brand are not licensed.
+
+Open-source components keep their own licences; see THIRD_PARTY_NOTICES.md and the third-party folder.
+
+A separate written agreement, HANDOVER_TERMS.md, sets out who owns what and a licence back to the previous owner of the code as it stood at the tagged handover commit. If that agreement is not signed, this notice stands as written and the previous owner's rights are whatever the law gives them.
+
+[REPLACE the first line with the legal owner's name once HANDOVER_TERMS.md is signed.]
