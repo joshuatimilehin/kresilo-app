@@ -1,72 +1,45 @@
-# Kresilo handover terms (DRAFT)
+# Kresilo handover agreement (short version)
 
-**Status: draft for both people to read, change and sign. It is not legal advice and is not binding until signed. Have a lawyer look at it before signing, especially section 6.**
+Two people, no money, no company, no lawyer: this is a plain agreement so you both know where you stand. It is not legal advice. If money, investors or a company ever come in, redo it properly with a lawyer.
 
-Parties: **[YOUR LEGAL NAME]** ("the Founder", GitHub `Pukujan`) and **Omon-zogie Joshua [CONFIRM FULL LEGAL NAME]** ("the Owner", GitHub `joshuatimilehin`).
-Date of handover: **2026-10-30 [CONFIRM]**.
+**Between:** **[YOUR FULL NAME]** (GitHub `Pukujan`), called "the Founder", and **Joshua [FULL NAME]** (GitHub `joshuatimilehin`), called "the Owner".
+**Date:** **[DATE YOU SIGN]**
 
-## Open points to settle before signing
+## What is settled
 
-1. Who registered and controls `kresilo.com`, and is it the Owner's? [CONFIRM]
-2. How long the Founder keeps `kresilo.design-bakery.com` running before it redirects to `kresilo.com` (suggested: 30 days from the handover date). [DECIDE]
-3. Whether any company, LLC or other registration for Kresilo was ever filed, in whose name, and who closes it. [CONFIRM, see section 6]
-4. Whether money, equity, credit or anything else is owed either way. [DECIDE]
-5. Which country's law applies and where a dispute would be heard. [DECIDE]
+1. **Kresilo is the Owner's.** The name, logo and brand, the domain `kresilo.com`, the code in this repository, the designs, the copy, the pitch deck and the pictures made for it. The Founder hands over every right they have in them.
+2. **No money, no shares.** Nothing has been paid, no shares or equity were ever issued, and no company was formed. The earlier idea of splitting it 50/50 ends with this agreement. Neither person owes the other money, a share, credit or anything else, and neither will make a claim against the other about the earlier idea.
+3. **The Founder keeps** their own tools (acs, oio, cgm, pcm), the domain `design-bakery.com` and everything under it, the old private repository with its history, and their own skills and know-how.
+4. **The Founder may reuse the code.** The Owner gives the Founder a free, permanent, non-exclusive licence to use and change the code **as it stood at the tag `handover-2026-10-30`** in the Founder's own other projects. The Founder will not use the name "Kresilo", its logo or its brand, and will not present anything as Kresilo or as its continuation. This does not cover the brand, designs, pitch deck or sample content. The Owner may keep using the same code.
+5. **The split is clean.** From now each person builds on their own. Neither owes the other updates, help, fixes or a share of what they build.
+6. **As is.** The code, pictures and text are handed over as they are, with no promise they are free of faults or of other people's rights. Open-source parts keep their own licences (see `THIRD_PARTY_NOTICES.md`, and keep the Open Design licence in `third-party/`). The pictures and text were made with AI tools under those tools' terms, and neither person promises they are exclusively protected.
 
-## 1. What the Owner receives
+## The live site
 
-From the handover date the Owner owns the Kresilo product, meaning:
+- The site runs today at `kresilo.design-bakery.com` on the Founder's computer and database. The Owner sets up their own hosting and moves it to `kresilo.com`.
+- The Founder keeps the old address running for **[30] days** after the date above, then points it to `kresilo.com`.
+- The Founder gives the Owner an export of the current database contents. No keys or secrets are shared; the Owner makes their own for the database, the AI gateway and Google sign-in, and the Founder switches off the old ones after the move.
+- From the date above the Owner pays for the product's hosting, services and domains.
 
-- the name "Kresilo", its logo and brand, and the domain `kresilo.com`;
-- the source code in the repository `kresilo-app` at the tagged commit `handover-2026-10-30`, and everything the Owner adds after it;
-- the designs, written copy, pitch deck, brand guidelines, sample maker profiles and stories, and the pictures generated for the product;
-- the right to run, change, sell, license and close the product however the Owner decides.
+## The Owner's own input
 
-The Founder assigns to the Owner all rights the Founder has in the above. This assignment is the part that must be signed to take effect; moving the repository on GitHub does not by itself transfer copyright.
+Joshua's ideas, direction and any work he did stay his. Where either person contributed code, designs or text, it is covered the same way as the rest. Add anything specific here: **[ADD, or write "nothing specific"]**.
 
-## 2. What the Founder keeps
+## If you disagree
 
-- The Founder's own tools and the stack they built (`acs`, `oio`, `cgm`, `pcm`) and everything in the repositories for them. None of it is part of this handover and none of it is in `kresilo-app`.
-- The domain `design-bakery.com` and everything under it, including its subdomains, servers, accounts and keys.
-- The Founder's general skills, know-how and the way they work, and any code that was not written for Kresilo.
-- The old repository `Pukujan/kresilo` and its history. It stays private. It contains the Founder's tooling and the product's earlier history.
+Talk first and try to settle it between you. If you can't, the law of **[COUNTRY OR STATE]** applies.
 
-## 3. Licence back to the Founder
+## Still to fill in (just these)
 
-The Owner grants the Founder a free, worldwide, permanent, non-exclusive licence to use, copy and change **the source code as it stood at the tagged commit** in the Founder's own other projects.
+- Both full names, and the date.
+- Confirm `kresilo.com` is the Owner's.
+- Confirm no company or business was ever formally registered. If something was filed, say what and who closes it: **[CONFIRM]**.
+- The number of days (suggested 30) for the old address.
+- Optional, and only if you both want it: a thank-you clause, for example "if the Owner ever sells Kresilo, the Founder receives [a small share / a payment / nothing]". The default above is nothing.
 
-The Founder will not use the name "Kresilo", its logo or brand, or present a product as Kresilo or as a continuation of it. The licence does not cover the brand, the designs, the pitch deck or the sample maker content, and it does not let the Founder offer a product that competes with Kresilo under the Kresilo name. It is not exclusive to the Founder: the Owner may keep using the same code.
+## Signing
 
-## 4. The split
-
-After the handover date each side develops its own version independently. Neither owes the other updates, support, fixes or a share of what they build. Code each side writes after the handover date is that side's own.
-
-## 5. Third-party and AI-made material
-
-- The code uses open-source packages under their own licences, and `THIRD_PARTY_NOTICES.md` and `third-party/` carry the notices. A copy of Open Design's Apache-2.0 licence must stay with the code. Fonts and icons keep their own licences.
-- Pictures and text were produced with AI services (including Grok, Codex and Claude) under those services' terms. The law on who can claim rights in AI-made work is unsettled in many places, so neither side promises that these have exclusive protection.
-- Everything is handed over **as is**, with no promise that it is free of defects or of other people's rights, and each side's liability to the other is limited to the extent the law allows.
-
-## 6. Company, equity and earlier understanding
-
-The two of you meant to share the product 50/50 and a company was partly registered but is not believed to be official. Settle this in writing so there is no doubt later:
-
-- confirm whether anything was actually filed or registered, where, and in whose name, and who closes or keeps it;
-- the Founder confirms they hold no shares, equity, revenue share or other claim in Kresilo after the handover date, and gives up any claim arising from the earlier 50/50 intention, **unless** the parties write down something different here: [DECIDE and WRITE what, if anything, the Founder receives in return];
-- the Owner confirms they owe the Founder nothing beyond what is written here, and the Founder owes the Owner nothing.
-
-## 7. Operations
-
-- **Live site:** the site now runs at `kresilo.design-bakery.com` on the Founder's computer and database. The Owner sets up their own hosting and database and moves the site to `kresilo.com`. The Founder keeps the old address running for **[30] days** after the handover date and then points it to `kresilo.com`.
-- **Database and data:** the Founder exports the current database contents to the Owner. The Owner takes over responsibility for users' data and for compliance with privacy law from the handover date.
-- **Keys and accounts:** the Founder does not share their private keys. The Owner creates their own for the database, the model gateway and Google sign-in. The Founder revokes the old ones after the move.
-- **Costs:** from the handover date the Owner pays for the product's hosting, services and domains.
-
-## 8. Contributions before the handover
-
-The Owner's earlier input to the product (ideas, direction and any work they did) is theirs, and nothing here takes it away. Where either person contributed code, designs or text, it is covered by this document the same way as the Founder's. List anything specific here: [ADD].
-
-## Signatures
+The simplest way with no lawyer: each of you writes "I agree" with your full name and the date, either in an email that includes this whole text, or in a pull request comment on this file, and each keeps a copy. A free e-signature tool also works. Do it before anything else is built on top.
 
 Founder: ______________________  Date: ____________
 
