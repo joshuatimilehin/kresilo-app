@@ -1,0 +1,2648 @@
+[
+ {
+  "id": "p6-ui-cafe-order",
+  "title": "Cafe order kit",
+  "subtype": "ui-ux",
+  "industry": "neighbourhood cafe",
+  "about": "A warm, rounded ordering system that makes a morning queue feel like a chat with the barista.",
+  "concepts": [
+   "coffee",
+   "morning routine",
+   "pickup",
+   "friendly",
+   "neighbourhood",
+   "warm",
+   "casual",
+   "quick order",
+   "loyalty",
+   "local",
+   "cosy",
+   "daily habit"
+  ],
+  "items": [
+   "onboarding with three steps",
+   "menu with category chips",
+   "drink customiser sheet",
+   "basket review",
+   "pickup time picker",
+   "order confirmation",
+   "loyalty stamp card",
+   "order history"
+  ],
+  "style": "Soft rounded system on a 4-column phone grid with generous 20px gutters, 16px card radius and pill buttons; friendly semi-rounded sans character with large weights for prices; ground is a warm off-white, surface a slightly deeper cream, ink warm near-black, accent a single saturated hue used only for the primary button and stamps.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#d8572a",
+   "#ead9bd",
+   "#f7f0e4",
+   "#2a1c14"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 800,
+   "radius": 4.2,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Your usual, ready when you are",
+  "cta": "Start my order",
+  "value": "price",
+  "rows": [
+   [
+    "Flat white",
+    "Oat milk, 8 oz"
+   ],
+   [
+    "Cinnamon bun",
+    "Baked at 7"
+   ],
+   [
+    "Cold brew",
+    "Slow steeped"
+   ],
+   [
+    "Almond croissant",
+    "Still warm"
+   ]
+  ],
+  "pictures": [
+   "coffee-cup-steam",
+   "croissant-dots",
+   "p2-morning-routine-icons-coffee-mug",
+   "moka-pot",
+   "cupcake-swirl",
+   "toasting-mugs"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "onboarding with three steps"
+   },
+   {
+    "kind": "list",
+    "item": "menu with category chips"
+   },
+   {
+    "kind": "choice",
+    "item": "drink customiser sheet"
+   },
+   {
+    "kind": "wheel",
+    "item": "pickup time picker"
+   },
+   {
+    "kind": "summary",
+    "item": "basket review"
+   },
+   {
+    "kind": "pass",
+    "item": "loyalty stamp card"
+   },
+   {
+    "kind": "site-grid",
+    "item": "menu with category chips"
+   },
+   {
+    "kind": "dashboard",
+    "item": "order history"
+   }
+  ],
+  "shapes": [
+   "s",
+   "l",
+   "s",
+   "p",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-library-lending",
+  "title": "Library lending app",
+  "subtype": "ui-ux",
+  "industry": "public library",
+  "about": "A calm, institutional-but-warm kit for borrowing, renewing and finding books, built on a quiet shelf-like grid.",
+  "concepts": [
+   "books",
+   "borrowing",
+   "reading",
+   "community",
+   "quiet",
+   "archive",
+   "learning",
+   "children and adults",
+   "membership",
+   "catalogue",
+   "civic",
+   "trustworthy"
+  ],
+  "items": [
+   "welcome and card setup",
+   "catalogue search with filters",
+   "book detail with availability",
+   "my loans and renewals",
+   "reserve a title",
+   "reading list",
+   "events this week",
+   "account and card settings"
+  ],
+  "style": "Orderly 8pt grid with narrow column rules and 4px radius, like index cards; serif-leaning text type for titles with a plain neutral sans for data; ground is paper white, surface a pale tint of the ink, ink deep cool near-black, accent a measured mid-tone used for availability and links.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#8a2b3a",
+   "#e5e2da",
+   "#fbfaf7",
+   "#1d2230"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 700,
+   "radius": 1,
+   "edge": 1,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Borrow a little more",
+  "cta": "Find a book",
+  "value": "date",
+  "rows": [
+   [
+    "The Salt Road",
+    "M. Okafor"
+   ],
+   [
+    "Field Guide to Moss",
+    "Reference"
+   ],
+   [
+    "Atlas of Small Places",
+    "Ready to collect"
+   ],
+   [
+    "Night Trains",
+    "Renewed once"
+   ]
+  ],
+  "pictures": [
+   "p9-knowledge-and-learning-library-shelf",
+   "open-book",
+   "book-stack",
+   "reader-silhouette",
+   "round-spectacles",
+   "p9-knowledge-and-learning-quill-pen"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "welcome and card setup"
+   },
+   {
+    "kind": "list",
+    "item": "catalogue search with filters"
+   },
+   {
+    "kind": "detail",
+    "item": "book detail with availability"
+   },
+   {
+    "kind": "board",
+    "item": "my loans and renewals"
+   },
+   {
+    "kind": "form",
+    "item": "reserve a title"
+   },
+   {
+    "kind": "site-grid",
+    "item": "catalogue search with filters"
+   },
+   {
+    "kind": "site-home",
+    "item": "welcome and card setup"
+   }
+  ],
+  "shapes": [
+   "s",
+   "l",
+   "s",
+   "s",
+   "l",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-ferry-timetable",
+  "title": "Ferry timetable kit",
+  "subtype": "ui-ux",
+  "industry": "island ferry line",
+  "about": "Clear, tidal and unfussy: departures first, with a cool-and-signal palette that reads in wind and glare.",
+  "concepts": [
+   "ferry",
+   "island",
+   "timetable",
+   "travel",
+   "harbour",
+   "tides",
+   "commuter",
+   "tourism",
+   "departures",
+   "weather",
+   "coastal",
+   "reliability"
+  ],
+  "items": [
+   "next departures board",
+   "route and stop picker",
+   "ticket purchase",
+   "boarding pass with code",
+   "delay and disruption notice",
+   "crossing status map",
+   "vehicle and bike booking",
+   "saved journeys"
+  ],
+  "style": "High-contrast signage logic: bold condensed grotesque character for times, tabular figures, 2px rules between rows, 2px radius; ground is cool light grey, surface white, ink deep cool grey, accent a bright signal hue reserved for delays and the primary action.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#ffb400",
+   "#e6e9ee",
+   "#f3f5f8",
+   "#1b2433"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 0.6,
+   "edge": 2,
+   "ground": "light",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Next crossing in 12 minutes",
+  "cta": "Buy a ticket",
+  "value": "time",
+  "rows": [
+   [
+    "North Quay",
+    "Foot passengers"
+   ],
+   [
+    "Harbour Bay",
+    "Cars and bikes"
+   ],
+   [
+    "Seal Island",
+    "Foot only"
+   ],
+   [
+    "Light Point",
+    "Cars and bikes"
+   ]
+  ],
+  "pictures": [
+   "ferry-crossing",
+   "sailboat",
+   "lighthouse-on-rock",
+   "rowing-boat",
+   "bicycle-side",
+   "paper-boat"
+  ],
+  "layouts": [
+   {
+    "kind": "board",
+    "item": "next departures board"
+   },
+   {
+    "kind": "choice",
+    "item": "route and stop picker"
+   },
+   {
+    "kind": "summary",
+    "item": "ticket purchase"
+   },
+   {
+    "kind": "pass",
+    "item": "boarding pass with code"
+   },
+   {
+    "kind": "dashboard",
+    "item": "crossing status map"
+   },
+   {
+    "kind": "site-home",
+    "item": "next departures board"
+   }
+  ],
+  "shapes": [
+   "l",
+   "s",
+   "p",
+   "l",
+   "l",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-clinic-booking",
+  "title": "Clinic booking kit",
+  "subtype": "ui-ux",
+  "industry": "neighbourhood clinic",
+  "about": "A reassuring, unhurried booking flow with plain structure, big targets and gentle colour.",
+  "concepts": [
+   "health",
+   "appointments",
+   "care",
+   "reassuring",
+   "accessible",
+   "family",
+   "reception",
+   "check-in",
+   "reminders",
+   "calm",
+   "patients",
+   "trust"
+  ],
+  "items": [
+   "welcome screen",
+   "choose a service",
+   "pick a practitioner",
+   "appointment calendar",
+   "your details form",
+   "confirmation with directions",
+   "reminder and reschedule",
+   "pre-visit checklist"
+  ],
+  "style": "Spacious single-column flow with 24px margins, 12px radius, large 48px touch targets; humanist sans of open, rounded character at generous sizes; ground is soft white, surface a cool pale tint, ink deep cool near-black, accent a calm saturated hue for the one primary button per view.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#2f7f86",
+   "#dcecee",
+   "#f9fbfb",
+   "#17252b"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 700,
+   "radius": 3.1,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Care that fits your week",
+  "cta": "Book a visit",
+  "value": "time",
+  "rows": [
+   [
+    "Check-up",
+    "20 minutes"
+   ],
+   [
+    "Physiotherapy",
+    "45 minutes"
+   ],
+   [
+    "Flu jab",
+    "10 minutes"
+   ],
+   [
+    "Nurse advice",
+    "15 minutes"
+   ]
+  ],
+  "pictures": [
+   "stretching-silhouette",
+   "p5-thank-you-icons-heart-in-hand",
+   "whole-apple",
+   "citrus-slices",
+   "sun-rays",
+   "hands-holding-seedling"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "welcome screen"
+   },
+   {
+    "kind": "choice",
+    "item": "choose a service"
+   },
+   {
+    "kind": "wheel",
+    "item": "appointment calendar"
+   },
+   {
+    "kind": "form",
+    "item": "your details form"
+   },
+   {
+    "kind": "confirm",
+    "item": "confirmation with directions"
+   },
+   {
+    "kind": "site-home",
+    "item": "welcome screen"
+   },
+   {
+    "kind": "dashboard",
+    "item": "reminder and reschedule"
+   }
+  ],
+  "shapes": [
+   "p",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-pottery-studio",
+  "title": "Pottery class booking",
+  "subtype": "ui-ux",
+  "industry": "pottery studio",
+  "about": "An earthy, tactile booking kit with generous space and a handmade, slightly irregular edge.",
+  "concepts": [
+   "ceramics",
+   "classes",
+   "craft",
+   "hands-on",
+   "slow living",
+   "workshop",
+   "making",
+   "clay",
+   "beginners",
+   "studio",
+   "textured",
+   "calm"
+  ],
+  "items": [
+   "home with upcoming classes",
+   "class detail",
+   "calendar and spots left",
+   "membership plans",
+   "kiln firing schedule",
+   "booking summary",
+   "my pieces tracker",
+   "studio rules sheet"
+  ],
+  "style": "Organic layout on a loose 6-column grid, wobbly-edged 22px radius shapes and hand-cut dividers; warm geometric sans with a soft serif for headlines; ground is raw clay-tinted off-white, surface a deeper sand, ink dark warm tone, accent a strong warm mid-tone used sparingly for stamps and buttons.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#c4673a",
+   "#e6d2b5",
+   "#f5ece0",
+   "#3b2a22"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 5.6,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Hands in the clay",
+  "cta": "Reserve a spot",
+  "value": "count",
+  "rows": [
+   [
+    "Wheel basics",
+    "Thursday evening"
+   ],
+   [
+    "Hand-building",
+    "Saturday morning"
+   ],
+   [
+    "Glazing day",
+    "Sunday"
+   ],
+   [
+    "Throw and trim",
+    "Wednesday"
+   ]
+  ],
+  "pictures": [
+   "clay-vase",
+   "potters-wheel",
+   "p10-pottery-and-jars-round-jug",
+   "p10-pottery-and-jars-handled-bowl",
+   "p10-pottery-and-jars-lidded-jar",
+   "vase-with-branch"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "home with upcoming classes"
+   },
+   {
+    "kind": "detail",
+    "item": "class detail"
+   },
+   {
+    "kind": "wheel",
+    "item": "calendar and spots left"
+   },
+   {
+    "kind": "choice",
+    "item": "membership plans"
+   },
+   {
+    "kind": "summary",
+    "item": "booking summary"
+   },
+   {
+    "kind": "site-home",
+    "item": "home with upcoming classes"
+   },
+   {
+    "kind": "dashboard",
+    "item": "my pieces tracker"
+   }
+  ],
+  "shapes": [
+   "p",
+   "l",
+   "s",
+   "s",
+   "s",
+   "p"
+  ]
+ },
+ {
+  "id": "p6-ui-festival-guide",
+  "title": "Festival guide kit",
+  "subtype": "ui-ux",
+  "industry": "outdoor music festival",
+  "about": "A loud, poster-like guide for stages, line-ups and meeting points that still works one-handed in a crowd.",
+  "concepts": [
+   "festival",
+   "line-up",
+   "stages",
+   "music",
+   "summer",
+   "crowd",
+   "schedule",
+   "map",
+   "friends",
+   "tickets",
+   "night",
+   "energy"
+  ],
+  "items": [
+   "welcome and ticket scan",
+   "line-up by stage",
+   "artist detail",
+   "my schedule",
+   "festival map",
+   "friends location sharing",
+   "food and water points",
+   "info and safety",
+   "lost and found"
+  ],
+  "style": "Brutalist-leaning blocks with heavy 4px ink outlines, zero radius, offset hard shadows and oversized stacked headlines in an ultra-heavy extended grotesque; ground is flat saturated accent, surface white, ink pure near-black, a second tint of accent for highlights.",
+  "formats": [
+   "phone",
+   "social"
+  ],
+  "palette": [
+   "#ff4d2e",
+   "#ffd23f",
+   "#ffffff",
+   "#0b0b0b"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 0,
+   "edge": 4,
+   "ground": "accent",
+   "caps": true,
+   "shadow": true,
+   "italic": false
+  },
+  "tagline": "Three days. Four stages.",
+  "cta": "Scan my ticket",
+  "value": "time",
+  "rows": [
+   [
+    "Main Stage",
+    "Friday"
+   ],
+   [
+    "Tent Stage",
+    "Friday"
+   ],
+   [
+    "Garden Stage",
+    "Saturday"
+   ],
+   [
+    "Late Barn",
+    "Saturday"
+   ]
+  ],
+  "pictures": [
+   "crowd-hands-up",
+   "p5-festival-and-gigs-tent",
+   "p5-festival-and-gigs-ticket",
+   "electric-guitar",
+   "p5-festival-and-gigs-speaker-stack",
+   "p5-festival-and-gigs-wristband"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "welcome and ticket scan"
+   },
+   {
+    "kind": "board",
+    "item": "line-up by stage"
+   },
+   {
+    "kind": "detail",
+    "item": "artist detail"
+   },
+   {
+    "kind": "list",
+    "item": "my schedule"
+   },
+   {
+    "kind": "site-grid",
+    "item": "line-up by stage"
+   },
+   {
+    "kind": "site-home",
+    "item": "welcome and ticket scan"
+   }
+  ],
+  "shapes": [
+   "l",
+   "s",
+   "s",
+   "p",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-money-tracker",
+  "title": "Money tracker app",
+  "subtype": "ui-ux",
+  "industry": "personal money tracker",
+  "about": "A quiet, numbers-first tracker with soft charts and no alarm colours, fintech-neutral and kind.",
+  "concepts": [
+   "budgeting",
+   "spending",
+   "savings goals",
+   "household",
+   "calm finance",
+   "monthly review",
+   "categories",
+   "habit",
+   "clarity",
+   "neutral",
+   "personal",
+   "students"
+  ],
+  "items": [
+   "setup with currency and month start",
+   "overview with monthly ring",
+   "add an expense sheet",
+   "categories list",
+   "savings goals",
+   "monthly review",
+   "recurring items",
+   "insights",
+   "settings"
+  ],
+  "style": "Minimal layout on an 8pt grid with 20px radius cards, thin 1px hairlines, tabular figures in a clean geometric sans; ground is near-white, surface a pale tint of accent, ink charcoal, accent used for chart fills in tints so the whole palette recolours from one slot.",
+  "formats": [
+   "phone"
+  ],
+  "palette": [
+   "#3d7be0",
+   "#e4edfb",
+   "#f8f9fb",
+   "#1c2230"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 600,
+   "radius": 5,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "A calm month, at a glance",
+  "cta": "Add an expense",
+  "value": "price",
+  "rows": [
+   [
+    "Groceries",
+    "Weekly shop"
+   ],
+   [
+    "Rent",
+    "Due on the 1st"
+   ],
+   [
+    "Transport",
+    "Monthly pass"
+   ],
+   [
+    "Coffee",
+    "Small joys"
+   ]
+  ],
+  "pictures": [
+   "coin-stacks",
+   "p1-checkout-and-payment-icons-wallet",
+   "p1-checkout-and-payment-icons-receipt",
+   "p1-checkout-and-payment-icons-banknote",
+   "p1-checkout-and-payment-icons-payment-card",
+   "gift-box-ribbon"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "setup with currency and month start"
+   },
+   {
+    "kind": "form",
+    "item": "add an expense sheet"
+   },
+   {
+    "kind": "list",
+    "item": "categories list"
+   },
+   {
+    "kind": "choice",
+    "item": "savings goals"
+   },
+   {
+    "kind": "summary",
+    "item": "monthly review"
+   },
+   {
+    "kind": "dashboard",
+    "item": "overview with monthly ring"
+   },
+   {
+    "kind": "site-home",
+    "item": "setup with currency and month start"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-gentle-movement",
+  "title": "Movement routine kit",
+  "subtype": "ui-ux",
+  "industry": "gentle movement studio",
+  "about": "A slow, breathing interface for routines, stretches and rest days, with long curves and generous pauses.",
+  "concepts": [
+   "movement",
+   "stretching",
+   "routine",
+   "wellbeing",
+   "rest",
+   "mobility",
+   "slow",
+   "breath",
+   "habit",
+   "gentle",
+   "older adults",
+   "home practice"
+  ],
+  "items": [
+   "welcome and goals",
+   "today's routine",
+   "exercise step with timer",
+   "rest day screen",
+   "weekly rhythm",
+   "routine library",
+   "reflection after session",
+   "reminders"
+  ],
+  "style": "Fluid layouts with large rounded 28px radius surfaces and long arcs, big airy 32px spacing and large light-weight rounded sans for numbers; ground is pale misty tint, surface a slightly stronger tint, ink deep muted near-black, accent a soft saturated hue for progress arcs.",
+  "formats": [
+   "phone"
+  ],
+  "palette": [
+   "#7aa6a0",
+   "#dfeceb",
+   "#f1f6f5",
+   "#233633"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 400,
+   "radius": 7.2,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Move a little, daily",
+  "cta": "Begin today",
+  "value": "none",
+  "rows": [
+   [
+    "Morning stretch",
+    "8 minutes"
+   ],
+   [
+    "Hip release",
+    "12 minutes"
+   ],
+   [
+    "Breath and reset",
+    "5 minutes"
+   ],
+   [
+    "Evening unwind",
+    "10 minutes"
+   ]
+  ],
+  "pictures": [
+   "stretching-silhouette",
+   "dancing-pair",
+   "p5-plant-care-leaf",
+   "sun-over-horizon",
+   "running-shoe",
+   "swimmer-lanes"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "welcome and goals"
+   },
+   {
+    "kind": "list",
+    "item": "today's routine"
+   },
+   {
+    "kind": "wheel",
+    "item": "exercise step with timer"
+   },
+   {
+    "kind": "confirm",
+    "item": "rest day screen"
+   },
+   {
+    "kind": "board",
+    "item": "weekly rhythm"
+   },
+   {
+    "kind": "form",
+    "item": "reflection after session"
+   },
+   {
+    "kind": "site-home",
+    "item": "welcome and goals"
+   },
+   {
+    "kind": "site-grid",
+    "item": "routine library"
+   }
+  ],
+  "shapes": [
+   "p",
+   "p",
+   "s",
+   "l",
+   "l",
+   "l"
+  ]
+ },
+ {
+  "id": "p6-ui-nonprofit-giving",
+  "title": "Giving campaign site",
+  "subtype": "ui-ux",
+  "industry": "small charity",
+  "about": "A direct, human donation journey led by stories, with trust cues and zero guilt-tripping.",
+  "concepts": [
+   "nonprofit",
+   "donations",
+   "campaign",
+   "impact",
+   "community",
+   "volunteers",
+   "fundraising",
+   "transparency",
+   "stories",
+   "local charity",
+   "trust",
+   "hope"
+  ],
+  "items": [
+   "campaign landing",
+   "story and impact page",
+   "donation amount picker",
+   "donor details form",
+   "thank-you screen",
+   "volunteer sign-up",
+   "annual report summary",
+   "newsletter sign-up"
+  ],
+  "style": "Editorial web grid with a large hero image band, 12-column layout, 8px radius and underlined links; sturdy serif display character with a neutral sans body; ground is warm white, surface soft tint of accent, ink dark charcoal, accent a strong hue for donate buttons only.",
+  "formats": [
+   "desktop",
+   "phone"
+  ],
+  "palette": [
+   "#c2410c",
+   "#f3e3d3",
+   "#fffaf4",
+   "#26211d"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 2,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Small gifts, big seasons",
+  "cta": "Give today",
+  "value": "price",
+  "rows": [
+   [
+    "Plant a tree",
+    "Per sapling"
+   ],
+   [
+    "Feed a family",
+    "A week of meals"
+   ],
+   [
+    "Fund a class",
+    "One term"
+   ],
+   [
+    "Mend a roof",
+    "The whole village"
+   ]
+  ],
+  "pictures": [
+   "hands-holding-seedling",
+   "handshake",
+   "crowd-hands-up",
+   "hands-planting",
+   "p5-thank-you-icons-heart-in-hand",
+   "p5-thank-you-icons-envelope"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "campaign landing"
+   },
+   {
+    "kind": "detail",
+    "item": "story and impact page"
+   },
+   {
+    "kind": "wheel",
+    "item": "donation amount picker"
+   },
+   {
+    "kind": "form",
+    "item": "donor details form"
+   },
+   {
+    "kind": "confirm",
+    "item": "thank-you screen"
+   },
+   {
+    "kind": "site-home",
+    "item": "campaign landing"
+   },
+   {
+    "kind": "site-detail",
+    "item": "story and impact page"
+   }
+  ],
+  "shapes": [
+   "s",
+   "l",
+   "l",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-craft-shop",
+  "title": "Craft shop storefront",
+  "subtype": "ui-ux",
+  "industry": "online craft shop",
+  "about": "A gallery-like store where each handmade object gets space, a story and an honest price.",
+  "concepts": [
+   "craft",
+   "handmade",
+   "shop",
+   "ecommerce",
+   "makers",
+   "gifts",
+   "small batch",
+   "artisan",
+   "storefront",
+   "product story",
+   "slow shopping",
+   "editorial"
+  ],
+  "items": [
+   "storefront home",
+   "collection grid",
+   "product detail with maker note",
+   "cart drawer",
+   "checkout details",
+   "delivery options",
+   "order confirmation",
+   "about the maker page"
+  ],
+  "style": "Gallery-white layout with wide margins, 3-column product grid with 2px radius, hairline dividers and understated serif display with a quiet sans; ground white, surface pale warm grey, ink soft black, accent a muted hue for price and the add-to-basket button.",
+  "formats": [
+   "desktop",
+   "phone"
+  ],
+  "palette": [
+   "#a15c38",
+   "#ece6dd",
+   "#ffffff",
+   "#2b2a28"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 0.5,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Made slowly, by hand",
+  "cta": "Add to basket",
+  "value": "price",
+  "rows": [
+   [
+    "Linen tea towel",
+    "Indigo dye"
+   ],
+   [
+    "Hand-spun yarn",
+    "Wool, 100 g"
+   ],
+   [
+    "Stoneware cup",
+    "Glazed"
+   ],
+   [
+    "Willow basket",
+    "Woven"
+   ]
+  ],
+  "pictures": [
+   "thread-spools",
+   "needle-and-thread",
+   "yarn-and-needles",
+   "embroidery-hoop",
+   "canvas-tote-bag",
+   "clay-vase"
+  ],
+  "layouts": [
+   {
+    "kind": "welcome",
+    "item": "storefront home"
+   },
+   {
+    "kind": "list",
+    "item": "collection grid"
+   },
+   {
+    "kind": "detail",
+    "item": "product detail with maker note"
+   },
+   {
+    "kind": "summary",
+    "item": "cart drawer"
+   },
+   {
+    "kind": "confirm",
+    "item": "order confirmation"
+   },
+   {
+    "kind": "site-home",
+    "item": "storefront home"
+   },
+   {
+    "kind": "site-grid",
+    "item": "collection grid"
+   },
+   {
+    "kind": "site-detail",
+    "item": "product detail with maker note"
+   }
+  ],
+  "shapes": [
+   "s",
+   "p",
+   "s",
+   "s",
+   "p",
+   "p"
+  ]
+ },
+ {
+  "id": "p6-ui-venue-tickets",
+  "title": "Music venue tickets",
+  "subtype": "ui-ux",
+  "industry": "live music venue",
+  "about": "A night-time ticketing kit with dark surfaces, glowing accents and a gig-poster pulse.",
+  "concepts": [
+   "music",
+   "gigs",
+   "tickets",
+   "night out",
+   "venue",
+   "live shows",
+   "bands",
+   "bar",
+   "local scene",
+   "doors open",
+   "community",
+   "late"
+  ],
+  "items": [
+   "upcoming shows list",
+   "show detail",
+   "ticket quantity picker",
+   "checkout",
+   "digital ticket with code",
+   "venue info and map",
+   "artist page",
+   "join the mailing list"
+  ],
+  "style": "Dark-mode first with deep ground, 6px radius cards separated by luminous 1px accent lines, extended bold sans for show names, mono-spaced character for times; ground near-black, surface slightly lifted dark, ink pale off-white text, accent a vivid neon-leaning hue.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#ff3d81",
+   "#232634",
+   "#0d0e14",
+   "#f4f1ea"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 800,
+   "radius": 1.5,
+   "edge": 0,
+   "ground": "dark",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Live, loud, local",
+  "cta": "Get tickets",
+  "value": "price",
+  "rows": [
+   [
+    "The Wild Tides",
+    "Friday"
+   ],
+   [
+    "Marlow Quartet",
+    "Saturday"
+   ],
+   [
+    "Dust and Honey",
+    "Thursday"
+   ],
+   [
+    "Night Choir",
+    "Friday"
+   ]
+  ],
+  "pictures": [
+   "electric-guitar",
+   "vintage-microphone",
+   "p5-festival-and-gigs-ticket",
+   "p5-festival-and-gigs-spotlights",
+   "spotlit-stage",
+   "vinyl-record"
+  ],
+  "layouts": [
+   {
+    "kind": "list",
+    "item": "upcoming shows list"
+   },
+   {
+    "kind": "detail",
+    "item": "show detail"
+   },
+   {
+    "kind": "wheel",
+    "item": "ticket quantity picker"
+   },
+   {
+    "kind": "summary",
+    "item": "checkout"
+   },
+   {
+    "kind": "pass",
+    "item": "digital ticket with code"
+   },
+   {
+    "kind": "site-grid",
+    "item": "upcoming shows list"
+   },
+   {
+    "kind": "site-detail",
+    "item": "show detail"
+   }
+  ],
+  "shapes": [
+   "p",
+   "p",
+   "s",
+   "s",
+   "l",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-ui-bakery-preorder",
+  "title": "Bakery pre-order kit",
+  "subtype": "ui-ux",
+  "industry": "neighbourhood bakery",
+  "about": "A simple morning pre-order system with the day's bake and a sold-out state that feels honest.",
+  "concepts": [
+   "bakery",
+   "bread",
+   "pre-order",
+   "morning",
+   "pastries",
+   "local",
+   "pickup",
+   "daily bake",
+   "sold out",
+   "small business",
+   "warm",
+   "breakfast"
+  ],
+  "items": [
+   "today's bake list",
+   "item detail",
+   "pickup slot picker",
+   "order basket",
+   "order confirmation",
+   "subscription box",
+   "sold-out and waitlist state",
+   "bakery info and map"
+  ],
+  "style": "Warm tactile layout with 18px radius photo cards, a baked-crust gradient used flat as two tones, chunky friendly serif for item names with a round sans for details; ground flour white, surface warm tint, ink dark warm tone, accent a toasted hue for add-to-order.",
+  "formats": [
+   "phone",
+   "desktop"
+  ],
+  "palette": [
+   "#c9772e",
+   "#f1dcc0",
+   "#fcf7ee",
+   "#3a2418"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 4.6,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Saved for you, fresh at eight",
+  "cta": "Reserve my loaf",
+  "value": "price",
+  "rows": [
+   [
+    "Sourdough loaf",
+    "Baked at 6"
+   ],
+   [
+    "Cardamom bun",
+    "Baked at 7"
+   ],
+   [
+    "Rye batard",
+    "Baked at 6"
+   ],
+   [
+    "Seeded rolls",
+    "Pack of six"
+   ]
+  ],
+  "pictures": [
+   "hand-drawn-loaf",
+   "croissant-dots",
+   "wheat-ears",
+   "p2-baking-tool-icons-rolling-pin",
+   "p12-ireland-bakery-cottage-round-loaf",
+   "p2-baking-tool-icons-whisk"
+  ],
+  "layouts": [
+   {
+    "kind": "list",
+    "item": "today's bake list"
+   },
+   {
+    "kind": "detail",
+    "item": "item detail"
+   },
+   {
+    "kind": "wheel",
+    "item": "pickup slot picker"
+   },
+   {
+    "kind": "summary",
+    "item": "order basket"
+   },
+   {
+    "kind": "confirm",
+    "item": "order confirmation"
+   },
+   {
+    "kind": "site-grid",
+    "item": "today's bake list"
+   },
+   {
+    "kind": "site-home",
+    "item": "bakery info and map"
+   }
+  ],
+  "shapes": [
+   "s",
+   "l",
+   "l",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-spice-stall",
+  "title": "Spice stall identity",
+  "subtype": "brand-identity",
+  "industry": "family spice stall at a covered market",
+  "about": "A generous, colour-rich identity of jar labels, paper cones and a hanging stall sign that smells of the market.",
+  "concepts": [
+   "spices",
+   "market stall",
+   "family business",
+   "flavour",
+   "cooking",
+   "aromatic",
+   "vibrant",
+   "jars",
+   "handwritten",
+   "warm",
+   "trade",
+   "hand craft"
+  ],
+  "items": [
+   "logo presentation on a stall sign",
+   "brand board with palette",
+   "jar label set",
+   "paper cone bag and stamp",
+   "price card and chalk tag",
+   "business card",
+   "recipe card insert",
+   "social post kit"
+  ],
+  "style": "Dense, abundant composition on a 3-column label grid with 6px rounded corners, repeating dot and geometric patterns, a chunky hand-cut display character with a plain sans for ingredients; ground warm kraft-white, surface saturated tint of accent, ink dark, accent a bold market hue with two tints to code each blend.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#c8321e",
+   "#f2a900",
+   "#f6ecd9",
+   "#2a1a12"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 1.5,
+   "edge": 2,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Blended at the market stall",
+  "headline": "Taste the\nmarket",
+  "line": "Saturdays, hall B",
+  "pictures": [
+   "chilli-bunch",
+   "p11-tanzania-spice-stall-jar-row",
+   "p11-tanzania-spice-stall-brass-scoop",
+   "p11-tanzania-spice-stall-paper-cone",
+   "p11-tanzania-spice-stall-cinnamon-sticks",
+   "p7-india-food-spice-tin"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation on a stall sign"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board with palette"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "logo presentation on a stall sign"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "jar label set"
+   }
+  ],
+  "shapes": [
+   "l",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-letterpress-shop",
+  "title": "Letterpress shop identity",
+  "subtype": "brand-identity",
+  "industry": "letterpress print shop",
+  "about": "A debossed, ink-on-cotton stationery identity that shows off pressure, registration and paper.",
+  "concepts": [
+   "letterpress",
+   "print shop",
+   "stationery",
+   "craft",
+   "paper",
+   "ink",
+   "invitations",
+   "heritage trades",
+   "tactile",
+   "typesetting",
+   "artisan",
+   "small press"
+  ],
+  "items": [
+   "logo presentation on cotton paper",
+   "business card with deboss",
+   "letterhead",
+   "envelope with liner",
+   "compliments slip",
+   "rubber stamp and seal",
+   "order form",
+   "paper sample book",
+   "brand board"
+  ],
+  "style": "Typographic composition on a strict centred axis with 0 radius, ornamental rule lines, small caps and wide margins, an old-style serif with spaced capitals; ground cotton white, surface warm paper tint, ink rich deep colour printed with slight misregistration, accent a second overprinted ink.",
+  "formats": [
+   "print"
+  ],
+  "palette": [
+   "#1f3b73",
+   "#b3382c",
+   "#f7f2e8",
+   "#1b1b2a"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 0,
+   "edge": 1,
+   "ground": "light",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Printed by hand, one at a time",
+  "headline": "Set in lead,\npressed in ink",
+  "line": "Open studio, first Friday",
+  "pictures": [
+   "p14-inkwell-journal-letter-seal",
+   "invitation-envelope",
+   "p9-knowledge-and-learning-ink-well",
+   "p9-knowledge-and-learning-quill-pen",
+   "p14-reading-desk-letter-opener",
+   "p5-divider-ornaments-centre-diamond-line"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation on cotton paper"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card with deboss"
+   },
+   {
+    "kind": "poster",
+    "item": "letterhead"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-tailor-atelier",
+  "title": "Tailor atelier identity",
+  "subtype": "brand-identity",
+  "industry": "bespoke tailor",
+  "about": "A precise, understated identity built around measured lines, tape marks and cloth labels.",
+  "concepts": [
+   "tailor",
+   "atelier",
+   "bespoke",
+   "fabric",
+   "fitting",
+   "garment",
+   "heritage trade",
+   "craft",
+   "refined",
+   "measure",
+   "clothing",
+   "detail"
+  ],
+  "items": [
+   "logo and monogram presentation",
+   "brand board",
+   "woven garment label",
+   "business card",
+   "appointment card",
+   "garment bag print",
+   "measurement sheet",
+   "shopping bag",
+   "window vinyl"
+  ],
+  "style": "Fine-line system with 1px tape-measure ticks, 0 radius, a small monogram in a thin frame and a restrained high-contrast serif with spaced small caps; ground chalk white, surface cloth-toned tint, ink deep near-black, accent a thin thread-colour line.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#9a8261",
+   "#e3ddd0",
+   "#f5f2ec",
+   "#161616"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 0,
+   "edge": 1,
+   "ground": "light",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Cut to measure",
+  "headline": "Made for\nonly you",
+  "line": "Fittings by appointment",
+  "pictures": [
+   "p5-sewing-and-knitting-tape-measure",
+   "scissors-open",
+   "needle-and-thread",
+   "p5-sewing-and-knitting-button-jar",
+   "thread-spools",
+   "p5-sewing-and-knitting-scissors"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo and monogram presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "woven garment label"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "woven garment label"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "p",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-community-radio",
+  "title": "Community radio identity",
+  "subtype": "brand-identity",
+  "industry": "community radio station",
+  "about": "A signal-and-voice identity: concentric rings, volunteer-made posters and a friendly dial.",
+  "concepts": [
+   "community radio",
+   "broadcast",
+   "local voices",
+   "audio",
+   "volunteers",
+   "signal",
+   "neighbourhood",
+   "programme",
+   "sound",
+   "live",
+   "grassroots",
+   "culture"
+  ],
+  "items": [
+   "logo with ring mark",
+   "brand board",
+   "programme schedule poster",
+   "studio door sign",
+   "sticker pack",
+   "tote bag print",
+   "presenter card",
+   "social post set",
+   "t-shirt back print"
+  ],
+  "style": "Concentric-circle motif on a loose modular grid with 50% radius shapes and hand-cut paper edges, a punchy rounded display sans with a typewriter-like companion; ground off-white, surface bold tint of accent, ink dark, accent a high-energy hue used on ring fills.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#ff5a1f",
+   "#ffd9c7",
+   "#f8f3ec",
+   "#1b1a1f"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 3.8,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Local voices, on air",
+  "headline": "Tune in\nnext door",
+  "line": "Live weekdays, 6 to 10",
+  "pictures": [
+   "studio-headphones",
+   "vintage-microphone",
+   "signal-arcs",
+   "sound-wave-bars",
+   "p1-home-studio-stickers-microphone-with-pop-filter",
+   "pointing-hand"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo with ring mark"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "presenter card"
+   },
+   {
+    "kind": "poster",
+    "item": "programme schedule poster"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "sticker pack"
+   }
+  ],
+  "shapes": [
+   "s",
+   "p",
+   "s",
+   "l",
+   "s",
+   "p"
+  ]
+ },
+ {
+  "id": "p6-br-ceramic-studio",
+  "title": "Ceramic studio identity",
+  "subtype": "brand-identity",
+  "industry": "pottery studio",
+  "about": "A tactile, earthy identity with thumbprint marks, glaze swatches and stamped bases.",
+  "concepts": [
+   "ceramics",
+   "pottery",
+   "clay",
+   "craft",
+   "studio",
+   "handmade",
+   "glaze",
+   "tactile",
+   "earthy",
+   "workshop",
+   "slow",
+   "artisan"
+  ],
+  "items": [
+   "logo and base stamp presentation",
+   "brand board with glaze swatches",
+   "business card",
+   "gift box and tissue",
+   "care instruction card",
+   "price tag",
+   "studio sign",
+   "class flyer",
+   "social kit"
+  ],
+  "style": "Organic shapes with irregular 24px radii, round impression marks and soft flat colour, a warm rounded serif with a modest sans; ground raw clay-white, surface glaze-like tint, ink dark warm tone-leaning neutral, accent a glaze hue with two lighter tints.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#4f7a6b",
+   "#e0c9a8",
+   "#f4ecdf",
+   "#38302a"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 6,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Thrown, glazed, shared",
+  "headline": "Made by hand,\nheld by hand",
+  "line": "Classes start in spring",
+  "pictures": [
+   "clay-vase",
+   "potters-wheel",
+   "p10-pottery-and-jars-round-jug",
+   "p10-pottery-and-jars-handled-bowl",
+   "p9-sculptors-studio-clay-lump",
+   "vase-with-branch"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo and base stamp presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board with glaze swatches"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "studio sign"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "gift box and tissue"
+   }
+  ],
+  "shapes": [
+   "p",
+   "l",
+   "s",
+   "s",
+   "s",
+   "p"
+  ]
+ },
+ {
+  "id": "p6-br-coffee-roaster",
+  "title": "Coffee roaster packaging",
+  "subtype": "brand-identity",
+  "industry": "small-batch coffee roaster",
+  "about": "A roast-by-roast packaging system where colour coding replaces long descriptions.",
+  "concepts": [
+   "coffee",
+   "roaster",
+   "packaging",
+   "small batch",
+   "origin",
+   "bags",
+   "labels",
+   "specialty",
+   "cafe",
+   "retail",
+   "colour coding",
+   "wholesale"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "coffee bag front and back",
+   "roast label set",
+   "shipping box",
+   "business card",
+   "sample sachet",
+   "cafe menu card",
+   "social kit"
+  ],
+  "style": "Modular label system with a strict 2-column grid, 4px radius, large roast-number numerals and a thin geometric sans in capitals; ground uncoated kraft-white, surface strong tint, ink near-black, accent plus three lighter tints coding roast level.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#b5532a",
+   "#e8d5b7",
+   "#f3ece0",
+   "#1f1713"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 700,
+   "radius": 1,
+   "edge": 0,
+   "ground": "light",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Roasted small, shipped fresh",
+  "headline": "Roast\nno. 07",
+  "line": "Ethiopia, washed, 250 g",
+  "pictures": [
+   "p8-brazil-food-sack-of-coffee-beans",
+   "coffee-cup-steam",
+   "moka-pot",
+   "p11-ethiopia-coffee-table-green-beans",
+   "p7-vietnam-food-coffee-drip-filter",
+   "p11-ethiopia-coffee-table-clay-coffee-pot"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "coffee bag front and back"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "coffee bag front and back"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "p",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-indie-cinema",
+  "title": "Cinema identity",
+  "subtype": "brand-identity",
+  "industry": "independent cinema",
+  "about": "A marquee-bright programme identity with ticket stubs, posters and glowing letter panels.",
+  "concepts": [
+   "cinema",
+   "film",
+   "programme",
+   "screenings",
+   "posters",
+   "tickets",
+   "nightlife",
+   "community",
+   "cultural venue",
+   "marquee",
+   "events",
+   "retro"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "ticket stub",
+   "programme poster series",
+   "foyer sign",
+   "membership card",
+   "popcorn box",
+   "social kit",
+   "flyer"
+  ],
+  "style": "Bold poster grid with 0 radius, thick border frames, repeating bulb-dot lines and a heavy display character with art-deco-leaning geometry; ground deep dark, surface lifted dark, ink pale warm, accent a bright marquee hue.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#ffb81c",
+   "#2b2433",
+   "#120f18",
+   "#f6ead2"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 0,
+   "edge": 4,
+   "ground": "dark",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Films worth leaving the house for",
+  "headline": "Now\nshowing",
+  "line": "Doors at half past seven",
+  "pictures": [
+   "film-camera",
+   "theatre-curtains",
+   "spotlit-stage",
+   "p5-festival-and-gigs-ticket",
+   "p11-ethiopia-coffee-table-popcorn-bowl",
+   "stars-sparkles"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "ticket stub"
+   },
+   {
+    "kind": "poster",
+    "item": "programme poster series"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "ticket stub"
+   }
+  ],
+  "shapes": [
+   "s",
+   "l",
+   "l",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-record-shop",
+  "title": "Record shop identity",
+  "subtype": "brand-identity",
+  "industry": "vinyl record shop and music venue",
+  "about": "A crate-digger identity of sleeves, stickers and gig flyers in cut-and-paste layers.",
+  "concepts": [
+   "records",
+   "vinyl",
+   "music",
+   "venue",
+   "crate",
+   "stickers",
+   "gigs",
+   "zines",
+   "nightlife",
+   "independent",
+   "subculture",
+   "collage"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "record sleeve",
+   "price sticker sheet",
+   "gig flyer",
+   "tote bag",
+   "membership card",
+   "window poster",
+   "social kit"
+  ],
+  "style": "Collage composition with photocopy-grain textures, 0 radius, torn-edge shapes and a mix of hand-lettered and typewriter-like characters; ground off-white, surface bright tint, ink black, accent a hot hue with an offset second tint.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#ff3b30",
+   "#ffe14d",
+   "#f4efe6",
+   "#111111"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 0,
+   "edge": 3,
+   "ground": "light",
+   "caps": false,
+   "shadow": true,
+   "italic": false
+  },
+  "tagline": "Dig deeper",
+  "headline": "Live\nFriday",
+  "line": "Three bands, free entry",
+  "pictures": [
+   "vinyl-record",
+   "p13-record-shop-crates-record-crate",
+   "p13-record-shop-crates-record-sleeve",
+   "p13-record-shop-crates-turntable",
+   "p13-record-shop-crates-price-sticker",
+   "p13-record-shop-crates-record-bag"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "membership card"
+   },
+   {
+    "kind": "poster",
+    "item": "gig flyer"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "record sleeve"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-architecture-practice",
+  "title": "Architecture practice identity",
+  "subtype": "brand-identity",
+  "industry": "small architecture practice",
+  "about": "A drawn, measured stationery set with plan-grid texture and a quiet confident monogram.",
+  "concepts": [
+   "architecture",
+   "studio",
+   "stationery",
+   "drawings",
+   "plans",
+   "professional",
+   "construction",
+   "monogram",
+   "grid",
+   "portfolio",
+   "minimal",
+   "precise"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "business card",
+   "letterhead",
+   "envelope",
+   "project folder",
+   "drawing title block",
+   "proposal cover",
+   "social kit"
+  ],
+  "style": "Orthographic grid system with 1px construction lines, 0 radius, rigorous alignment to a 12-unit baseline and a precise neutral grotesque; ground drafting white, surface pale grey, ink dark graphite, accent a single dimension hue.",
+  "formats": [
+   "print",
+   "desktop"
+  ],
+  "palette": [
+   "#2563eb",
+   "#e5e7eb",
+   "#fafafa",
+   "#1f2933"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 500,
+   "radius": 0,
+   "edge": 1,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Drawn with care, built to last",
+  "headline": "Plan,\nsection, place",
+  "line": "Studio open by appointment",
+  "pictures": [
+   "terraced-houses",
+   "p14-map-table-compass",
+   "p14-map-table-ruler",
+   "cottage-chimney",
+   "wooden-ladder",
+   "p11-morocco-tile-bench-pencil-and-compass"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "business card"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   }
+  ],
+  "shapes": [
+   "l",
+   "s",
+   "s",
+   "l",
+   "p",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-ice-cream-parlour",
+  "title": "Ice cream parlour identity",
+  "subtype": "brand-identity",
+  "industry": "ice cream parlour",
+  "about": "A scoop-and-cone identity with flavour colour codes, tub labels and a joyful pattern set.",
+  "concepts": [
+   "ice cream",
+   "dessert",
+   "parlour",
+   "flavours",
+   "treats",
+   "family",
+   "summer",
+   "packaging",
+   "colourful",
+   "tubs",
+   "cones",
+   "fun"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "tub label set",
+   "cone sleeve",
+   "flavour menu",
+   "napkin print",
+   "pattern pack",
+   "loyalty card",
+   "social kit"
+  ],
+  "style": "Scoop-circle motif with 50% radius shapes, drip-like rounded shapes, playful pattern tiles and a bubbly bold display; ground cream, surface strong pastel tint, ink dark, accent family of five tints coding flavours.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#ff7aa8",
+   "#ffe3a3",
+   "#fff6e6",
+   "#4a2c3a"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 8,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Scoops for everyone",
+  "headline": "Two scoops,\nno rules",
+  "line": "Open till sunset",
+  "pictures": [
+   "ice-cream-cone",
+   "iced-drink-straw",
+   "cupcake-swirl",
+   "p5-birthday-party-cupcake-with-candle",
+   "sun-rays",
+   "parasol-fruit-cart"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "loyalty card"
+   },
+   {
+    "kind": "poster",
+    "item": "tub label set"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "tub label set"
+   }
+  ],
+  "shapes": [
+   "p",
+   "p",
+   "s",
+   "s",
+   "s",
+   "l"
+  ]
+ },
+ {
+  "id": "p6-br-chocolate-maker",
+  "title": "Chocolate maker identity",
+  "subtype": "brand-identity",
+  "industry": "bean-to-bar chocolate maker",
+  "about": "A refined wrapper and bar-mould identity, with each origin in its own pattern and colour.",
+  "concepts": [
+   "chocolate",
+   "bean to bar",
+   "packaging",
+   "wrappers",
+   "origin",
+   "premium",
+   "gifts",
+   "craft food",
+   "small batch",
+   "patterns",
+   "tasting",
+   "artisan"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "bar wrapper set",
+   "inner foil pattern",
+   "gift box",
+   "tasting card",
+   "market table sign",
+   "business card",
+   "social kit"
+  ],
+  "style": "Mould-grid motif with square segments, 2px radius, geometric pattern per origin and an elegant condensed serif; ground deep dark or cream, surface rich tint, ink contrasting, accent plus tints for each origin.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#c9822b",
+   "#e9d8bd",
+   "#fbf4e8",
+   "#2e1a12"
+  ],
+  "look": {
+   "font": "poster",
+   "weight": 400,
+   "radius": 0.8,
+   "edge": 0,
+   "ground": "light",
+   "caps": false,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Bean to bar, slowly",
+  "headline": "Single\norigin",
+  "line": "Seventy percent, Ecuador",
+  "pictures": [
+   "p8-ecuador-food-cacao-pods",
+   "p8-brazil-food-tray-of-chocolate-truffle-sweets",
+   "gift-box-ribbon",
+   "p8-ecuador-food-warm-cinnamon-drink-in-a-mug",
+   "p8-ecuador-food-passion-fruit",
+   "stars-sparkles"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "tasting card"
+   },
+   {
+    "kind": "poster",
+    "item": "market table sign"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "bar wrapper set"
+   }
+  ],
+  "shapes": [
+   "s",
+   "s",
+   "s",
+   "s",
+   "s",
+   "s"
+  ]
+ },
+ {
+  "id": "p6-br-bike-shop",
+  "title": "Bike shop identity",
+  "subtype": "brand-identity",
+  "industry": "neighbourhood bike shop",
+  "about": "A workshop-sturdy identity with chain-link patterns, tag labels and tough stickers.",
+  "concepts": [
+   "bicycle",
+   "bike shop",
+   "repair",
+   "cycling",
+   "workshop",
+   "city",
+   "sturdy",
+   "stickers",
+   "commuting",
+   "community",
+   "tough",
+   "DIY"
+  ],
+  "items": [
+   "logo presentation",
+   "brand board",
+   "frame sticker set",
+   "repair tag",
+   "workshop apron print",
+   "business card",
+   "service price poster",
+   "inner-tube box",
+   "social kit"
+  ],
+  "style": "Utilitarian shapes with 3px bold outlines, 4px radius, repeated link-like circle pattern and a stencil-leaning condensed sans; ground concrete-light, surface white, ink black, accent a high-visibility hue used for stickers and tags.",
+  "formats": [
+   "print",
+   "social"
+  ],
+  "palette": [
+   "#ffd400",
+   "#d9dce0",
+   "#eef0f2",
+   "#111111"
+  ],
+  "look": {
+   "font": "sans",
+   "weight": 900,
+   "radius": 1,
+   "edge": 3,
+   "ground": "light",
+   "caps": true,
+   "shadow": false,
+   "italic": false
+  },
+  "tagline": "Fixed while you wait",
+  "headline": "Ride\nmore",
+  "line": "Repairs from twenty minutes",
+  "pictures": [
+   "bicycle-side",
+   "delivery-bike-crate",
+   "hammer-and-spanner",
+   "p1-rainy-day-stickers-bicycle-with-mudguard",
+   "p5-order-tracking-icons-bicycle-courier",
+   "wooden-ladder"
+  ],
+  "layouts": [
+   {
+    "kind": "logo",
+    "item": "logo presentation"
+   },
+   {
+    "kind": "palette",
+    "item": "brand board"
+   },
+   {
+    "kind": "type",
+    "item": "type specimen"
+   },
+   {
+    "kind": "card",
+    "item": "business card"
+   },
+   {
+    "kind": "poster",
+    "item": "service price poster"
+   },
+   {
+    "kind": "social",
+    "item": "social post"
+   },
+   {
+    "kind": "label",
+    "item": "frame sticker set"
+   }
+  ],
+  "shapes": [
+   "l",
+   "l",
+   "s",
+   "s",
+   "s",
+   "p"
+  ]
+ }
+]

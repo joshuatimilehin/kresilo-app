@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-22T03:37:02.036757+00:00",
+  "scope": "Owner-approved guest presentation prototype",
+  "url": "https://kresilo.design-bakery.com",
+  "sourceCommit": "b6364152f8e95df8ff13968d2f4aff1ea5e990e6",
+  "sourceTree": "4b8d1facd9933431cab3b373d328d13fed4558fa",
+  "implementationPullRequest": "https://github.com/Pukujan/kresilo/pull/11",
+  "archiveSha256": "c0a88b20bbe17aaabc998f59020cb8a0924e3a0c2110531770331da9c121b097",
+  "entryAsset": "/assets/index-DoHJX0Fs.js",
+  "entryAssetBytes": 526378,
+  "entryMatchesAcceptedBuild": true,
+  "macbookLiveApi": {
+    "checkedAt": "2026-10-22T03:27:59.050Z",
+    "checks": [
+      "Cross-guest project access denied",
+      "Reference reason required",
+      "Proposal leaves art unchanged and cites saved references",
+      "Repeated approval is idempotent",
+      "Concurrent edits reject the stale writer",
+      "Restore appends a version and preserves later history",
+      "Private preview redacts reasons, prompts and project internals",
+      "Invited second session can comment on the same project",
+      "Imported image bytes persist in the same Octo workspace",
+      "Uninvited media access denied"
+    ],
+    "modelProvenance": "ali/qwen3.8-omni-flash \u00b7 reference media and saved reasons \u00b7 provider-reported $0.000010 \u00b7 review before applying"
+  },
+  "macbookPreflightExport": {
+    "bytes": 580951,
+    "type": "video/mp4",
+    "renderSeconds": 13.801
+  },
+  "decodedExport": {
+    "codec": "h264",
+    "width": 540,
+    "height": 720,
+    "duration": "4.000000",
+    "distinctFrames": 3
+  },
+  "browser": {
+    "desktop": [
+      1487,
+      1058
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "guestCreatedAndResumed": true,
+    "reasonPersistedAfterRefresh": true,
+    "groundedQuickCutsProposalApproved": true,
+    "fourSecondExportRestoredAfterRefresh": true,
+    "exportPlaybackEndedAtSeconds": 4,
+    "privatePreviewCreated": true,
+    "copyLinkToastConfirmed": true,
+    "horizontalOverflow": false,
+    "consoleErrors": [],
+    "loadedBrokenImages": 0,
+    "galleryLoops": 3,
+    "galleryPauseControlChecked": true
+  },
+  "service": {
+    "existingHostnameAndTunnelPreserved": true,
+    "earlierBuilderRuntimePreserved": true,
+    "previousServiceConfigurationBackedUp": true,
+    "separateAcceptedRelease": true,
+    "ownedPreflightStopped": true
+  },
+  "limits": {
+    "googleCredentialsSubmitted": false,
+    "liveGoogleSignInVerified": false,
+    "nativeSafariOrIOSVerified": false,
+    "providerFallbackObservedEarlier": true
+  },
+  "research": {
+    "tables": 12,
+    "countsUnchanged": true,
+    "fingerprintsUnchanged": true,
+    "verifiedAt": "2026-10-22T03:37:35.876Z"
+  }
+}

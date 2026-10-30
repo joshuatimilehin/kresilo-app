@@ -1,0 +1,1228 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "steps": [
+    "guest1 goto status 200",
+    "guest1 initial {\"projectId\": \"9c987f23-e2de-4e3d-bff3-e213d866e073\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"]], \"proposals\": [], \"versions\": [1], \"decisions\": 2, \"history\": 1}",
+    "guest1 after_ref {\"projectId\": \"9c987f23-e2de-4e3d-bff3-e213d866e073\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-pool-lines\", \"Pale evaporation pools\", \"pool lines give quiet rhythm for live QA\"]], \"proposals\": [], \"versions\": [1], \"decisions\": 2, \"history\": 2}",
+    "guest1 after_proposal {\"projectId\": \"9c987f23-e2de-4e3d-bff3-e213d866e073\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-pool-lines\", \"Pale evaporation pools\", \"pool lines give quiet rhythm for live QA\"]], \"proposals\": [[\"373d6c97-158e-4984-9296-44510d6b9197\", \"proposed\", \"Make it quieter using the Pale evaporation pools \\u2014 pool lines give quiet rhythm\", [\"ref-pool-lines\", \"ref-contours\", \"ref-horizon\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \\u2014 Pale evaporation pools: \\\"pool lines give quiet rhythm for live QA\\\"; Terracotta contour lines: \\\"quiet, one warm note\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1], \"decisions\": 2, \"history\": 3}",
+    "guest1 after_approve {\"projectId\": \"9c987f23-e2de-4e3d-bff3-e213d866e073\", \"posterVersion\": 2, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#33504E\", \"surface\": \"#2C4644\", \"hairline\": \"#7C8E8B\", \"horizonTo\": \"#F3EDE1\", \"horizonFrom\": \"#BFE3CE\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 172, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 58}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"show\": false}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-pool-lines\", \"Pale evaporation pools\", \"pool lines give quiet rhythm for live QA\"]], \"proposals\": [[\"373d6c97-158e-4984-9296-44510d6b9197\", \"approved\", \"Make it quieter using the Pale evaporation pools \\u2014 pool lines give quiet rhythm\", [\"ref-pool-lines\", \"ref-contours\", \"ref-horizon\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \\u2014 Pale evaporation pools: \\\"pool lines give quiet rhythm for live QA\\\"; Terracotta contour lines: \\\"quiet, one warm note\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1, 2], \"decisions\": 3, \"history\": 4}",
+    "guest1 after_refresh {\"projectId\": \"9c987f23-e2de-4e3d-bff3-e213d866e073\", \"posterVersion\": 2, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#33504E\", \"surface\": \"#2C4644\", \"hairline\": \"#7C8E8B\", \"horizonTo\": \"#F3EDE1\", \"horizonFrom\": \"#BFE3CE\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 172, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 58}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"show\": false}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-pool-lines\", \"Pale evaporation pools\", \"pool lines give quiet rhythm for live QA\"]], \"proposals\": [[\"373d6c97-158e-4984-9296-44510d6b9197\", \"approved\", \"Make it quieter using the Pale evaporation pools \\u2014 pool lines give quiet rhythm\", [\"ref-pool-lines\", \"ref-contours\", \"ref-horizon\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \\u2014 Pale evaporation pools: \\\"pool lines give quiet rhythm for live QA\\\"; Terracotta contour lines: \\\"quiet, one warm note\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1, 2], \"decisions\": 3, \"history\": 4}",
+    "guest2 initial {\"projectId\": \"20d63ae2-b696-4b17-a1fe-df53f03a8d45\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"]], \"proposals\": [], \"versions\": [1], \"decisions\": 2, \"history\": 1}",
+    "guest2 proposal {\"projectId\": \"20d63ae2-b696-4b17-a1fe-df53f03a8d45\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"]], \"proposals\": [[\"7aba3edb-ee46-4fff-9776-a3244bf8070a\", \"proposed\", \"Make it quieter for decline check\", [\"ref-contours\", \"ref-horizon\", \"ref-ground\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal. Cited saved reasons \\u2014 Terracotta contour lines: \\\"quiet, one warm note\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\"; Cracked pale ground: \\\"ground texture\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1], \"decisions\": 2, \"history\": 2}",
+    "guest2 decline buttons visible 2 attempt 0",
+    "guest2 after_decline {\"projectId\": \"20d63ae2-b696-4b17-a1fe-df53f03a8d45\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"]], \"proposals\": [[\"7aba3edb-ee46-4fff-9776-a3244bf8070a\", \"declined\", \"Make it quieter for decline check\", [\"ref-contours\", \"ref-horizon\", \"ref-ground\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal. Cited saved reasons \\u2014 Terracotta contour lines: \\\"quiet, one warm note\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\"; Cracked pale ground: \\\"ground texture\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1], \"decisions\": 2, \"history\": 3}",
+    "mobile initial {\"projectId\": \"c4b2c3bb-61be-4e64-a362-24245c0e5c00\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"]], \"proposals\": [], \"versions\": [1], \"decisions\": 2, \"history\": 1}",
+    "mobile after_ref {\"projectId\": \"c4b2c3bb-61be-4e64-a362-24245c0e5c00\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-dusk-horizon\", \"Dusk horizon circle\", \"dusk horizon circle holds scale for mobile QA\"]], \"proposals\": [], \"versions\": [1], \"decisions\": 2, \"history\": 2}",
+    "mobile after_proposal {\"projectId\": \"c4b2c3bb-61be-4e64-a362-24245c0e5c00\", \"posterVersion\": 1, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#204F4D\", \"surface\": \"#1A4341\", \"hairline\": \"#6E8280\", \"horizonTo\": \"#F4EEE2\", \"horizonFrom\": \"#C8B4F2\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 168, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 44}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"r\": 8, \"cx\": 120, \"cy\": 26, \"show\": true}, \"rule\": {\"y\": 123, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"r\": 43, \"cx\": 58, \"cy\": 98, \"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-dusk-horizon\", \"Dusk horizon circle\", \"dusk horizon circle holds scale for mobile QA\"]], \"proposals\": [[\"e41d1424-3748-4487-8456-8e0fa41e5e01\", \"proposed\", \"Use the Dusk horizon circle \\u2014 horizon circle holds scale and make it quieter\", [\"ref-dusk-horizon\", \"ref-horizon\", \"ref-note\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \\u2014 Dusk horizon circle: \\\"dusk horizon circle holds scale for mobile QA\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\"; Ivory note: \\\"one figure gives scale, kept as a written note\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1], \"decisions\": 2, \"history\": 3}",
+    "mobile after_approve {\"projectId\": \"c4b2c3bb-61be-4e64-a362-24245c0e5c00\", \"posterVersion\": 2, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#33504E\", \"surface\": \"#2C4644\", \"hairline\": \"#7C8E8B\", \"horizonTo\": \"#F3EDE1\", \"horizonFrom\": \"#BFE3CE\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 172, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 58}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"show\": false}, \"rule\": {\"y\": 142, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-dusk-horizon\", \"Dusk horizon circle\", \"dusk horizon circle holds scale for mobile QA\"]], \"proposals\": [[\"e41d1424-3748-4487-8456-8e0fa41e5e01\", \"approved\", \"Use the Dusk horizon circle \\u2014 horizon circle holds scale and make it quieter\", [\"ref-dusk-horizon\", \"ref-horizon\", \"ref-note\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \\u2014 Dusk horizon circle: \\\"dusk horizon circle holds scale for mobile QA\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\"; Ivory note: \\\"one figure gives scale, kept as a written note\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1, 2], \"decisions\": 3, \"history\": 4}",
+    "mobile after_refresh {\"projectId\": \"c4b2c3bb-61be-4e64-a362-24245c0e5c00\", \"posterVersion\": 2, \"poster\": {\"label\": \"Poster v4\", \"width\": 150, \"height\": 188, \"palette\": {\"type\": \"#F2F1ED\", \"accent\": \"#C85731\", \"canvas\": \"#33504E\", \"surface\": \"#2C4644\", \"hairline\": \"#7C8E8B\", \"horizonTo\": \"#F3EDE1\", \"horizonFrom\": \"#BFE3CE\"}, \"typography\": {\"title\": \"Salt\", \"family\": \"serif-italic\", \"titleY\": 172, \"eyebrow\": \"Salt Flats Identity\", \"titleSize\": 58}, \"composition\": {\"sun\": {\"r\": 7, \"cx\": 120, \"cy\": 30, \"show\": false}, \"ring\": {\"show\": false}, \"rule\": {\"y\": 142, \"show\": true}, \"caption\": \"Salt Flats Identity\", \"horizon\": {\"figure\": true}}}, \"refs\": [[\"ref-horizon\", \"Lilac horizon with one figure\", \"one figure gives scale\"], [\"ref-note\", \"Ivory note\", \"one figure gives scale, kept as a written note\"], [\"ref-patchwork\", \"Teal / ivory / terracotta patchwork\", \"grid rhythm\"], [\"ref-ground\", \"Cracked pale ground\", \"ground texture\"], [\"ref-contours\", \"Terracotta contour lines\", \"quiet, one warm note\"], [\"ref-dusk-horizon\", \"Dusk horizon circle\", \"dusk horizon circle holds scale for mobile QA\"]], \"proposals\": [[\"e41d1424-3748-4487-8456-8e0fa41e5e01\", \"approved\", \"Use the Dusk horizon circle \\u2014 horizon circle holds scale and make it quieter\", [\"ref-dusk-horizon\", \"ref-horizon\", \"ref-note\"], \"quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \\u2014 Dusk horizon circle: \\\"dusk horizon circle holds scale for mobile QA\\\"; Lilac horizon with one figure: \\\"one figure gives scale\\\"; Ivory note: \\\"one figure gives scale, kept as a written note\\\". Nothing on the board changes until you approve.\"]], \"versions\": [1, 2], \"decisions\": 3, \"history\": 4}"
+  ],
+  "guest1": {
+    "initial": {
+      "projectId": "9c987f23-e2de-4e3d-bff3-e213d866e073",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ]
+      ],
+      "proposals": [],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 1
+    },
+    "after_ref": {
+      "projectId": "9c987f23-e2de-4e3d-bff3-e213d866e073",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-pool-lines",
+          "Pale evaporation pools",
+          "pool lines give quiet rhythm for live QA"
+        ]
+      ],
+      "proposals": [],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 2
+    },
+    "after_proposal": {
+      "projectId": "9c987f23-e2de-4e3d-bff3-e213d866e073",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-pool-lines",
+          "Pale evaporation pools",
+          "pool lines give quiet rhythm for live QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "373d6c97-158e-4984-9296-44510d6b9197",
+          "proposed",
+          "Make it quieter using the Pale evaporation pools \u2014 pool lines give quiet rhythm",
+          [
+            "ref-pool-lines",
+            "ref-contours",
+            "ref-horizon"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \u2014 Pale evaporation pools: \"pool lines give quiet rhythm for live QA\"; Terracotta contour lines: \"quiet, one warm note\"; Lilac horizon with one figure: \"one figure gives scale\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 3
+    },
+    "after_approve": {
+      "projectId": "9c987f23-e2de-4e3d-bff3-e213d866e073",
+      "posterVersion": 2,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#33504E",
+          "surface": "#2C4644",
+          "hairline": "#7C8E8B",
+          "horizonTo": "#F3EDE1",
+          "horizonFrom": "#BFE3CE"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 172,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 58
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "show": false
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-pool-lines",
+          "Pale evaporation pools",
+          "pool lines give quiet rhythm for live QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "373d6c97-158e-4984-9296-44510d6b9197",
+          "approved",
+          "Make it quieter using the Pale evaporation pools \u2014 pool lines give quiet rhythm",
+          [
+            "ref-pool-lines",
+            "ref-contours",
+            "ref-horizon"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \u2014 Pale evaporation pools: \"pool lines give quiet rhythm for live QA\"; Terracotta contour lines: \"quiet, one warm note\"; Lilac horizon with one figure: \"one figure gives scale\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1,
+        2
+      ],
+      "decisions": 3,
+      "history": 4
+    },
+    "after_refresh": {
+      "projectId": "9c987f23-e2de-4e3d-bff3-e213d866e073",
+      "posterVersion": 2,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#33504E",
+          "surface": "#2C4644",
+          "hairline": "#7C8E8B",
+          "horizonTo": "#F3EDE1",
+          "horizonFrom": "#BFE3CE"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 172,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 58
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "show": false
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-pool-lines",
+          "Pale evaporation pools",
+          "pool lines give quiet rhythm for live QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "373d6c97-158e-4984-9296-44510d6b9197",
+          "approved",
+          "Make it quieter using the Pale evaporation pools \u2014 pool lines give quiet rhythm",
+          [
+            "ref-pool-lines",
+            "ref-contours",
+            "ref-horizon"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; grid rhythm: horizon and rule snap back to the patchwork spacing. Cited saved reasons \u2014 Pale evaporation pools: \"pool lines give quiet rhythm for live QA\"; Terracotta contour lines: \"quiet, one warm note\"; Lilac horizon with one figure: \"one figure gives scale\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1,
+        2
+      ],
+      "decisions": 3,
+      "history": 4
+    },
+    "pageerrors": []
+  },
+  "guest2": {
+    "initial": {
+      "projectId": "20d63ae2-b696-4b17-a1fe-df53f03a8d45",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ]
+      ],
+      "proposals": [],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 1
+    },
+    "proposal": {
+      "projectId": "20d63ae2-b696-4b17-a1fe-df53f03a8d45",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ]
+      ],
+      "proposals": [
+        [
+          "7aba3edb-ee46-4fff-9776-a3244bf8070a",
+          "proposed",
+          "Make it quieter for decline check",
+          [
+            "ref-contours",
+            "ref-horizon",
+            "ref-ground"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal. Cited saved reasons \u2014 Terracotta contour lines: \"quiet, one warm note\"; Lilac horizon with one figure: \"one figure gives scale\"; Cracked pale ground: \"ground texture\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 2
+    },
+    "after_decline": {
+      "projectId": "20d63ae2-b696-4b17-a1fe-df53f03a8d45",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ]
+      ],
+      "proposals": [
+        [
+          "7aba3edb-ee46-4fff-9776-a3244bf8070a",
+          "declined",
+          "Make it quieter for decline check",
+          [
+            "ref-contours",
+            "ref-horizon",
+            "ref-ground"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal. Cited saved reasons \u2014 Terracotta contour lines: \"quiet, one warm note\"; Lilac horizon with one figure: \"one figure gives scale\"; Cracked pale ground: \"ground texture\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 3
+    },
+    "pageerrors": []
+  },
+  "mobile": {
+    "initial": {
+      "projectId": "c4b2c3bb-61be-4e64-a362-24245c0e5c00",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ]
+      ],
+      "proposals": [],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 1
+    },
+    "after_ref": {
+      "projectId": "c4b2c3bb-61be-4e64-a362-24245c0e5c00",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-dusk-horizon",
+          "Dusk horizon circle",
+          "dusk horizon circle holds scale for mobile QA"
+        ]
+      ],
+      "proposals": [],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 2
+    },
+    "after_proposal": {
+      "projectId": "c4b2c3bb-61be-4e64-a362-24245c0e5c00",
+      "posterVersion": 1,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#204F4D",
+          "surface": "#1A4341",
+          "hairline": "#6E8280",
+          "horizonTo": "#F4EEE2",
+          "horizonFrom": "#C8B4F2"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 168,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 44
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "r": 8,
+            "cx": 120,
+            "cy": 26,
+            "show": true
+          },
+          "rule": {
+            "y": 123,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "r": 43,
+            "cx": 58,
+            "cy": 98,
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-dusk-horizon",
+          "Dusk horizon circle",
+          "dusk horizon circle holds scale for mobile QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "e41d1424-3748-4487-8456-8e0fa41e5e01",
+          "proposed",
+          "Use the Dusk horizon circle \u2014 horizon circle holds scale and make it quieter",
+          [
+            "ref-dusk-horizon",
+            "ref-horizon",
+            "ref-note"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \u2014 Dusk horizon circle: \"dusk horizon circle holds scale for mobile QA\"; Lilac horizon with one figure: \"one figure gives scale\"; Ivory note: \"one figure gives scale, kept as a written note\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1
+      ],
+      "decisions": 2,
+      "history": 3
+    },
+    "after_approve": {
+      "projectId": "c4b2c3bb-61be-4e64-a362-24245c0e5c00",
+      "posterVersion": 2,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#33504E",
+          "surface": "#2C4644",
+          "hairline": "#7C8E8B",
+          "horizonTo": "#F3EDE1",
+          "horizonFrom": "#BFE3CE"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 172,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 58
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "show": false
+          },
+          "rule": {
+            "y": 142,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-dusk-horizon",
+          "Dusk horizon circle",
+          "dusk horizon circle holds scale for mobile QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "e41d1424-3748-4487-8456-8e0fa41e5e01",
+          "approved",
+          "Use the Dusk horizon circle \u2014 horizon circle holds scale and make it quieter",
+          [
+            "ref-dusk-horizon",
+            "ref-horizon",
+            "ref-note"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \u2014 Dusk horizon circle: \"dusk horizon circle holds scale for mobile QA\"; Lilac horizon with one figure: \"one figure gives scale\"; Ivory note: \"one figure gives scale, kept as a written note\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1,
+        2
+      ],
+      "decisions": 3,
+      "history": 4
+    },
+    "after_refresh": {
+      "projectId": "c4b2c3bb-61be-4e64-a362-24245c0e5c00",
+      "posterVersion": 2,
+      "poster": {
+        "label": "Poster v4",
+        "width": 150,
+        "height": 188,
+        "palette": {
+          "type": "#F2F1ED",
+          "accent": "#C85731",
+          "canvas": "#33504E",
+          "surface": "#2C4644",
+          "hairline": "#7C8E8B",
+          "horizonTo": "#F3EDE1",
+          "horizonFrom": "#BFE3CE"
+        },
+        "typography": {
+          "title": "Salt",
+          "family": "serif-italic",
+          "titleY": 172,
+          "eyebrow": "Salt Flats Identity",
+          "titleSize": 58
+        },
+        "composition": {
+          "sun": {
+            "r": 7,
+            "cx": 120,
+            "cy": 30,
+            "show": false
+          },
+          "ring": {
+            "show": false
+          },
+          "rule": {
+            "y": 142,
+            "show": true
+          },
+          "caption": "Salt Flats Identity",
+          "horizon": {
+            "figure": true
+          }
+        }
+      },
+      "refs": [
+        [
+          "ref-horizon",
+          "Lilac horizon with one figure",
+          "one figure gives scale"
+        ],
+        [
+          "ref-note",
+          "Ivory note",
+          "one figure gives scale, kept as a written note"
+        ],
+        [
+          "ref-patchwork",
+          "Teal / ivory / terracotta patchwork",
+          "grid rhythm"
+        ],
+        [
+          "ref-ground",
+          "Cracked pale ground",
+          "ground texture"
+        ],
+        [
+          "ref-contours",
+          "Terracotta contour lines",
+          "quiet, one warm note"
+        ],
+        [
+          "ref-dusk-horizon",
+          "Dusk horizon circle",
+          "dusk horizon circle holds scale for mobile QA"
+        ]
+      ],
+      "proposals": [
+        [
+          "e41d1424-3748-4487-8456-8e0fa41e5e01",
+          "approved",
+          "Use the Dusk horizon circle \u2014 horizon circle holds scale and make it quieter",
+          [
+            "ref-dusk-horizon",
+            "ref-horizon",
+            "ref-note"
+          ],
+          "quieter reads here as fewer marks: the upper ring goes, the ground stays unprinted, and the gray-teal from the contour study replaces the deep teal; one figure gives scale, so the silhouette stays at the foot of the horizon; the lilac-to-cream horizon keeps its role as the only light source. Cited saved reasons \u2014 Dusk horizon circle: \"dusk horizon circle holds scale for mobile QA\"; Lilac horizon with one figure: \"one figure gives scale\"; Ivory note: \"one figure gives scale, kept as a written note\". Nothing on the board changes until you approve."
+        ]
+      ],
+      "versions": [
+        1,
+        2
+      ],
+      "decisions": 3,
+      "history": 4
+    },
+    "pageerrors": []
+  }
+}

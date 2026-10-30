@@ -1,0 +1,202 @@
+[
+  {
+    "view": "Home opening",
+    "source": "design-references/simple-storyboard/home-opening.jpg",
+    "render": "docs/qa/simple-workspace/home-opening.jpg",
+    "comparison": "docs/qa/simple-workspace/home-opening-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Culture story",
+    "source": "design-references/simple-storyboard/home-culture.jpg",
+    "render": "docs/qa/simple-workspace/culture-story.jpg",
+    "comparison": "docs/qa/simple-workspace/culture-story-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Gallery",
+    "source": "design-references/simple-storyboard/home-gallery.jpg",
+    "render": "docs/qa/simple-workspace/gallery.jpg",
+    "comparison": "docs/qa/simple-workspace/gallery-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Place picker",
+    "source": "design-references/simple-storyboard/place-picker.jpg",
+    "render": "docs/qa/simple-workspace/place-picker.jpg",
+    "comparison": "docs/qa/simple-workspace/place-picker-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Place collection",
+    "source": "design-references/simple-storyboard/place-collection.jpg",
+    "render": "docs/qa/simple-workspace/place-collection.jpg",
+    "comparison": "docs/qa/simple-workspace/place-collection-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Work detail",
+    "source": "design-references/simple-storyboard/work-detail.jpg",
+    "render": "docs/qa/simple-workspace/work-detail.jpg",
+    "comparison": "docs/qa/simple-workspace/work-detail-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Creator profile",
+    "source": "design-references/simple-storyboard/creator-profile.jpg",
+    "render": "docs/qa/simple-workspace/creator-profile.jpg",
+    "comparison": "docs/qa/simple-workspace/creator-profile-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Process story",
+    "source": "design-references/simple-storyboard/process-story.jpg",
+    "render": "docs/qa/simple-workspace/process-story.jpg",
+    "comparison": "docs/qa/simple-workspace/process-story-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Save reference",
+    "source": "design-references/simple-storyboard/save-reference.jpg",
+    "render": "docs/qa/simple-workspace/save-reference.jpg",
+    "comparison": "docs/qa/simple-workspace/save-reference-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Create idea",
+    "source": "design-references/simple-storyboard/create-idea.jpg",
+    "render": "docs/qa/simple-workspace/create-idea.jpg",
+    "comparison": "docs/qa/simple-workspace/create-idea-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Guest account",
+    "source": "design-references/simple-storyboard/guest-account.jpg",
+    "render": "docs/qa/simple-workspace/guest-account.jpg",
+    "comparison": "docs/qa/simple-workspace/guest-account-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Project board",
+    "source": "design-references/simple-storyboard/project-board.jpg",
+    "render": "docs/qa/simple-workspace/project-board.jpg",
+    "comparison": "docs/qa/simple-workspace/project-board-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Project comment",
+    "source": "design-references/simple-storyboard/project-comment.jpg",
+    "render": "docs/qa/simple-workspace/project-comment.jpg",
+    "comparison": "docs/qa/simple-workspace/project-comment-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Focused editor",
+    "source": "design-references/simple-storyboard/focused-editor.jpg",
+    "render": "docs/qa/simple-workspace/focused-editor.jpg",
+    "comparison": "docs/qa/simple-workspace/focused-editor-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "AI proposal",
+    "source": "design-references/simple-storyboard/ai-proposal.jpg",
+    "render": "docs/qa/simple-workspace/ai-proposal.jpg",
+    "comparison": "docs/qa/simple-workspace/ai-proposal-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Motion preview",
+    "source": "design-references/simple-storyboard/motion-preview.jpg",
+    "render": "docs/qa/simple-workspace/motion-preview.jpg",
+    "comparison": "docs/qa/simple-workspace/motion-preview-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "History restore",
+    "source": "design-references/simple-storyboard/history-restore.jpg",
+    "render": "docs/qa/simple-workspace/history-restore.jpg",
+    "comparison": "docs/qa/simple-workspace/history-restore-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Publish preview",
+    "source": "design-references/simple-storyboard/publish-preview.jpg",
+    "render": "docs/qa/simple-workspace/publish-preview.jpg",
+    "comparison": "docs/qa/simple-workspace/publish-preview-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Published project",
+    "source": "design-references/simple-storyboard/published-project.jpg",
+    "render": "docs/qa/simple-workspace/published-project.jpg",
+    "comparison": "docs/qa/simple-workspace/published-project-comparison.jpg",
+    "viewport": [
+      1487,
+      1058
+    ]
+  },
+  {
+    "view": "Mobile discovery",
+    "source": "design-references/simple-storyboard/mobile-discovery.jpg",
+    "render": "docs/qa/simple-workspace/mobile-discovery.jpg",
+    "comparison": "docs/qa/simple-workspace/mobile-discovery-comparison.jpg",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

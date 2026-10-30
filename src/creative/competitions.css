@@ -1,0 +1,62 @@
+/* Competitions: cards, the competition page, the entries grid and the host form's extras. Reuses the event page and host form layouts. */
+.comp-card .comp-prompt { font-size: 13px; line-height: 1.4; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.comp-card .meetup-card-media .vis, .comp-card .meetup-card-media > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.comp-card[data-phase="closed"] strong, .comp-card[data-phase="ended"] strong { opacity: .85; }
+.comp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+.comp-meta.big { gap: 6px 18px; }
+.comp-standing { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.comp-meta.big .comp-standing { font-size: 15px; }
+.comp-standing.won { color: var(--ink); font-weight: 600; }
+.comp-standing.won svg { color: #d99a00; }
+.comp-crown { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--acid, #c7fe02); color: #111; box-shadow: 0 4px 14px #0004; }
+.comp-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 28px 0 24px; }
+.comp-bar h1 { display: flex; margin: 0; }
+.comp-prompt-big { font-family: "Instrument Serif", Georgia, serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; }
+.comp-rules { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.comp-rules li { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+.comp-rules li svg { flex: none; color: var(--muted); }
+.comp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.comp-host-tools { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.comp-chosen { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
+.comp-yours { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 0 6px 0 16px; border: 1px solid var(--ink); border-radius: 100px; font-size: 14px; }
+.comp-yours[data-state="won"] svg:first-child { color: #d99a00; }
+.comp-confirm { display: inline-flex; }
+.comp-picker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.comp-picker button[role="radio"], .comp-picker-new { width: 76px; height: 76px; padding: 0; border: 2px solid transparent; border-radius: 12px; overflow: hidden; background: none; cursor: pointer; display: grid; place-items: center; }
+.comp-picker button[role="radio"][aria-checked="true"] { border-color: var(--acid); box-shadow: 0 0 0 2px var(--ink); }
+.comp-picker .creative-artwork { width: 100%; flex: none; }
+.comp-picker-new { border: 1px dashed var(--line) !important; color: var(--ink); }
+.comp-picker-new:hover { border-color: var(--ink) !important; }
+.comp-picker-go { min-height: 48px; }
+
+/* The entries: a picture, the maker, and a vote. */
+.comp-entries { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 28px 20px; }
+.comp-entry { display: grid; gap: 10px; min-width: 0; }
+.comp-entry-art { position: relative; display: block; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 28px #0002; }
+.comp-entry-art .vis, .comp-entry-art > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.comp-entry[data-won] .comp-entry-art { box-shadow: 0 0 0 3px var(--acid), 0 10px 28px #0003; }
+.comp-entry[data-mine] .comp-entry-art { outline: 2px solid var(--ink); outline-offset: 2px; }
+.comp-rank { position: absolute; left: 10px; top: 10px; min-width: 28px; height: 28px; padding: 0 8px; display: grid; place-items: center; border-radius: 100px; background: #000a; color: #fff; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.comp-entry-foot { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.comp-entry-who { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+.comp-entry-who > span:last-child { display: grid; min-width: 0; }
+.comp-entry-who strong, .comp-entry-who small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.comp-entry-who strong { font-size: 14px; font-weight: 500; }
+.comp-entry-who small { font-size: 12px; color: var(--muted); }
+.comp-votes { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border: 1px solid var(--line); border-radius: 100px; background: transparent; color: var(--ink); font: inherit; font-size: 14px; font-variant-numeric: tabular-nums; cursor: pointer; }
+.comp-votes:hover:not(:disabled) { border-color: var(--ink); }
+.comp-votes[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+.comp-votes:disabled { cursor: default; opacity: .6; }
+.comp-votes.own { cursor: default; opacity: 1; border-style: dashed; }
+.comp-pick[aria-pressed="true"] { color: #d99a00; }
+
+.comp-rules-edit { display: grid; gap: 8px; }
+.comp-rules-edit .host-line { padding-right: 6px; }
+.comp-rules-edit .host-line input { flex: 1; }
+.comp-add-rule { justify-self: start; }
+@media (max-width: 520px) {
+  .comp-entries { grid-template-columns: minmax(0, 1fr); }
+  .comp-bar { margin: 18px 0; }
+}
+.comp-strip .gallery-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.comp-strip .gallery-heading h2 { margin: 0; }

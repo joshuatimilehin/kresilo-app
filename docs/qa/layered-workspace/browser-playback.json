@@ -1,0 +1,47 @@
+{
+  "asOf": "2026-10-22T08:20:30.104Z",
+  "playback": [
+    {
+      "currentTime": 3.06388,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/orbit-cuts.mp4"
+    },
+    {
+      "currentTime": 3.143494,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/type-rush.mp4"
+    },
+    {
+      "currentTime": 3.062813,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/signal-shuffle.mp4"
+    },
+    {
+      "currentTime": 3.058582,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/quick-cuts.mp4"
+    },
+    {
+      "currentTime": 3.907389,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/collage-shuffle.mp4"
+    },
+    {
+      "currentTime": 3.908501,
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/kresilo/type-punch.mp4"
+    }
+  ]
+}

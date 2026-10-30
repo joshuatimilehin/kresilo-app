@@ -1,0 +1,226 @@
+[
+  {
+    "poster": {
+      "visibleLabels": 1,
+      "width": 210,
+      "height": 12,
+      "ratioToViewport": 0.146,
+      "expected75vw": 1080,
+      "deltaFrom75vw": -870
+    },
+    "propLabels": [],
+    "boardVisible": true,
+    "boardTiles": 4,
+    "mobileToolbar": [],
+    "allButtonsUnder44": [
+      {
+        "text": "Publish preview",
+        "h": 28,
+        "w": 123.7
+      },
+      {
+        "text": "References",
+        "h": 32.9,
+        "w": 82.3
+      },
+      {
+        "text": "Decisions",
+        "h": 32.9,
+        "w": 82.3
+      },
+      {
+        "text": "Versions",
+        "h": 32.9,
+        "w": 82.3
+      },
+      {
+        "text": "Add reference",
+        "h": 28,
+        "w": 227
+      },
+      {
+        "text": "",
+        "h": 24,
+        "w": 28
+      },
+      {
+        "text": "drawing n/a",
+        "h": 24,
+        "w": 91.4
+      },
+      {
+        "text": "Zoom out",
+        "h": 22,
+        "w": 26
+      },
+      {
+        "text": "Zoom in",
+        "h": 22,
+        "w": 26
+      },
+      {
+        "text": "terminal",
+        "h": 17.8,
+        "w": 57.6
+      },
+      {
+        "text": "history (1)",
+        "h": 17.8,
+        "w": 74.7
+      },
+      {
+        "text": "Propose",
+        "h": 25.5,
+        "w": 64.5
+      }
+    ],
+    "hasUnsavedBanner": true,
+    "hasNotSaved": true,
+    "hasDotBoard": true,
+    "textSample": "Kresilo\nSalt Flats Identity\none project \u00b7 5 references \u00b7 private\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nPublish preview\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nSALT FLATS IDENTITY\n5 ref \u00b7 2 dec\nReferences\nDecisions\nVersions\nLilac horizon with one figure\nSalt Flats study \u2014 reference 1\n\u201cone figure gives scale\u201d\nIvory note\nSalt Flats study \u2014 annotation\n\u201cone figure gives scale, kept as a written note\u201d\nTeal / ivory / terracotta patchwork\nSalt Flats study \u2014 reference 2\n\u201cgrid rhythm\u201d\nCracked pale ground\nSalt Flats study \u2014 reference 3\n\u201cground texture\u201d\nTerracotta contour lines\nSalt Flats study \u2014 reference 4\n\u201cquiet, one warm note\u201d\nAdd reference\nPoster v4 \u00b7 poster v1\ndrawing n/a\n100%\n\n\u201cone figure gives scale\u201d\n\n\u201cone figure gives scale, kept as a written note\u201d\n\n\u201cgrid rhythm\u201d\n\n\u201cground texture\u201d\n\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nWEBSITE PREVIEW \u00b7 PRIVATE\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\n\nSalt Flats Identity\n\nCOMMAND SURFACE\nterminal\nhistory (1)\nKresilo command surface \u2014 `help` for verbs, `status` for state.\nkresilo>\n10 verbs \u00b7 0 open\nCOPILOT\nNO MODEL CALLED\nprototype guidance\nPropose\n\nNo proposals yet. Guidance writes a patch on a card and waits \u2014 it never touches the live poster until you approve.\n\nEXTENSIONS\nFigma\nNot connected\nHiggsfield\nNot connected\nPaper\nNot connected\nClaude\nNot connected",
+    "viewport": "1440x900",
+    "consoleErrors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "poster": {
+      "visibleLabels": 1,
+      "width": 168,
+      "height": 12,
+      "ratioToViewport": 0.219,
+      "expected75vw": 576,
+      "deltaFrom75vw": -408
+    },
+    "propLabels": [],
+    "boardVisible": true,
+    "boardTiles": 4,
+    "mobileToolbar": [],
+    "allButtonsUnder44": [
+      {
+        "text": "References",
+        "h": 32.9,
+        "w": 71.6
+      },
+      {
+        "text": "Decisions",
+        "h": 32.9,
+        "w": 63.6
+      },
+      {
+        "text": "Versions",
+        "h": 32.9,
+        "w": 58.3
+      },
+      {
+        "text": "terminal",
+        "h": 17.8,
+        "w": 57.6
+      },
+      {
+        "text": "history (1)",
+        "h": 17.8,
+        "w": 74.7
+      }
+    ],
+    "hasUnsavedBanner": true,
+    "hasNotSaved": true,
+    "hasDotBoard": true,
+    "textSample": "Kresilo\nSalt Flats Identity\none project \u00b7 5 references \u00b7 private\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nPublish preview\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nSALT FLATS IDENTITY\n5 ref \u00b7 2 dec\nReferences\nDecisions\nVersions\nLilac horizon with one figure\nSalt Flats study \u2014 reference 1\n\u201cone figure gives scale\u201d\nIvory note\nSalt Flats study \u2014 annotation\n\u201cone figure gives scale, kept as a written note\u201d\nTeal / ivory / terracotta patchwork\nSalt Flats study \u2014 reference 2\n\u201cgrid rhythm\u201d\nCracked pale ground\nSalt Flats study \u2014 reference 3\n\u201cground texture\u201d\nTerracotta contour lines\nSalt Flats study \u2014 reference 4\n\u201cquiet, one warm note\u201d\nAdd reference\nPoster v4 \u00b7 poster v1\n100%\n\n\u201cone figure gives scale\u201d\n\n\u201cone figure gives scale, kept as a written note\u201d\n\n\u201cgrid rhythm\u201d\n\n\u201cground texture\u201d\n\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nWEBSITE PREVIEW \u00b7 PRIVATE\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\n\nSalt Flats Identity\n\nCOMMAND SURFACE\nterminal\nhistory (1)\nKresilo command surface \u2014 `help` for verbs, `status` for state.\nkresilo>\n10 verbs \u00b7 0 open\nCOPILOT\nNO MODEL CALLED\nprototype guidance\nPropose\n\nNo proposals yet. Guidance writes a patch on a card and waits \u2014 it never touches the live poster until you approve.\n\nEXTENSIONS\nFigma\nNot connected\nHiggsfield\nNot connected\nPaper\nNot connected\nClaude\nNot connected",
+    "viewport": "768x1024",
+    "consoleErrors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "poster": {
+      "visibleLabels": 1,
+      "width": 292.5,
+      "height": 12,
+      "ratioToViewport": 0.75,
+      "expected75vw": 293,
+      "deltaFrom75vw": 0
+    },
+    "propLabels": [],
+    "boardVisible": false,
+    "boardTiles": 0,
+    "mobileToolbar": [
+      {
+        "text": "Folder",
+        "h": 49.5,
+        "w": 70
+      },
+      {
+        "text": "Proposals",
+        "h": 49.5,
+        "w": 70
+      },
+      {
+        "text": "Decide",
+        "h": 49.5,
+        "w": 70
+      },
+      {
+        "text": "Command",
+        "h": 49.5,
+        "w": 70
+      },
+      {
+        "text": "History",
+        "h": 49.5,
+        "w": 70
+      }
+    ],
+    "allButtonsUnder44": [],
+    "hasUnsavedBanner": true,
+    "hasNotSaved": true,
+    "hasDotBoard": true,
+    "textSample": "Salt Flats Identity\none project \u00b7 5 references \u00b7 private\nPublish\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nPoster v4 \u00b7 poster v1\n100%\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nFolder\nProposals\nDecide\nCommand\nHistory\nAsk for a change \u2014 guidance writes a proposal card\nPropose\nDesign preview \u2014 changes are not saved",
+    "viewport": "390x844",
+    "consoleErrors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "viewport": "1440x900",
+    "homeChecks": {
+      "One command layer": false,
+      "GUI and terminal share it": false,
+      "metadata only": false,
+      "SVG editable by command": false,
+      "by Kristello": false,
+      "Salt Flats \u00b7 original Kresilo design study / faithful editable recreation": false,
+      "Gather a reference, with a reason": true,
+      "review a proposed direction": true,
+      "Open the Studio": true,
+      "Culture feeds creativity.": true
+    }
+  },
+  {
+    "viewport": "390x844",
+    "homeChecks": {
+      "One command layer": false,
+      "GUI and terminal share it": false,
+      "metadata only": false,
+      "SVG editable by command": false,
+      "by Kristello": false,
+      "Salt Flats \u00b7 original Kresilo design study / faithful editable recreation": false,
+      "Gather a reference, with a reason": true,
+      "review a proposed direction": true,
+      "Open the Studio": true,
+      "Culture feeds creativity.": true
+    }
+  }
+]

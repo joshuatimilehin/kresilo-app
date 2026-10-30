@@ -1,0 +1,63 @@
+{
+  "asOf": "2026-10-22",
+  "url": "https://kresilo.design-bakery.com",
+  "sourceCommit": "db5e4420407ce03e0a0c5fdddde99bb59d7fbbfc",
+  "sourcePR": 26,
+  "finalHead": "9afc590478001026ce146e679f17fbe887306c2f",
+  "testedMergeCandidate": "15f48c9f77c57e396785ca94cdf9c273c679b567",
+  "candidateBase": "0acdadc5a5b6c4732f0f87e796e76fbe1e8abec9",
+  "requiredCI": {
+    "push": 39833740524,
+    "pullRequest": 39833824490,
+    "repositoryAndApplicationChecks": "success",
+    "gates": "success",
+    "runner": "MacBook Pro",
+    "tests": 85
+  },
+  "artifact": {
+    "entry": "/assets/index-Dj0TaL9q.js",
+    "sha256": "f8d3ecae4739e0730eb8120c0d550be7e8c6afc5a838f65359be2298dea3360b",
+    "status": 200,
+    "publicBytesMatchHost": true
+  },
+  "verification": {
+    "preflightProjectFlowAssertions": 17,
+    "publicProjectFlowAssertions": 17,
+    "publicHistoryAssertions": 18,
+    "publicLayeredAssertions": 21,
+    "realModel": "ali/qwen3.8-omni-flash",
+    "exportRetested": false,
+    "browser": {
+      "namedCreate": true,
+      "mobileDrawerRemainsOpenForAssets": true,
+      "noLayerModeCannotPrompt": true,
+      "savedLayerTargetLabelsAgree": true,
+      "referencePickerNamesDestinationAndReason": true,
+      "escapeReturnsFocus": true,
+      "refreshRetainsArtwork": true,
+      "noOverflowAtWidths": [
+        390,
+        320
+      ]
+    }
+  },
+  "runtime": {
+    "existingServicePort": 4390,
+    "preflightStopped": true,
+    "previousReleaseRetained": true,
+    "rollbackConfigurationRetained": true,
+    "configurationBytesPreserved": true,
+    "tunnelChanged": false,
+    "researchWrites": false,
+    "migration": false,
+    "secondDatabase": false
+  },
+  "limits": [
+    "Native phone hardware untested",
+    "Google sign-in unconfigured",
+    "Copy then remove is two explicit operations",
+    "Invitations grant edit/comment access, not task assignment",
+    "Export not rerun for this follow-up"
+  ],
+  "reportIncrement": "Required report-only CI and accepted merge remain pending; live issue #20 owns later receipts"
+}

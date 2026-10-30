@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-10-22",
+  "status": "local acceptance; required CI, merge and hosted rollout pending",
+  "sourceBranch": "codex/clear-project-flows",
+  "ownerIssue": 20,
+  "parentIssues": [
+    12,
+    1
+  ],
+  "dependencies": [
+    14,
+    15,
+    18,
+    8
+  ],
+  "runtimeAssertions": 17,
+  "layeredModelAssertions": 21,
+  "model": "ali/qwen3.8-omni-flash",
+  "exportRetested": false,
+  "browser": {
+    "namedProjectCreation": true,
+    "referenceOnlyProjectCreation": true,
+    "existingProjectAddsIndependentLayer": true,
+    "originalBackgroundPreserved": true,
+    "requiredReasonVisible": true,
+    "projectRename": true,
+    "referenceRemoveRestore": true,
+    "searchablePicker": true,
+    "escapeFocusReturnsToLauncher": true,
+    "mobileAssetModeKeepsDrawerOpen": true,
+    "noPromptUntilLayerExists": true,
+    "targetLabelsAgree": true,
+    "projectTitleVisibleAt320": true,
+    "noOverflowAtWidths": [
+      320,
+      390
+    ],
+    "chainedModalFocusReturn": true,
+    "desktopCreateLayoutInspected": true,
+    "darkSelectedAssistanceColors": {
+      "background": "#344129",
+      "text": "#f3f2e9"
+    },
+    "createThemeControlDoesNotFloatOverForm": true
+  },
+  "documentation": {
+    "mermaidDiagramsRendered": 6,
+    "renderer": "Mermaid CLI 12.0.0",
+    "visuallyInspected": true
+  },
+  "configuration": {
+    "changed": false,
+    "newDatabase": false,
+    "researchWrites": false,
+    "migration": false
+  },
+  "limits": [
+    "Native phone hardware untested",
+    "Google sign-in remains unconfigured",
+    "Copy then remove is explicit, not an atomic move",
+    "No task assignee/deadline system; invitations grant edit/comment access",
+    "No new export assertion from this follow-up"
+  ],
+  "localRepositoryChecks": {
+    "pinnedVerifier": "passed; final creation layout checked again with application verify",
+    "lint": "passed with existing warnings",
+    "types": "passed",
+    "tests": 85,
+    "build": "passed",
+    "finalRequiredCI": "pending"
+  }
+}

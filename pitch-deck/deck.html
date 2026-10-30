@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kresilo pitch deck, a16z Speedrun SR008</title>
+<style>
+/* Tokens: repo src/globals.css (ink, ivory, accent, violet, Instrument Serif, Inter) plus the supplied palette board */
+@font-face{font-family:"Instrument Serif";font-style:italic;src:url(fonts/instrument-serif-italic.ttf)}
+@font-face{font-family:"Inter";font-weight:100 900;src:url(fonts/inter-variable.ttf)}
+:root{
+  --ink:#0a0c0e; --ink2:#101315; --ivory:#edeae3; --paper:#f2f1ed; --cream:#eae1c2;
+  --lime:#c7fe02; --lime2:#dfff00; --pink:#ff6b9d; --violet:#8b5cf8; --mint:#7ed6b6; --orange:#ff8a3d;
+  --serif:"Instrument Serif","Times New Roman",serif; --sans:"Inter",system-ui,sans-serif; --mono:"SF Mono",Menlo,monospace;
+}
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#222}
+body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.s{width:1920px;height:1080px;position:relative;overflow:hidden;break-after:page;page-break-after:always}
+.dark{background:var(--ink);color:var(--ivory)}
+.light{background:var(--paper);color:var(--ink)}
+.limebg{background:var(--lime);color:var(--ink)}
+.abs{position:absolute}
+.disp{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;line-height:.98}
+.lab{font-family:var(--mono);font-size:20px;letter-spacing:.14em;text-transform:uppercase}
+.body{font-size:30px;line-height:1.38;font-weight:400}
+.mut{opacity:.62}
+.wm{display:block;font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.04em;line-height:1;font-size:52px;text-transform:none;white-space:nowrap}
+.wm::before{content:"Kresilo"}
+.wm.w{color:var(--ivory)}
+.foot{position:absolute;left:96px;right:96px;bottom:44px;display:flex;justify-content:space-between;align-items:center;gap:28px;font-family:var(--mono);font-size:17px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.foot .wm{opacity:1}
+.chip{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 22px;font-size:22px;font-weight:500}
+.chip.l{background:var(--lime);color:var(--ink)}
+.chip.o{border:1.5px solid currentColor}
+.shot{position:absolute;border-radius:16px;overflow:hidden;background-repeat:no-repeat;background-size:100% auto;box-shadow:0 40px 90px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08)}
+.light .shot{box-shadow:0 30px 70px rgba(10,12,14,.22),0 0 0 1px rgba(10,12,14,.08)}
+.art{position:absolute;background-size:cover;background-position:center;border-radius:14px}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.num{font-family:var(--mono);font-size:20px;letter-spacing:.14em}
+h2.disp{font-size:104px}
+.rule{height:2px;background:currentColor;opacity:.2}
+.pt{position:absolute}
+.pt b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:52px;line-height:1.02;margin-bottom:12px}
+.pt span{font-size:27px;line-height:1.36;opacity:.72;display:block}
+table{border-collapse:collapse;width:100%}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+ <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+ <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/><path d="M14.5 6.5l3 3"/></symbol>
+ <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></symbol>
+ <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5"/><path d="M4 15v4h16v-4"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m8 12.3 2.8 2.8L16.5 9"/></symbol>
+ <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+ <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3a5.5 5.5 0 0 1-11 0zM12 16.5V21"/></symbol>
+ <symbol id="i-term" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m7 10 3 2.2L7 14.5M12.5 15h4.5"/></symbol>
+ <symbol id="i-layers" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 5.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h.5"/></symbol>
+</svg>
+
+<!-- 1 TITLE -->
+<section class="s limebg">
+  <div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:var(--lime)"></div>
+  <span class="wm abs" style="left:420px;top:150px;font-size:380px;text-align:center;width:1080px"></span>
+  <div class="abs disp" style="left:0;right:0;top:640px;text-align:center;font-size:62px">The creative environment where inspiration becomes the project.</div>
+  <div class="abs lab" style="left:96px;bottom:70px;line-height:1.7">Pitch deck · 2026<br>Joshua, Founder &amp; CEO &nbsp;·&nbsp; Pujan, Co-founder &amp; CTO</div>
+  <div class="abs lab" style="right:96px;bottom:70px;text-align:right;line-height:1.7">a16z Speedrun SR008<br>kresiloapp@gmail.com</div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="s dark">
+  <div class="abs lab mut" style="left:96px;top:84px">The problem</div>
+  <h2 class="abs disp" style="left:96px;top:140px;width:1000px;font-size:112px">Creative work moves forward. <span style="color:var(--lime)">The reasoning gets left behind.</span></h2>
+  <div class="abs body mut" style="left:96px;top:600px;width:820px;font-size:36px">Creators have become the human API, carrying context between tools by hand.</div>
+  <!-- hub diagram -->
+  <svg class="abs" style="left:1040px;top:90px" width="800" height="690" viewBox="0 0 800 690" fill="none">
+    <g stroke="#edeae3" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round">
+      <path d="M400 345 L150 110"/><path d="M400 345 L640 90"/><path d="M400 345 L90 380"/><path d="M400 345 L690 420"/><path d="M400 345 L330 600"/>
+    </g>
+    <circle cx="400" cy="345" r="108" fill="#c7fe02"/>
+    <text x="400" y="338" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="46" fill="#0a0c0e">You,</text>
+    <text x="400" y="386" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="46" fill="#0a0c0e">by hand</text>
+    <g font-family="Inter" font-size="26" font-weight="500" fill="#edeae3" text-anchor="middle">
+      <rect fill="none" x="40" y="70" width="220" height="62" rx="31" stroke="#8b5cf8" stroke-width="2.5"/><text x="150" y="110" text-anchor="middle">Inspiration</text>
+      <rect fill="none" x="520" y="52" width="240" height="62" rx="31" stroke="#ff6b9d" stroke-width="2.5"/><text x="640" y="92" text-anchor="middle">References</text>
+      <rect fill="none" x="10" y="350" width="200" height="62" rx="31" stroke="#7ed6b6" stroke-width="2.5"/><text x="110" y="390" text-anchor="middle">Published</text>
+      <rect fill="none" x="590" y="392" width="210" height="62" rx="31" stroke="#ff8a3d" stroke-width="2.5"/><text x="695" y="432" text-anchor="middle">Design file</text>
+      <rect fill="none" x="230" y="570" width="200" height="62" rx="31" stroke="#edeae3" stroke-opacity=".6" stroke-width="2.5"/><text x="330" y="610" text-anchor="middle">Feedback</text>
+    </g>
+  </svg>
+  <div class="rule abs" style="left:96px;right:96px;top:790px"></div>
+  <div class="pt" style="left:96px;top:830px;width:520px"><b>Inspiration loses its context</b><span>A saved reference forgets where it came from and why it mattered.</span></div>
+  <div class="pt" style="left:700px;top:830px;width:520px"><b>Work crosses many tools</b><span>Every handoff drops the intent behind the decision.</span></div>
+  <div class="pt" style="left:1304px;top:830px;width:520px"><b>The reasoning never travels</b><span>Files move forward. The why stays behind in someone's head.</span></div>
+  <div class="foot" style="bottom:22px"><span></span><span>First hand: Joshua ran a crypto agency and watched this happen in every project</span></div>
+</section>
+
+<!-- 3 THE LOOP -->
+<section class="s limebg">
+  <div class="abs lab" style="left:96px;top:84px">The idea</div>
+  <h2 class="abs disp" style="left:96px;top:140px;width:1100px;font-size:132px">Culture feeds creativity. Creativity produces culture.</h2>
+  <div class="abs disp" style="left:96px;top:590px;font-size:132px;color:var(--ink);opacity:1;width:1100px">Kresilo connects them.</div>
+  <div class="abs body" style="left:96px;top:820px;width:900px;font-size:34px">A social network and creative studio, built as one continuous world: discovery, thought, making, memory and cultural exchange.</div>
+  <!-- loop diagram -->
+  <svg class="abs" style="left:1130px;top:120px" width="720" height="760" viewBox="0 0 720 760" fill="none">
+    <circle cx="360" cy="380" r="270" stroke="#0a0c0e" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <g font-family="Instrument Serif" font-style="italic" font-size="40" text-anchor="middle" fill="#0a0c0e">
+      <circle cx="360" cy="110" r="86" fill="#8b5cf8"/><text x="360" y="127" fill="#edeae3">Discover</text>
+      <circle cx="622" cy="300" r="86" fill="#ff6b9d"/><text x="622" y="317">Make</text>
+      <circle cx="522" cy="606" r="86" fill="#7ed6b6"/><text x="522" y="623">Remember</text>
+      <circle cx="198" cy="606" r="86" fill="#ff8a3d"/><text x="198" y="623">Publish</text>
+      <circle cx="98" cy="300" r="86" fill="#0a0c0e"/><text x="98" y="317" fill="#c7fe02">Credit</text>
+    </g>
+  </svg>
+</section>
+
+<!-- 4 EMPOWERS -->
+<section class="s light">
+  <div class="abs lab mut" style="left:96px;top:84px">What it empowers people to do</div>
+  <h2 class="abs disp" style="left:96px;top:130px;font-size:112px;width:1500px">Develop how you see, not just what you make.</h2>
+  <!-- five cards -->
+  <div class="abs" style="left:96px;top:420px;width:1728px;height:520px;display:grid;grid-template-columns:repeat(5,1fr);gap:20px">
+    <div style="position:relative;border-radius:22px;overflow:hidden;background:#17151f url(assets/blue-hour.jpg) center/cover;color:var(--ivory)"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,14,0) 30%,rgba(10,12,14,.82))"></div>
+      <div style="position:absolute;left:26px;right:26px;bottom:26px"><span class="chip l" style="font-size:30px;padding:12px"><svg class="i"><use href="#i-search"/></svg></span><div class="disp" style="font-size:62px;margin:16px 0 8px">Discover</div><div style="font-size:23px;line-height:1.34;opacity:.85">Enter a maker's world, their references and methods, not just the finished piece.</div></div></div>
+    <div style="position:relative;border-radius:22px;overflow:hidden;background:#222 url(assets/market-rhythm.jpg) center/cover;color:var(--ivory)"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,14,0) 20%,rgba(10,12,14,.9))"></div>
+      <div style="position:absolute;left:26px;right:26px;bottom:26px"><span class="chip l" style="font-size:30px;padding:12px"><svg class="i"><use href="#i-pencil"/></svg></span><div class="disp" style="font-size:62px;margin:16px 0 8px">Make</div><div style="font-size:23px;line-height:1.34;opacity:.85">Bring a reference into a project and open a Studio that already knows why.</div></div></div>
+    <div style="position:relative;border-radius:22px;overflow:hidden;background:#222 url(assets/mineral-texture.jpg) center/cover;color:var(--ivory)"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,14,0) 20%,rgba(10,12,14,.9))"></div>
+      <div style="position:absolute;left:26px;right:26px;bottom:26px"><span class="chip l" style="font-size:30px;padding:12px"><svg class="i"><use href="#i-clock"/></svg></span><div class="disp" style="font-size:62px;margin:16px 0 8px">Remember</div><div style="font-size:23px;line-height:1.34;opacity:.85">References, decisions and history stay with the work, between sessions and tools.</div></div></div>
+    <div style="position:relative;border-radius:22px;overflow:hidden;background:#222 url(assets/culture-type.jpg) center/cover;color:var(--ivory)"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,14,0) 20%,rgba(10,12,14,.9))"></div>
+      <div style="position:absolute;left:26px;right:26px;bottom:26px"><span class="chip l" style="font-size:30px;padding:12px"><svg class="i"><use href="#i-upload"/></svg></span><div class="disp" style="font-size:62px;margin:16px 0 8px">Publish</div><div style="font-size:23px;line-height:1.34;opacity:.85">Private by default. Share the work, a reference, or the story of a decision.</div></div></div>
+    <div style="position:relative;border-radius:22px;overflow:hidden;background:#222 url(assets/soft-structures.jpg) center/cover;color:var(--ivory)"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,14,0) 20%,rgba(10,12,14,.9))"></div>
+      <div style="position:absolute;left:26px;right:26px;bottom:26px"><span class="chip l" style="font-size:30px;padding:12px"><svg class="i"><use href="#i-check"/></svg></span><div class="disp" style="font-size:62px;margin:16px 0 8px">Be credited</div><div style="font-size:23px;line-height:1.34;opacity:.85">Attribution travels with the work, so influence stays visible.</div></div></div>
+  </div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm" ></span>04</span></div>
+</section>
+
+<!-- 5 STUDIO -->
+<section class="s dark">
+  <div class="abs lab mut" style="left:96px;top:84px">The Studio</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:620px;font-size:92px">One place that remembers the project.</h2>
+  <div class="pt" style="left:96px;top:500px;width:560px"><b>Intent, references, decisions</b><span>Every reference keeps its source and why you saved it.</span></div>
+  <div class="pt" style="left:96px;top:660px;width:560px"><b>Copilot, terminal, extensions</b><span>Four doors, one command layer. Figma, Higgsfield and Paper to start, on your own accounts.</span></div>
+  <div class="pt" style="left:96px;top:850px;width:560px"><b>History of every change</b><span>Who did it, what it cited, and when.</span></div>
+  <div class="shot" style="left:720px;top:96px;width:1104px;height:659px;background-image:url(assets/studio.png);background-position:bottom"></div>
+  <div class="abs" style="left:720px;top:800px;width:1104px;display:flex;gap:14px;flex-wrap:wrap">
+    <span class="chip o"><svg class="i"><use href="#i-layers"/></svg>Canvas</span>
+    <span class="chip o"><svg class="i"><use href="#i-eye"/></svg>Copilot</span>
+    <span class="chip o"><svg class="i"><use href="#i-term"/></svg>Terminal</span>
+    <span class="chip o"><svg class="i"><use href="#i-plug"/></svg>Extensions</span>
+    <span class="chip o"><svg class="i"><use href="#i-clock"/></svg>Versions</span>
+  </div>
+  <div class="abs lab" style="left:720px;top:900px;line-height:1.8;color:var(--lime)">Working prototype: home feed, discover, makers, Studio canvas and layers,<br>approve or decline every AI change, version history, publish</div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm w" ></span>05</span></div>
+</section>
+
+<!-- 6 AI PROPOSES -->
+<section class="s dark">
+  <div class="shot" style="left:96px;top:160px;width:1060px;height:728px;background-image:url(assets/approval.png);background-position:center"></div>
+  <div class="abs lab mut" style="left:1260px;top:84px">The trust point</div>
+  <h2 class="abs disp" style="left:1260px;top:130px;width:580px;font-size:112px">AI proposes. <span style="color:var(--lime)">You approve.</span></h2>
+  <div class="pt" style="left:1260px;top:560px;width:560px"><b>Nothing runs until you say so</b><span>Every change an agent makes waits for your approval and stays in the project's history.</span></div>
+  <div class="pt" style="left:1260px;top:770px;width:560px"><b>Your accounts, your credits</b><span>Reads are free. Writes and spending always come to you as a card.</span></div>
+  
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm w" ></span>06</span></div>
+</section>
+
+<!-- 7 PUBLISH + CREDIT -->
+<section class="s light">
+  <div class="abs lab mut" style="left:96px;top:84px">Publish and credit</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:1100px;font-size:112px">Private until you say so.</h2>
+  <div class="shot" style="left:96px;top:450px;width:780px;height:466px;background-image:url(assets/publish.png);background-position:bottom"></div>
+  <div class="shot" style="left:1044px;top:450px;width:780px;height:464px;background-image:url(assets/published.png);background-position:bottom;background-size:100% auto"></div>
+  <div class="pt" style="left:96px;top:290px;width:520px"><b style="font-size:46px">You choose the layers</b><span style="font-size:24px">Intent, references, decisions, history, assets. Everything else stays private.</span></div>
+  <div class="pt" style="left:700px;top:290px;width:520px"><b style="font-size:46px">Keys and paths never leave</b><span style="font-size:24px">API keys, local paths and private notes are stripped before anything leaves.</span></div>
+  <div class="pt" style="left:1304px;top:290px;width:520px"><b style="font-size:46px">Credit travels with it</b><span style="font-size:24px">Tools, collaborators and the work you built on are named.</span></div>
+  <div class="abs lab" style="left:96px;top:950px;font-size:19px;opacity:.6">Only you can confirm a publish. Copilot and extensions cannot.</div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm" ></span>07</span></div>
+</section>
+
+<!-- 8 WHY NOW -->
+<section class="s dark">
+  <div class="abs lab mut" style="left:96px;top:84px">Why now</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:1500px;font-size:120px">The places creators borrowed stopped working for makers.</h2>
+  <div class="abs" style="left:96px;top:560px;width:1728px;display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
+    <div><div class="num" style="color:var(--pink)">01</div><div class="rule" style="margin:18px 0 26px"></div><div class="disp" style="font-size:62px;margin-bottom:16px">Borrowed homes punished making.</div><div class="body mut" style="font-size:28px">Instagram punishes anything that doesn't perform. X rewards arguing more than making.</div></div>
+    <div><div class="num" style="color:var(--violet)">02</div><div class="rule" style="margin:18px 0 26px"></div><div class="disp" style="font-size:62px;margin-bottom:16px">One person, every tool.</div><div class="body mut" style="font-size:28px">The same creator now designs, edits, writes and publishes, each in a different app. Every handoff drops the reasoning behind the work.</div></div>
+    <div><div class="num" style="color:var(--lime)">03</div><div class="rule" style="margin:18px 0 26px"></div><div class="disp" style="font-size:62px;margin-bottom:16px">Tools can finally connect.</div><div class="body mut" style="font-size:28px">Tools increasingly open up to outside connection. One project can sit across your own accounts, with nothing bundled or sold as a step.</div></div>
+  </div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm w" ></span>08</span></div>
+</section>
+
+<!-- 9 COMPETITION -->
+<section class="s light">
+  <div class="abs lab mut" style="left:96px;top:84px">Where Kresilo sits</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:1728px;font-size:96px;line-height:1.22">Everyone else owns a step.<br><span style="background:var(--lime);padding:0 18px;border-radius:12px;-webkit-box-decoration-break:clone">Kresilo owns the loop.</span></h2>
+  <div class="abs" style="left:96px;top:420px;width:1728px">
+    <table style="font-size:27px">
+      <thead><tr class="lab" style="font-size:18px;text-align:left;opacity:.55"><th style="padding:0 0 14px;width:470px">Kind</th><th style="width:460px">Examples</th><th>Why they won't connect it</th></tr></thead>
+      <tbody style="line-height:1.3">
+        <tr style="border-top:2px solid rgba(10,12,14,.18)"><td style="padding:11px 0;font-weight:600">Portfolios</td><td style="opacity:.7">Dribbble</td><td>Show the finish, not the thinking.</td></tr>
+        <tr style="border-top:1px solid rgba(10,12,14,.15)"><td style="padding:11px 0;font-weight:600">CVs</td><td style="opacity:.7">Behance</td><td>A record you show, not a place you return to.</td></tr>
+        <tr style="border-top:1px solid rgba(10,12,14,.15)"><td style="padding:11px 0;font-weight:600">Borrowed homes and stages</td><td style="opacity:.7">Instagram, X</td><td>Punish what doesn't perform. Reward arguing more than making.</td></tr>
+        <tr style="border-top:1px solid rgba(10,12,14,.15)"><td style="padding:11px 0;font-weight:600">Collectors</td><td style="opacity:.7">Are.na, Pinterest</td><td>Built to collect. What you make never flows back.</td></tr>
+        <tr style="border-top:1px solid rgba(10,12,14,.15)"><td style="padding:11px 0;font-weight:600">Design tools</td><td style="opacity:.7">Figma, Photoshop</td><td>Built around the file. Memory stops at the file.</td></tr>
+        <tr style="border-top:1px solid rgba(10,12,14,.15)"><td style="padding:11px 0;font-weight:600">AI assistants and suites</td><td style="opacity:.7">ChatGPT, Claude, Krea</td><td>Context lives in threads. Bundled access is the business model.</td></tr>
+        <tr style="background:var(--ink);color:var(--ivory)"><td style="padding:22px 24px;font-family:var(--serif);font-style:italic;font-size:48px;color:var(--lime)">Kresilo</td><td></td><td style="font-weight:600;padding-right:24px">One project. Your accounts. Your tools. Sells no step, so it can connect all of them.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm" ></span>09</span></div>
+</section>
+
+<!-- 10 GTM -->
+<section class="s dark">
+  <div class="abs lab mut" style="left:96px;top:84px">Market strategy</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:1500px;font-size:120px">Start focused. Grow through what people make and share.</h2>
+  <div class="art" style="left:96px;top:560px;width:540px;height:200px;background-image:url(assets/process-desk.jpg);background-position:center 40%"></div>
+  <div class="art" style="left:690px;top:560px;width:540px;height:200px;background-image:url(assets/moving-colour.jpg)"></div>
+  <div class="art" style="left:1284px;top:560px;width:540px;height:200px;background-image:url(assets/folded-paper.jpg)"></div>
+  <div class="pt" style="left:96px;top:790px;width:540px"><b style="font-size:48px">Seed the community</b><span style="font-size:24px">Designers, illustrators, photographers and other visual thinkers who actively share work, references and process.</span></div>
+  <div class="pt" style="left:690px;top:790px;width:540px"><b style="font-size:48px">Make creation the hook</b><span style="font-size:24px">Useful to one creator alone: save a reference, start a project, keep the reasoning. The network adds to that, but it isn't needed on day one.</span></div>
+  <div class="pt" style="left:1284px;top:790px;width:540px"><b style="font-size:48px">Grow through contribution</b><span style="font-size:24px">Published work brings new people in. Attribution, remixing and project contributions give creators reasons to return and invite others.</span></div>
+  <div class="foot" style="bottom:20px"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm w" ></span>10</span></div>
+</section>
+
+<!-- 11 BUSINESS -->
+<section class="s light">
+  <div class="abs lab mut" style="left:96px;top:84px">Business model</div>
+  <h2 class="abs disp" style="left:96px;top:130px;width:1500px;font-size:112px">Creators pay for the Studio. The rest comes next.</h2>
+  <div class="abs" style="left:96px;top:470px;width:900px;height:470px;border-radius:28px;background:var(--ink);color:var(--ivory);padding:52px">
+    <span class="chip l" style="font-weight:700;letter-spacing:.1em;font-size:20px">NOW</span>
+    <div class="disp" style="font-size:112px;margin:24px 0 6px">Studio</div>
+    <div style="font-family:var(--mono);color:var(--lime);font-size:24px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px">Subscription</div>
+    <div class="body" style="font-size:30px;opacity:.85">The project workspace: memory, version history and professional workflows. You connect your own accounts and tools. We don't sell any step.</div>
+  </div>
+  <div class="abs" style="left:1040px;top:470px;width:784px;height:220px;border-radius:28px;border:2px solid var(--ink);padding:34px 44px">
+    <span class="chip o" style="font-size:18px;padding:6px 16px">NEXT</span>
+    <div class="disp" style="font-size:62px;margin:10px 0 6px">Marketplace</div>
+    <div style="font-size:23px;line-height:1.35;opacity:.75">Extensions and creative services built by developers and creatives. Revenue: commission on transactions.</div>
+  </div>
+  <div class="abs" style="left:1040px;top:720px;width:784px;height:220px;border-radius:28px;border:2px solid var(--ink);padding:34px 44px">
+    <span class="chip o" style="font-size:18px;padding:6px 16px">LATER</span>
+    <div class="disp" style="font-size:62px;margin:10px 0 6px">Creator economy</div>
+    <div style="font-size:23px;line-height:1.35;opacity:.75">Designers earn from sessions, workshops, memberships and commissions through their profiles. Revenue: transaction fees.</div>
+  </div>
+  <div class="foot"><span></span><span style="display:flex;align-items:center;gap:28px"><span class="wm" ></span>11</span></div>
+</section>
+
+<!-- 12 TEAM -->
+<section class="s dark">
+  <div class="abs lab mut" style="left:96px;top:84px">The team</div>
+  <h2 class="abs disp" style="left:96px;top:130px;font-size:130px">Built by people who lived the problem.</h2>
+  <div class="abs" style="left:96px;top:420px;width:840px;height:330px;border-radius:28px;background:var(--lime);color:var(--ink);padding:48px">
+    <div style="display:flex;align-items:center;gap:26px"><div class="disp" style="width:104px;height:104px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-size:66px">J</div><div><div class="disp" style="font-size:66px">Joshua</div><div class="lab" style="font-size:19px;margin-top:10px">Founder &amp; CEO</div></div></div>
+    <div style="font-size:29px;line-height:1.38;margin-top:30px">Customer zero. Ran creative production at a crypto agency, and kept hitting the same wall: the work moved forward, the reasoning didn't.</div>
+  </div>
+  <div class="abs" style="left:984px;top:420px;width:840px;height:330px;border-radius:28px;background:var(--violet);color:var(--ivory);padding:48px">
+    <div style="display:flex;align-items:center;gap:26px"><div class="disp" style="width:104px;height:104px;border-radius:50%;background:var(--ink);color:var(--ivory);display:grid;place-items:center;font-size:66px">P</div><div><div class="disp" style="font-size:66px">Pujan</div><div class="lab" style="font-size:19px;margin-top:10px">Co-founder &amp; CTO</div></div></div>
+    <div style="font-size:29px;line-height:1.38;margin-top:30px">Ran production systems in legal, healthcare and insurance, where whether an agent can be trusted to act is the whole job.</div>
+  </div>
+  <div class="abs lab mut" style="left:96px;top:810px">Advisors</div>
+  <div class="abs" style="left:96px;top:860px;width:1728px;display:grid;grid-template-columns:repeat(4,1fr);gap:40px;border-top:2px solid rgba(237,234,227,.2);padding-top:28px">
+    <div><div class="disp" style="font-size:44px">Jim Toepel</div><div class="lab mut" style="font-size:17px;margin-top:8px">Ex Meta</div></div>
+    <div><div class="disp" style="font-size:44px">Borys Skowron</div><div class="lab mut" style="font-size:17px;margin-top:8px">CEO, Bhong</div></div>
+    <div><div class="disp" style="font-size:44px">Chrys Li</div><div class="lab mut" style="font-size:17px;margin-top:8px">AI systems design, 7Modes</div></div>
+    <div><div class="disp" style="font-size:44px">Raphael Manachem</div><div class="lab mut" style="font-size:17px;margin-top:8px">Ex Microsoft</div></div>
+  </div>
+</section>
+
+<!-- 13 ASK -->
+<section class="s light">
+  <div class="abs lab mut" style="left:96px;top:84px">The ask</div>
+  <h2 class="abs disp" style="left:96px;top:130px;font-size:120px;width:1500px">The standard Speedrun deal.</h2>
+  <div class="abs" style="left:96px;top:380px;display:flex;align-items:center;gap:36px">
+    <div class="disp" style="background:var(--lime);padding:14px 40px;border-radius:20px;font-size:120px">Up to $1M</div>
+    <div class="body" style="font-size:34px;width:760px">$500K up front on a SAFE, and $500K in our next round.</div>
+  </div>
+  <div class="abs lab mut" style="left:96px;top:620px">What it builds</div>
+  <div class="abs" style="left:96px;top:670px;width:1728px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+    <div style="background:var(--ink);color:var(--ivory);border-radius:26px;padding:40px;height:290px"><div class="disp" style="font-size:64px;color:var(--lime);margin-bottom:14px">Tech platform</div><div style="font-size:26px;line-height:1.38;opacity:.85">The project workspace: memory, version history, and connections to your own accounts and tools.</div></div>
+    <div style="background:var(--ink);color:var(--ivory);border-radius:26px;padding:40px;height:290px"><div class="disp" style="font-size:64px;color:var(--pink);margin-bottom:14px">Community</div><div style="font-size:26px;line-height:1.38;opacity:.85">The first group of designers, illustrators and photographers who share their work and process.</div></div>
+    <div style="background:var(--ink);color:var(--ivory);border-radius:26px;padding:40px;height:290px"><div class="disp" style="font-size:64px;color:var(--mint);margin-bottom:14px">Expansion</div><div style="font-size:26px;line-height:1.38;opacity:.85">The marketplace and creator tools, once the studio is in real use.</div></div>
+  </div>
+</section>
+
+<!-- 14 THANK YOU -->
+<section class="s limebg">
+  <span class="wm abs" style="left:420px;top:150px;font-size:380px;text-align:center;width:1080px"></span>
+  <div class="abs disp" style="left:0;right:0;top:640px;text-align:center;font-size:96px">Thank you.</div>
+  <div class="abs lab" style="left:0;right:0;bottom:70px;text-align:center;line-height:1.7">Joshua &amp; Pujan · kresiloapp@gmail.com</div>
+</section>
+</body>
+</html>

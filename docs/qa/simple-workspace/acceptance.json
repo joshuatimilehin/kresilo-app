@@ -1,0 +1,264 @@
+{
+  "asOf": "2026-10-21",
+  "scope": "Local working-tree and production-build evidence; required remote CI and deployment pending",
+  "api": {
+    "checkedAt": "2026-10-22T02:17:45.906Z",
+    "checks": [
+      "Cross-guest project access denied",
+      "Reference reason required",
+      "Proposal leaves art unchanged and cites saved references",
+      "Repeated approval is idempotent",
+      "Concurrent edits reject the stale writer",
+      "Restore appends a version and preserves later history",
+      "Private preview redacts reasons, prompts and project internals",
+      "Invited second session can comment on the same project",
+      "Imported image bytes persist in the same Octo workspace",
+      "Uninvited media access denied"
+    ],
+    "modelProvenance": "ali/qwen3.8-omni-flash \u00b7 reference media and saved reasons \u00b7 provider-reported $0.000010 \u00b7 review before applying",
+    "projectId": "c78d0090-3256-4c23-b3bc-551a8729af2b"
+  },
+  "motion": {
+    "bytes": 115247,
+    "type": "video/mp4",
+    "renderSeconds": 54.611,
+    "jobId": "1a4172d7-a7c7-42ea-8809-6ad4026d06fe"
+  },
+  "videoInput": {
+    "provenance": "ali/qwen3.8-omni-flash \u00b7 reference images and saved reasons \u00b7 review before applying",
+    "rationale": "The saved reason describes a slow camera drift across a quiet horizon with a bright circular sun, which supports reducing the title\u2019s visual weight so it sits more calmly against that stillness. The current frame shows large cream script over a pink-purple sun and teal sky; making the title smaller and slightly cooler will let the horizon breathe without losing legibility.",
+    "citesVideo": true,
+    "artUnchanged": true
+  },
+  "motionProposal": {
+    "provenance": "ali/qwen3.8-omni-flash \u00b7 reference media and saved reasons \u00b7 provider-reported $0.000010 \u00b7 review before applying",
+    "proposedMotion": {
+      "loop": true,
+      "seconds": 4,
+      "movement": "rise"
+    },
+    "appliedOnlyAfterApproval": true,
+    "immutableVersions": 2
+  },
+  "starters": {
+    "checkedAt": "2026-10-22T02:17:37.758Z",
+    "results": [
+      {
+        "template": "evening-poster",
+        "asset": "after-light",
+        "persisted": true,
+        "editableCaption": true
+      },
+      {
+        "template": "material-study",
+        "asset": "folded-paper",
+        "persisted": true,
+        "editableCaption": true
+      },
+      {
+        "template": "culture-cover",
+        "asset": "quiet-type",
+        "persisted": true,
+        "editableCaption": true
+      }
+    ],
+    "unknownTemplateRejected": true
+  },
+  "researchCountsAndFingerprintsUnchanged": true,
+  "modelBackedApiEarlier": {
+    "checkedAt": "2026-10-21T21:39:48.219Z",
+    "checks": [
+      "Cross-guest project access denied",
+      "Reference reason required",
+      "Proposal leaves art unchanged and cites saved references",
+      "Repeated approval is idempotent",
+      "Concurrent edits reject the stale writer",
+      "Restore appends a version and preserves later history",
+      "Private preview redacts reasons, prompts and project internals",
+      "Invited second session can comment on the same project",
+      "Imported image bytes persist in the same Octo workspace",
+      "Uninvited media access denied"
+    ],
+    "modelProvenance": "ali/qwen3.8-omni-flash \u00b7 reference media and saved reasons \u00b7 provider-reported $0.000010 \u00b7 review before applying",
+    "projectId": "f0bab217-230c-49dd-b3cf-07c213b79135"
+  },
+  "modelFallbackObserved": {
+    "checkedAt": "2026-10-21T22:16:30.521Z",
+    "checks": [
+      "Cross-guest project access denied",
+      "Reference reason required",
+      "Proposal leaves art unchanged and cites saved references",
+      "Repeated approval is idempotent",
+      "Concurrent edits reject the stale writer",
+      "Restore appends a version and preserves later history",
+      "Private preview redacts reasons, prompts and project internals",
+      "Invited second session can comment on the same project",
+      "Imported image bytes persist in the same Octo workspace",
+      "Uninvited media access denied"
+    ],
+    "modelProvenance": "Prototype guidance \u00b7 no usable model response \u00b7 no artwork changed",
+    "projectId": "82d6e868-c508-496f-ae74-c5d7962ebbb5"
+  },
+  "fastMotion": {
+    "checkedAt": "2026-10-22T02:10:46.364Z",
+    "results": [
+      {
+        "movement": "cut",
+        "projectId": "42e25895-cf16-45c4-a37d-ff62edd81c4f",
+        "persisted": true,
+        "versionPersisted": true,
+        "bytes": 1289753,
+        "renderSeconds": 7.632,
+        "path": "public/assets/kresilo/quick-cuts.mp4"
+      },
+      {
+        "movement": "type",
+        "projectId": "b848baaa-87b8-411a-8377-22c22486b318",
+        "persisted": true,
+        "versionPersisted": true,
+        "bytes": 540037,
+        "renderSeconds": 7.357,
+        "path": "public/assets/kresilo/type-punch.mp4"
+      },
+      {
+        "movement": "collage",
+        "projectId": "8b4965fe-2a06-4bbe-8d44-c2c28f4d97e0",
+        "persisted": true,
+        "versionPersisted": true,
+        "bytes": 612018,
+        "renderSeconds": 7.418,
+        "path": "public/assets/kresilo/collage-shuffle.mp4"
+      }
+    ]
+  },
+  "fastMotionProposal": {
+    "checkedAt": "2026-10-22T02:18:33.621Z",
+    "provenance": "ali/qwen3.8-omni-flash \u00b7 reference media and saved reasons \u00b7 provider-reported $0.000010 \u00b7 review before applying",
+    "proposedMotion": {
+      "loop": true,
+      "seconds": 4,
+      "movement": "cut"
+    },
+    "unapplied": true,
+    "appliedOnlyAfterApproval": true
+  },
+  "fastMotionFrames": [
+    {
+      "preset": "quick-cuts",
+      "sampleSeconds": [
+        0.1,
+        0.7,
+        1.2
+      ],
+      "changedPixelFractions": [
+        0.8857,
+        0.9433
+      ],
+      "motionVerified": true
+    },
+    {
+      "preset": "type-punch",
+      "sampleSeconds": [
+        0.1,
+        0.7,
+        1.2
+      ],
+      "changedPixelFractions": [
+        0.1225,
+        0.0298
+      ],
+      "motionVerified": true
+    },
+    {
+      "preset": "collage-shuffle",
+      "sampleSeconds": [
+        0.1,
+        0.7,
+        1.2
+      ],
+      "changedPixelFractions": [
+        0.5075,
+        0.5021
+      ],
+      "motionVerified": true
+    }
+  ],
+  "exportCorrection": "Earlier files were playable, but sampled fast-cut frames were static/blank. The duplicated embedded player runtime was removed and the timeline was registered inside its timed composition. New exports are H.264 540x720, four seconds, 96 frames. Sampled image changes confirm motion; earlier playable-only evidence is insufficient for motion acceptance.",
+  "checks": {
+    "lint": "passed with existing refresh warnings",
+    "typecheck": "passed",
+    "tests": 62,
+    "build": "passed",
+    "remoteCi": "pending",
+    "deployment": "pending",
+    "googleSignIn": "not configured; presentation guest access selected"
+  },
+  "researchPreservation": {
+    "beforeAt": "2026-10-21T19:49:51.949Z",
+    "afterAt": "2026-10-22T02:49:28.045Z",
+    "tables": 12,
+    "countsUnchanged": true,
+    "fingerprintsUnchanged": true
+  },
+  "browser": {
+    "viewports": [
+      [
+        1487,
+        1058
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        740
+      ]
+    ],
+    "horizontalOverflow": false,
+    "reducedMotionPersists": true,
+    "galleryAutoPlayStoppedWhenReduced": true,
+    "restoredExport": {
+      "duration": 4,
+      "ended": true,
+      "width": 540,
+      "height": 720,
+      "error": null,
+      "downloadAfterNavigation": true,
+      "downloadAfterRefresh": true
+    },
+    "googleSignIn": "not configured; not tested",
+    "nativeSafari": "not tested",
+    "finalCompiledJourney": {
+      "revision": "1811c11",
+      "createHorizonLoaded": true,
+      "boardAndTextControls": true,
+      "exportLinkRestored": true,
+      "newPrivatePublication": true,
+      "copyLinkConfirmed": true,
+      "consoleErrors": []
+    }
+  },
+  "visualResult": "passed; see design-qa.md",
+  "productRevisions": [
+    "f4fe75a",
+    "2bf8317",
+    "3c75ad9",
+    "1811c11"
+  ],
+  "repositoryChecks": {
+    "command": "scripts/verify-repository.py with the pinned toolchain",
+    "exitCode": 0,
+    "scope": "local governance, frozen dependencies, lint, typecheck, 62 tests, production build",
+    "requiredRemoteCi": "pending"
+  },
+  "mermaidPreview": {
+    "rendered": true,
+    "tool": "Mermaid CLI 12.0.0",
+    "parseError": false
+  }
+}

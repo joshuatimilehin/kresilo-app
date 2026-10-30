@@ -1,0 +1,146 @@
+{
+  "status": "first render, visual acceptance failed",
+  "builderCommit": "c13b363ccefaef63cb217055814ad710b31a8970",
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    },
+    {
+      "route": "/demo",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "httpStatus": 200,
+      "pageOverflow": false,
+      "pageExceptions": []
+    }
+  ]
+}

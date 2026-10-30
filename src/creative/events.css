@@ -1,0 +1,57 @@
+/* Events: the tab and format row, your place at an event, the private pill and the host form's missing fields. */
+
+/* Tabs and format chips share one row; on a phone the chips wrap under the tabs. */
+.events-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px; margin: 36px 0 28px; }
+.events-bar .board-tabs { margin: 0; }
+.events-chips { display: flex; align-items: center; gap: 8px; min-width: 0; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.events-chips::-webkit-scrollbar { display: none; }
+.events-chips .chip-button { flex-shrink: 0; white-space: nowrap; }
+.events-chips .events-near { margin-left: 4px; flex-shrink: 0; white-space: nowrap; }
+.events-bar + .meetups-featured { margin-top: 0; }
+@media (max-width: 760px) {
+  .events-bar { margin: 24px 0 20px; }
+  .events-chips { width: 100%; }
+  .events-chips .events-near { width: auto; margin-left: auto; }
+}
+@media (max-width: 520px) {
+  .events-chips { gap: 6px; }
+  .events-chips .chip-button { padding: 0 12px; gap: 5px; font-size: 13px; }
+  .events-chips .events-near { display: none; }
+}
+
+/* "You're going" reads as a status, not a call to action. */
+.pill.event-going-on { border-color: var(--ink); color: var(--ink); }
+.pill.event-going-on:hover { transform: none; }
+.pill[aria-busy="true"] { cursor: progress; opacity: 1; }
+.event-cancel { display: inline-flex; align-items: center; gap: 4px; min-height: 48px; padding: 0 4px 0 16px; border: 1px solid var(--line); border-radius: 100px; font-size: 14px; color: var(--ink); }
+.event-cancel .icon-button { color: var(--ink); cursor: pointer; }
+.event-cancel .icon-button:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.event-cancel .event-cancel-yes { color: #e5484d; }
+
+/* Hosted events live on your profile only. */
+.event-format-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.event-private { display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 12px 0 10px; border: 1px solid var(--line); border-radius: 100px; font-size: 12px; color: var(--muted); }
+
+/* After Save, required fields still empty are outlined. */
+.host-row label[data-invalid], .host-line[data-invalid] { border-color: #e5484d; box-shadow: 0 0 0 1px #e5484d; }
+.host-row label[data-invalid] input:focus-visible, .host-line[data-invalid] input:focus-visible { outline: none; box-shadow: none; }
+.host-fields input.host-title[aria-invalid="true"], .host-fields input.host-title[aria-invalid="true"]:focus { border-bottom-color: #e5484d; box-shadow: 0 1px 0 #e5484d; }
+
+/* The host's tools on their own event: take it down, edit it. */
+.event-host-tools { display: inline-flex; align-items: center; gap: 8px; }
+.event-remove > svg { color: #e5484d; margin-inline-end: 2px; }
+.event-cancel .spinner { width: 16px; height: 16px; }
+
+/* Join, for people who are going. Before it opens it is dimmed; hovering shows the start. */
+.event-join { gap: 8px; }
+.event-join[aria-disabled="true"] { opacity: 0.45; cursor: default; }
+.event-join[aria-disabled="true"]:hover { transform: none; }
+
+/* Covers: upload your own, your projects, then makers' case studies. */
+.host-covers .host-cover-upload { display: grid; place-items: center; border: 1px dashed var(--line); color: var(--ink); background: color-mix(in srgb, var(--ink) 4%, transparent); }
+.host-covers .host-cover-upload:hover:not(:disabled) { border-color: var(--ink); }
+.host-covers .host-cover-upload .spinner { width: 18px; height: 18px; }
+/* A project keeps its own shape, centred and cropped by the square. */
+.host-covers .host-cover-own, .host-cover:has(> .creative-artwork) { display: grid; place-items: center; }
+.host-covers .creative-artwork, .host-cover .creative-artwork { width: 100%; flex: none; }
+.meetup-card-media > img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }

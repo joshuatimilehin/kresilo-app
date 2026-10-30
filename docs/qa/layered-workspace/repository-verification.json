@@ -1,0 +1,13 @@
+{
+  "asOf": "2026-10-22T08:42:53.3460061Z",
+  "sourceCommit": "6288993c675d1d0d18fac7ca45b16c6b46585069",
+  "verifier": "scripts/verify-repository.py with pinned toolchain",
+  "platform": "Windows",
+  "adapter": "Resolve pnpm.cmd only in verifier subprocess",
+  "exitCode": 0,
+  "unitTests": 67,
+  "liveApiAssertions": 25,
+  "browser": "Desktop and 390x844 mobile Chromium viewport",
+  "motion": "Three original four-second H.264 loops with distinct decoded frames; layered export verified",
+  "release": "Required remote MacBook Pro checks and accepted merge pending"
+}

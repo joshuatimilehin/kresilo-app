@@ -1,0 +1,1090 @@
+/* Studio: a canvas that leads, with icon-only floating controls and drawers. */
+.sx-workspace {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.sx-stage {
+  position: relative;
+  margin-top: 52px;
+  /* The editor sets the exact width that fits the free space (see ProjectEditor). */
+  width: min(580px, 100%);
+}
+.sx-stage .editor-canvas {
+  width: 100%;
+}
+.sx-history {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  display: flex;
+  gap: 4px;
+}
+.sx-history button,
+.sx-tool,
+.sx-quick button,
+.sx-ai-head button,
+.sx-ai-form button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.sx-history button:disabled {
+  opacity: 0.3;
+}
+.sx-history button:not(:disabled):hover,
+.sx-tool:hover,
+.sx-quick button:hover,
+.sx-ai-form button:hover {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.sx-badge {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 10px/16px Inter, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+.sx-toolbox {
+  position: absolute;
+  top: 0;
+  right: -64px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px #0003;
+  z-index: 20;
+}
+.sx-ai-tool {
+  background: var(--acid, #d6ff3f);
+  color: #111;
+}
+.sx-ai-tool:hover {
+  background: var(--acid, #d6ff3f);
+  filter: brightness(0.95);
+}
+.sx-ai-tool[aria-pressed="true"] {
+  box-shadow: 0 0 0 2px var(--ink);
+}
+.sx-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5a36;
+  border: 2px solid var(--paper);
+}
+.sx-quick {
+  position: absolute;
+  z-index: 15;
+  transform: translate(-50%, calc(-100% - 8px));
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 18px #0004;
+  touch-action: manipulation;
+}
+.sx-quick.below {
+  transform: translate(-50%, 22px);
+}
+.sx-quick button {
+  width: 40px;
+  height: 40px;
+}
+.sx-quick button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.sx-result {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: min(540px, 100%);
+  flex: none;
+  padding: 6px 6px 6px 14px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  font-size: 13px;
+}
+.sx-result svg {
+  flex: none;
+}
+.sx-result button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+}
+.sx-result.nothing svg {
+  color: #d99a1f;
+}
+.sx-result.proposed svg,
+.sx-result.applied svg {
+  color: #3a9d5d;
+}
+.sx-result.kept svg {
+  color: var(--muted);
+}
+/* The assistant: a drawer. A bottom sheet on a phone, a floating panel on a desktop. */
+.sx-ai {
+  position: fixed;
+  z-index: 60;
+  right: 24px;
+  bottom: 24px;
+  width: min(420px, calc(100vw - 32px));
+  max-height: 70dvh;
+  overflow: auto;
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 50px #0006;
+  transform: translateY(24px);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: transform 0.2s ease, opacity 0.2s ease, visibility 0.2s;
+}
+.sx-ai[data-open="true"] {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.sx-ai-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sx-ai-head > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.sx-ai-form {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 2px 4px;
+}
+.sx-ai .sx-ai-form input {
+  background: transparent;
+  outline: 0;
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+  padding: 8px 6px;
+}
+.sx-ai-form .send {
+  background: var(--acid, #d6ff3f);
+  color: #111;
+}
+.sx-ai-form .needs {
+  animation: sx-pulse 1.4s ease-in-out infinite;
+  background: color-mix(in srgb, var(--acid, #d6ff3f) 35%, transparent);
+}
+@keyframes sx-pulse {
+  50% {
+    transform: scale(1.12);
+  }
+}
+.sx-chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sx-chips button {
+  flex: none;
+}
+.sx-chips button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+}
+.sx-chips button[aria-pressed="true"] {
+  background: var(--acid, #d6ff3f);
+  color: #111;
+  border-color: transparent;
+}
+.sx-chips button:disabled {
+  opacity: 0.45;
+}
+.sx-ai-actions {
+  display: inline-flex;
+  gap: 2px;
+}
+.sx-ai-actions button[aria-pressed="true"] {
+  background: var(--acid, #d6ff3f);
+  color: #111;
+}
+/* Phone: the toolbox becomes a floating pill at the bottom, the drawer a bottom sheet. */
+@media (max-width: 850px), (max-height: 500px) {
+  .sx-stage {
+    margin-top: 52px;
+  }
+  .sx-toolbox {
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 2px;
+    padding: 5px;
+    border-radius: 32px;
+    z-index: 65;
+  }
+  .sx-ai {
+    left: 8px;
+    right: 8px;
+    bottom: calc(80px + env(safe-area-inset-bottom));
+    width: auto;
+    max-height: var(--sx-sheet-h);
+  }
+  .sx-tool {
+    width: 46px;
+    height: 46px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sx-ai,
+  .sx-ai-form .needs {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* The floating toolbox steps aside while a panel or sheet is open. */
+body:has([role="dialog"][data-state="open"]) .sx-toolbox {
+  display: none;
+}
+
+.sx-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.sx-more > button,
+.sx-more > a {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+}
+/* In a sheet the sheet's own icon already names the panel. */
+[role="dialog"] .layer-panel > h2 {
+  display: none;
+}
+
+/* Tool sheet: beside the design, never over it. */
+:root {
+  --sx-sheet-h: 34dvh;
+}
+.sx-sheet {
+  position: fixed;
+  z-index: 58;
+  right: 24px;
+  top: 96px;
+  width: 340px;
+  max-height: calc(100dvh - 130px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px #0005;
+  animation: sx-rise 0.18s ease-out;
+}
+.sx-sheet header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 6px 6px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.sx-readout {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.sx-readout b {
+  font-weight: 600;
+}
+.sx-sheet-actions {
+  display: inline-flex;
+}
+.sx-sheet header button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.sx-sheet-body {
+  overflow: auto;
+  padding: 12px 14px 16px;
+  display: grid;
+  gap: 12px;
+}
+.sx-sheet-body .layer-panel {
+  position: static;
+  width: auto;
+  max-height: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.sx-sheet-body .layer-panel > h2 {
+  display: none;
+}
+.sx-own-colour input {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+}
+@keyframes sx-rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+/* A desktop keeps the canvas clear of the panel by sliding it left. */
+@media (min-width: 851px) and (min-height: 501px) {
+  .focused-editor[data-sheet]:not([data-sheet="ai"]) .sx-workspace {
+    padding-right: 360px;
+  }
+}
+@media (max-width: 850px), (max-height: 500px) {
+  .sx-sheet {
+    left: 8px;
+    right: 8px;
+    top: auto;
+    bottom: calc(80px + env(safe-area-inset-bottom));
+    width: auto;
+    height: var(--sx-sheet-h);
+    max-height: none;
+  }
+  /* With a sheet open the canvas shrinks to sit fully in view above it. */
+  .focused-editor[data-sheet] .sx-stage {
+    margin-top: 48px;
+  }
+  .focused-editor[data-sheet] {
+    overflow: hidden;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sx-sheet {
+    animation: none;
+  }
+}
+.sx-tool[aria-pressed="true"]:not(.sx-ai-tool) {
+  background: var(--ink);
+  color: var(--paper);
+}
+.sx-sheet .sx-sheet-body textarea {
+  min-height: 48px !important;
+  height: 48px;
+  resize: vertical;
+}
+.sx-sheet-body .layer-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+/* What the assistant may change: four icon toggles, off ones dimmed and struck. */
+.sx-allow {
+  display: flex;
+  gap: 6px;
+}
+.sx-allow button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--ink);
+  opacity: 0.5;
+}
+.sx-allow button::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-45deg);
+}
+.sx-allow button[aria-pressed="true"] {
+  opacity: 1;
+  background: color-mix(in srgb, var(--acid, #d6ff3f) 22%, transparent);
+  border-color: var(--acid, #d6ff3f);
+}
+.sx-allow button[aria-pressed="true"]::after {
+  display: none;
+}
+/* Hand-only: the assistant is off; its drawer shows only the switch to turn it back on. */
+.sx-ai[data-off="true"] > :not(.sx-ai-head) {
+  display: none;
+}
+.sx-ai-actions .sx-hand[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.sx-tool.sx-ai-off {
+  background: transparent;
+  color: var(--muted, #888);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+/* Every layer in a multi-selection gets a quiet outline; handles stay for one layer. */
+.sx-sel-outline {
+  position: absolute;
+  z-index: 12;
+  border: 2px solid var(--acid, #d6ff3f);
+  border-radius: 2px;
+  pointer-events: none;
+  transform-origin: center;
+  box-shadow: 0 0 0 1px #0006;
+}
+.sx-quick button:disabled {
+  opacity: 0.35;
+}
+/* What the assistant learns the artist turned down: their own words, each removable. */
+.sx-taste {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sx-taste span {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 2px 2px 10px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  font-size: 12px;
+  color: var(--muted, #999);
+}
+.sx-taste button {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+}
+/* Brush size while painting a mask: a dot that grows with the slider. */
+.sx-brush {
+  position: absolute;
+  z-index: 15;
+  transform: translate(-50%, 10px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 18px #0004;
+}
+.sx-brush i {
+  flex: none;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.sx-brush input {
+  width: 110px;
+}
+/* The smallest phones: seven tools still fit inside the screen. */
+@media (max-width: 380px) {
+  .sx-toolbox {
+    gap: 0;
+    padding: 4px;
+  }
+  .sx-tool {
+    width: 40px;
+    height: 40px;
+  }
+  .sx-tool svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+/* Zoom: the canvas grows inside a frame of the artwork's shape that scrolls
+   when zoomed. Tall shapes narrow so the whole canvas stays above the tools. */
+.sx-zoom {
+  width: 100%;
+  margin-inline: auto;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  position: relative;
+}
+.sx-zoom[data-zoomed] {
+  overflow: auto;
+  touch-action: pan-x pan-y;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.sx-zoom::-webkit-scrollbar {
+  display: none;
+}
+.sx-fit {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--acid, #d6ff3f);
+  color: #111;
+}
+/* On touch, dragging a layer moves the layer instead of scrolling the page. */
+.editor-canvas .canvas-image-layer {
+  touch-action: none;
+}
+/* With a suggestion open on a wide screen, the whole stage steps left so the
+   side panel never covers it; the canvas itself is not moved inside its frame. */
+@media (min-width: 1101px) {
+  .proposal-open .sx-stage,
+  .proposal-open .sx-workspace > .sx-result {
+    transform: translateX(-215px);
+  }
+  .proposal-open .sx-stage .editor-canvas {
+    width: 100%;
+    transform: none;
+  }
+}
+/* Assistant settings: hand-only, apply right away, the switches, focus and taste. */
+.sx-ai-more {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.sx-ai-more .sx-ai-actions {
+  justify-content: flex-start;
+}
+.sx-result .sx-allow-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  padding: 6px 12px;
+  border-radius: 100px;
+  background: var(--acid, #c7fe02);
+  color: #111;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.proposal-blocked {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--acid, #c7fe02) 12%, transparent);
+  font-size: 13px;
+}
+.proposal-blocked .sx-allow-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 100px;
+  background: var(--acid, #c7fe02);
+  color: #111;
+  font-size: 13px;
+}
+/* Canvas size: poster, story, square, wide. */
+.sx-formats {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+.sx-formats button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+}
+.sx-formats button[aria-checked="true"] {
+  border-color: var(--acid, #c7fe02);
+  background: color-mix(in srgb, var(--acid, #c7fe02) 14%, transparent);
+}
+/* Canvas colour: swatches, your own, and the photo on or off. */
+.sx-canvas-colour {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.sx-canvas-colour > button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.sx-canvas-colour > button[aria-pressed="true"] {
+  outline: 2px solid var(--acid, #c7fe02);
+  outline-offset: 2px;
+}
+.sx-canvas-colour .sx-photo-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+}
+/* Drawing by hand: the surface over the canvas and its tools. */
+.draw-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  touch-action: none;
+  cursor: crosshair;
+  container-type: inline-size;
+}
+.draw-surface svg {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+.draw-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 100px;
+  background: var(--paper, #181b18);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
+}
+.draw-colours,
+.draw-sizes {
+  display: flex;
+  gap: 6px;
+}
+.draw-colours button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.draw-colours button[aria-checked="true"] {
+  outline: 2px solid var(--acid, #c7fe02);
+  outline-offset: 2px;
+}
+.draw-sizes button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+}
+.draw-sizes button i {
+  border-radius: 50%;
+  background: currentColor;
+}
+.draw-sizes button[aria-checked="true"] {
+  border-color: var(--acid, #c7fe02);
+}
+.draw-bar > button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.draw-bar > .draw-done {
+  background: var(--acid, #c7fe02);
+  color: #111;
+}
+/* Sticker: a few words, then a chip that places it when it is ready. */
+.sticker-ask {
+  display: grid;
+  gap: 12px;
+}
+.sticker-ask input {
+  min-height: 48px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  font-size: 16px;
+}
+.sticker-chip .spinner {
+  width: 18px;
+  height: 18px;
+}
+
+/* Zoom: out, a slider, in, and fit. Sits on the left of the row above the canvas. */
+.sx-zoombar {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 40px;
+  padding: 0 4px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+}
+.sx-zoombar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 18px;
+  background: transparent;
+  color: var(--ink);
+  font: 600 12px Inter, sans-serif;
+  cursor: pointer;
+}
+.sx-zoombar button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.sx-zoombar button:not(:disabled):hover {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.sx-zoombar input[type="range"] {
+  width: 96px;
+  accent-color: var(--acid, #c7fe02);
+}
+@media (max-width: 850px), (max-height: 500px) {
+  .sx-zoombar input[type="range"] {
+    display: none;
+  }
+}
+/* A mouse can scroll a zoomed canvas, so show thin scrollbars where there is one. */
+@media (pointer: fine) {
+  .sx-zoom[data-zoomed] {
+    scrollbar-width: thin;
+  }
+  .sx-zoom[data-zoomed]::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* The editor sizes the stage; older caps on the canvas itself must not shrink it inside. */
+.layered-editor .sx-stage .editor-canvas {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+/* A phone on its side: the tools stand upright on the right so the short screen goes to the canvas. */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sx-toolbox {
+    top: 62px;
+    bottom: auto;
+    left: auto;
+    right: calc(10px + env(safe-area-inset-right));
+    transform: none;
+    flex-direction: column;
+    gap: 1px;
+    padding: 4px;
+  }
+  .sx-toolbox .sx-tool {
+    width: 38px;
+    height: 38px;
+  }
+  .sx-stage,
+  .focused-editor[data-sheet] .sx-stage {
+    margin-top: 8px;
+  }
+  .sx-history {
+    top: 0;
+    right: auto;
+    left: -54px;
+    flex-direction: column;
+  }
+  .sx-zoombar {
+    display: none;
+  }
+}
+/* Style: the project's Open Design look, picked from cards of colour and type. */
+.sx-style-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.sx-style-current {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+.style-swatches {
+  display: inline-flex;
+}
+.style-swatches i {
+  width: 16px;
+  height: 16px;
+  margin-right: -4px;
+  border-radius: 50%;
+  border: 1.5px solid var(--paper);
+}
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  max-height: 64vh;
+  overflow-y: auto;
+  padding: 4px;
+}
+.style-card {
+  display: grid;
+  gap: 4px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+.style-card[aria-checked="true"] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 2px var(--acid, #c7fe02);
+}
+.style-card-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 92px;
+  border-radius: 11px;
+  border: 1px solid;
+}
+.style-card-art i {
+  font-style: normal;
+  font-size: 34px;
+  line-height: 1;
+}
+.style-card-art .style-swatches {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+}
+.style-none .style-card-art {
+  border-style: dashed;
+  border-color: var(--line);
+  color: var(--muted);
+}
+.style-card b {
+  font-size: 13px;
+  padding: 0 4px 4px;
+}
+/* A phone shows two cards a row, so many styles fit in one look. */
+@media (max-width: 600px) {
+  .style-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    max-height: 68dvh;
+  }
+  .style-card-art {
+    height: 80px;
+  }
+  .style-card-art > i {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .style-card b {
+    padding-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.style-credit {
+  margin: 10px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+/* A narrow canvas: the zoom bar drops its slider, and on a very narrow one it gives way to undo and history. */
+.sx-stage[data-narrow] .sx-zoombar input[type="range"] {
+  display: none;
+}
+.sx-stage[data-narrow="tight"] .sx-zoombar {
+  display: none;
+}
+
+/* Undo and redo: one clear pair above the canvas, on every screen, beside the versions. */
+.sx-history {
+  align-items: center;
+}
+.sx-undo-pair {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+.sx-history .sx-undo-pair button:not(:disabled) {
+  color: var(--ink);
+}
+.sx-history .sx-undo-pair button:disabled {
+  opacity: 0.28;
+  cursor: default;
+}
+.sx-history button:focus-visible {
+  outline: 2px solid var(--acid, #c7fe02);
+  outline-offset: 1px;
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .sx-undo-pair {
+    flex-direction: column;
+  }
+}
+
+/* The Text sheet's added lines: the words, and a bin to take one away. */
+.sx-text-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.sx-text-line textarea {
+  flex: 1;
+  min-width: 0;
+}
+.sx-text-line[data-selected] textarea {
+  border-color: var(--acid, #c7fe02);
+}
+.canvas-mark.selected {
+  outline: 2px solid #c7fe02;
+  outline-offset: 2px;
+}
+
+/* The assistant's designers: four icons and the working designer's name, in one fixed row under the head. */
+.sx-designers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sx-designers button {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.sx-designers button[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--acid, #d6ff3f) 22%, transparent);
+  border-color: var(--acid, #d6ff3f);
+}
+.sx-designers button[data-picked="true"] {
+  box-shadow: 0 0 0 2px var(--ink);
+}
+.sx-designers .sx-designer-name {
+  margin-inline-start: auto;
+  font: 600 13px/1.2 Inter, sans-serif;
+  white-space: nowrap;
+}

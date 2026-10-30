@@ -1,0 +1,71 @@
+{
+  "asOf": "2026-10-22T08:10:24.761Z",
+  "evidence": [
+    {
+      "name": "orbit-cuts",
+      "codec": "h264",
+      "width": 540,
+      "height": 720,
+      "duration": 4,
+      "fps": "24/1",
+      "frames": [
+        {
+          "at": 0.08,
+          "sha256": "e9d010b59d45dc39fe39fed6d2c7b16030427fd4362a0b50ef186929c3d24790"
+        },
+        {
+          "at": 0.32,
+          "sha256": "607d263b69ccba9ebb119cd3de6c299d93cf408d40baa98713679b1840c961b5"
+        },
+        {
+          "at": 0.58,
+          "sha256": "a1d243dbdcaeac18a933a609d87e66cfe7ce2635859d39998a03c57d77578b66"
+        }
+      ]
+    },
+    {
+      "name": "type-rush",
+      "codec": "h264",
+      "width": 540,
+      "height": 720,
+      "duration": 4,
+      "fps": "24/1",
+      "frames": [
+        {
+          "at": 0.08,
+          "sha256": "1562d9e5973f850e0fda8c26a5a91e1f51b108203a7b1d9b7be429934ea8b32b"
+        },
+        {
+          "at": 0.2,
+          "sha256": "f7b009fa0f01747b92d89e13d2ba0ef9ce402815a1a7b7e3a1938c7b8a3983a6"
+        },
+        {
+          "at": 0.36,
+          "sha256": "62fe11d832a1ca7d5a545626a0a0973fbdf22ba387e5cb2ee89e9a8fa0e1bfd6"
+        }
+      ]
+    },
+    {
+      "name": "signal-shuffle",
+      "codec": "h264",
+      "width": 540,
+      "height": 720,
+      "duration": 4,
+      "fps": "24/1",
+      "frames": [
+        {
+          "at": 0.08,
+          "sha256": "ef378b42a1cdcd04ad82349c9e353a9a540b13aed339ecc8ba09159e34280bdc"
+        },
+        {
+          "at": 0.32,
+          "sha256": "f458dbdd013feaaa0ea2b96f8db03b6aafa1da14eab4245f2b06cee7fcd0bbb7"
+        },
+        {
+          "at": 0.58,
+          "sha256": "b98683400f54c6cb27837e5f7cb1f1cae3b2c3939b9dee736e28dd1fb14837ab"
+        }
+      ]
+    }
+  ]
+}

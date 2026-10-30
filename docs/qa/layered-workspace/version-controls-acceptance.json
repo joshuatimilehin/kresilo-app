@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-22",
+  "automated": {
+    "unitTestsPassed": 71,
+    "pinnedRepositoryVerifierExit": 0,
+    "liveGuestChecksPassed": 18,
+    "script": "scripts/verify-version-controls.mjs",
+    "scope": [
+      "unavailable initial undo",
+      "saved edit navigation",
+      "stale revision conflict",
+      "redo after fresh read",
+      "new edit clears redo",
+      "abandoned snapshots retained",
+      "comments excluded",
+      "explicit restore undoable",
+      "guest isolation"
+    ]
+  },
+  "browserObservations": {
+    "widths": [
+      360,
+      390,
+      430
+    ],
+    "noHorizontalOverflow": true,
+    "buttonsMinimumHeight": 44,
+    "undoApprovedPromptEdit": true,
+    "redoRestoresExactLayerStyles": true,
+    "redoAfterReload": true,
+    "keyboardUndoRedo": true,
+    "shortcutLeavesPromptFieldAlone": true,
+    "savedVersionPreview": true,
+    "previewDoesNotMutateCanvas": true,
+    "focusReturnsToVersions": true
+  },
+  "limits": "Responsive browser checks; native mobile hardware untested. Existing project history limits remain."
+}

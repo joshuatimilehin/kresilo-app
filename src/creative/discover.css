@@ -1,0 +1,192 @@
+/* Discover: real projects on shelves. Same paper, ink and acid as the rest of the site. */
+.dx {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 36px;
+  margin-top: 8px;
+}
+/* Rows that swipe sideways must not widen the page: every section may shrink to the screen. */
+.dx > * {
+  min-width: 0;
+}
+.dx-chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+.dx-chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--line, rgb(128 128 128 / 0.35));
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+}
+.dx-chip i {
+  font-style: normal;
+  opacity: 0.6;
+}
+.dx-chip[aria-pressed="true"] {
+  background: var(--ink, #141412);
+  color: var(--paper, #f3f1ea);
+  border-color: var(--ink, #141412);
+}
+.dx-hero {
+  position: relative;
+  display: block;
+  border-radius: 22px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  height: min(62vw, 400px);
+  background: #111;
+}
+.dx-hero-media,
+.dx-hero-media .vis,
+.dx-hero-media .vis-gen,
+.dx-hero-media img {
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dx-hero-copy {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: grid;
+  gap: 6px;
+  padding: 28px 20px 20px;
+  background: linear-gradient(to top, #000c 0, #0000 100%);
+}
+.dx-hero-copy,
+.dx-hero-copy b,
+.dx-hero-copy .dx-by {
+  color: #fff;
+}
+.dx-hero-copy b {
+  font: 400 clamp(30px, 6vw, 56px) / 1 "Instrument Serif", Georgia, serif;
+}
+.dx-hero-copy > svg {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.dx-kind {
+  justify-self: start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--acid, #c7fe02);
+  color: #111;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.dx-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.dx-shelf header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.dx-shelf h2 {
+  margin: 0;
+  font: 400 clamp(26px, 4vw, 34px) / 1 "Instrument Serif", Georgia, serif;
+}
+.dx-more {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line, rgb(128 128 128 / 0.35));
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+}
+.dx-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 210px);
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 6px;
+}
+.dx-row > * {
+  scroll-snap-align: start;
+}
+.dx-boards {
+  grid-auto-columns: minmax(240px, 300px);
+}
+.dx-tile {
+  display: grid;
+  gap: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+.dx-tile b {
+  font-weight: 600;
+  font-size: 14px;
+}
+.dx-tile small {
+  opacity: 0.65;
+}
+.dx-media {
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #222;
+}
+.dx-media .vis,
+.dx-media img,
+.dx-media svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.dx-people {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.dx-who {
+  flex: none;
+  width: 92px;
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+.dx-who .creator-avatar {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 6px;
+  box-shadow: 0 0 0 2px var(--acid, #c7fe02);
+}
+.dx-who b {
+  font-size: 13px;
+  font-weight: 600;
+}
+.dx-who small {
+  opacity: 0.6;
+  font-size: 12px;
+}

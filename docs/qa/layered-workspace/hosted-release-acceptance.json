@@ -1,0 +1,65 @@
+{
+  "asOf": "2026-10-22",
+  "url": "https://kresilo.design-bakery.com",
+  "sourceCommit": "e106f4ffc173d69407d411e459b0a3979314bb15",
+  "sourcePR": 24,
+  "finalHead": "7bc72fc29d7ed4736fb0cf4d5d5f2aae1e894b03",
+  "testedCandidate": "af24903cb082f644177ad227e7dfb52b74287caa",
+  "requiredCI": {
+    "push": 39823474636,
+    "pullRequest": 39823544198,
+    "repositoryAndApplicationChecks": "success",
+    "gates": "success",
+    "runner": "MacBook Pro",
+    "unitTests": 71
+  },
+  "artifact": {
+    "entry": "/assets/index-Lflr5etL.js",
+    "sha256": "75008752b5bd57047804edca050182d16c578e7bef40d16770bb79c857923523",
+    "publicHTMLReferencesEntry": true,
+    "publicBytesMatchHostBuild": true,
+    "HTTPSStatus": 200
+  },
+  "runtime": {
+    "existingServicePreserved": true,
+    "port": 4390,
+    "previousReleaseRetained": true,
+    "rollbackConfigurationRetained": true,
+    "preflightStopped": true,
+    "researchWrites": false,
+    "databaseMigration": false,
+    "tunnelChanged": false
+  },
+  "verification": {
+    "preflightHistoryChecks": 18,
+    "publicHistoryChecks": 18,
+    "publicLayeredChecks": 25,
+    "liveModel": "ali/qwen3.8-omni-flash",
+    "layeredExport": {
+      "verified": true,
+      "codec": "h264",
+      "width": 540,
+      "height": 720,
+      "seconds": 2
+    },
+    "browser": {
+      "desktopProfileShortcut": true,
+      "mobileProfileShortcut": true,
+      "exactWordmark": "Kresilo",
+      "referenceToStudio": true,
+      "mobileDrawer": true,
+      "studioToOwnProfile": true,
+      "noOverflowAtWidths": [
+        320,
+        390
+      ]
+    }
+  },
+  "recovery": "Initial launchd bootstrap failed; previous service recovered, then normal service reload succeeded. Interruption duration was not measured. One Mac command-line HTML client returned 403; public Node requests and browser checks returned 200 and matched the accepted entry.",
+  "limits": [
+    "Native phone hardware untested",
+    "Google sign-in remains unconfigured",
+    "Private imported canvas media cannot be published",
+    "Automated layered test report alone does not establish deployment; identity evidence is recorded here"
+  ]
+}

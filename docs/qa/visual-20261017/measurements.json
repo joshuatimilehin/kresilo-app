@@ -1,0 +1,673 @@
+[
+  {
+    "label": "home",
+    "route": "/",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [
+      {
+        "w": 338,
+        "h": 424
+      },
+      {
+        "w": 260,
+        "h": 173
+      },
+      {
+        "w": 260,
+        "h": 173
+      },
+      {
+        "w": 260,
+        "h": 173
+      },
+      {
+        "w": 260,
+        "h": 173
+      },
+      {
+        "w": 260,
+        "h": 173
+      }
+    ],
+    "buttonCount": 4,
+    "buttonsMinHeight": 15.9,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "STUDIO",
+        "h": 15.9,
+        "w": 48.8,
+        "aria": null
+      },
+      {
+        "text": "Open the Studio",
+        "h": 38.8,
+        "w": 151.8,
+        "aria": null
+      },
+      {
+        "text": "HOW IT WORKS",
+        "h": 15.9,
+        "w": 97.7,
+        "aria": null
+      },
+      {
+        "text": "edit it",
+        "h": 15.9,
+        "w": 46.3,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\nSTUDIO\nINTERACTIVE PROTOTYPE\nCulture feeds creativity.\nCreativity produces culture.\n\nKresilo is a design workspace that treats references, proposals and decisions as one continuous record. This prototype explores creative continuity: gather with a reason, review a proposed direction, approve it, and keep the decision. Deterministic guidance is labelled truthfully \u2014 no external AI runs here.\n\nOpen the Studio\nHOW IT WORKS\nInteractive prototype\nSingle project\nOriginal Kresilo design study\nWORKING POSTER\nv1 \u00b7 seeded\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nfaithful editable recreation\nedit it\nFrom a reference you love to a decision you can keep.\nTHE WORKFLOW\n01\nGather a reference, with a reason\n\nPick a Salt Flats study tile and say why it matters. The reason is saved with the reference, not lost in a folder.\n\n02\nReview a proposed direction\n\nDeterministic prototype guidance suggests a direction and cites the saved references and reasons it used. Nothing is applied yet.\n\n03\nApprove it \u2014 or decline\n\nApproving changes the poster and records the decision. Declining leaves the artwork untouched.\n\n04\nKeep the decision\n\nThe decision, its sources, and a new version stay with the project, so the work remains explainable later.\n\nREFERENCES GATHERED\noriginal Kresilo design study\nLilac horizon with one figure\none figure gives scale\nIvory note\none figure gives scale, kept as a written note\nTeal / ivory / terracotta patchwork\ngrid rhythm\nCracked pale ground\nground texture\nTerracotta contour lines\nquiet, one warm note\nSALT FLATS \u00b7 ORIGINAL KRESILO DESIGN STUDY / FAITHFUL EDITABLE RECREATION\nThe references are the memory.\n\nEvery reference carries a source and a reason. Prototype guidance reads those reasons, cites the references it used, and returns a patch on a card \u2014 it never repaints the poster on its own.\n\n01\nGather\n\nReferences and their reasons live inside the project \u2014 the culture that feeds the work.\n\n02\nPropose\n\nGuidance returns a patch, a rationale and its citations. Nothing is applied without you.\n\n03\nApprove\n\nApproving writes the poster change, the decision, a new version, and a history entry together. That record is the culture produced.\n\nNo external model, image service or credit is called. Prototype guidance is rule-based and local.\nKRESILO \u00b7 DEMO",
+    "viewport": "1440x900",
+    "status": 200,
+    "console": [],
+    "pageerrors": []
+  },
+  {
+    "label": "demo",
+    "route": "/demo",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [],
+    "buttonCount": 2,
+    "buttonsMinHeight": 17.4,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "Back to homepage",
+        "h": 17.4,
+        "w": 100,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\n\nStorage is not connected to this runtime (503 STORAGE_SETUP_REQUIRED), so nothing can be saved yet. You can open the design preview explicitly \u2014 it is unsaved and in-memory only.\n\nOpen design preview\n\nDesign preview \u2014 changes are not saved. It is never shown as Saved.\n\nBack to homepage",
+    "viewport": "1440x900",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "label": "demo-preview",
+    "route": "/demo (preview)",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": {
+      "wrapperWidth": 210,
+      "posterWidth": 210,
+      "ratioToViewport": 0.146
+    },
+    "svgs": [
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 166,
+        "h": 110
+      },
+      {
+        "w": 166,
+        "h": 110
+      },
+      {
+        "w": 166,
+        "h": 110
+      }
+    ],
+    "buttonCount": 18,
+    "buttonsMinHeight": 17.8,
+    "toolbarButtons": [
+      {
+        "text": "Publish preview",
+        "h": 28,
+        "w": 123.7,
+        "aria": null
+      },
+      {
+        "text": "Propose",
+        "h": 25.5,
+        "w": 64.5,
+        "aria": null
+      }
+    ],
+    "buttonsUnder44": [
+      {
+        "text": "Kresilo",
+        "h": 19,
+        "w": 64.5,
+        "aria": null
+      },
+      {
+        "text": "Publish preview",
+        "h": 28,
+        "w": 123.7,
+        "aria": null
+      },
+      {
+        "text": "References",
+        "h": 32.9,
+        "w": 82.3,
+        "aria": null
+      },
+      {
+        "text": "Decisions",
+        "h": 32.9,
+        "w": 82.3,
+        "aria": null
+      },
+      {
+        "text": "Versions",
+        "h": 32.9,
+        "w": 82.3,
+        "aria": null
+      },
+      {
+        "text": "Add reference",
+        "h": 28,
+        "w": 227,
+        "aria": null
+      },
+      {
+        "text": "Geometry guides",
+        "h": 24,
+        "w": 28,
+        "aria": null
+      },
+      {
+        "text": "drawing n/a",
+        "h": 24,
+        "w": 91.4,
+        "aria": "Drawing tools are not available in this prototype"
+      },
+      {
+        "text": "Zoom out",
+        "h": 22,
+        "w": 26,
+        "aria": "Zoom out"
+      },
+      {
+        "text": "Zoom in",
+        "h": 22,
+        "w": 26,
+        "aria": "Zoom in"
+      },
+      {
+        "text": "terminal",
+        "h": 17.8,
+        "w": 57.6,
+        "aria": null
+      },
+      {
+        "text": "history (1)",
+        "h": 17.8,
+        "w": 74.7,
+        "aria": null
+      },
+      {
+        "text": "Propose",
+        "h": 25.5,
+        "w": 64.5,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\nSalt Flats Identity\none project \u00b7 5 references \u00b7 private\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nPublish preview\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nSALT FLATS IDENTITY\n5 ref \u00b7 2 dec\nReferences\nDecisions\nVersions\nLilac horizon with one figure\nSalt Flats study \u2014 reference 1\n\u201cone figure gives scale\u201d\nIvory note\nSalt Flats study \u2014 annotation\n\u201cone figure gives scale, kept as a written note\u201d\nTeal / ivory / terracotta patchwork\nSalt Flats study \u2014 reference 2\n\u201cgrid rhythm\u201d\nCracked pale ground\nSalt Flats study \u2014 reference 3\n\u201cground texture\u201d\nTerracotta contour lines\nSalt Flats study \u2014 reference 4\n\u201cquiet, one warm note\u201d\nAdd reference\nPoster v4 \u00b7 poster v1\ndrawing n/a\n100%\n\n\u201cone figure gives scale\u201d\n\n\u201cone figure gives scale, kept as a written note\u201d\n\n\u201cgrid rhythm\u201d\n\n\u201cground texture\u201d\n\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nWEBSITE PREVIEW \u00b7 PRIVATE\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\n\nSalt Flats Identity\n\nCOMMAND SURFACE\nterminal\nhistory (1)\nKresilo command surface \u2014 `help` for verbs, `status` for state.\nkresilo>\n10 verbs \u00b7 0 open\nCOPILOT\nNO MODEL CALLED\nprototype guidance\nPropose\n\nNo proposals yet. Guidance writes a patch on a card and waits \u2014 it never touches the live poster until you approve.\n\nEXTENSIONS\nFigma\nNot connected\nHiggsfield\nNot connected\nPaper\nNot connected\nClaude\nNot connected",
+    "viewport": "1440x900",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": [],
+    "previewClicked": true
+  },
+  {
+    "label": "home",
+    "route": "/",
+    "viewportWidth": 768,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 1024,
+    "clientHeight": 1024,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [
+      {
+        "w": 298,
+        "h": 374
+      },
+      {
+        "w": 219,
+        "h": 146
+      },
+      {
+        "w": 219,
+        "h": 146
+      },
+      {
+        "w": 219,
+        "h": 146
+      },
+      {
+        "w": 219,
+        "h": 146
+      },
+      {
+        "w": 219,
+        "h": 146
+      }
+    ],
+    "buttonCount": 4,
+    "buttonsMinHeight": 15.9,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "STUDIO",
+        "h": 15.9,
+        "w": 48.8,
+        "aria": null
+      },
+      {
+        "text": "Open the Studio",
+        "h": 38.8,
+        "w": 151.8,
+        "aria": null
+      },
+      {
+        "text": "HOW IT WORKS",
+        "h": 15.9,
+        "w": 97.7,
+        "aria": null
+      },
+      {
+        "text": "edit it",
+        "h": 15.9,
+        "w": 46.3,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\nSTUDIO\nINTERACTIVE PROTOTYPE\nCulture feeds creativity.\nCreativity produces culture.\n\nKresilo is a design workspace that treats references, proposals and decisions as one continuous record. This prototype explores creative continuity: gather with a reason, review a proposed direction, approve it, and keep the decision. Deterministic guidance is labelled truthfully \u2014 no external AI runs here.\n\nOpen the Studio\nHOW IT WORKS\nInteractive prototype\nSingle project\nOriginal Kresilo design study\nWORKING POSTER\nv1 \u00b7 seeded\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nfaithful editable recreation\nedit it\nFrom a reference you love to a decision you can keep.\nTHE WORKFLOW\n01\nGather a reference, with a reason\n\nPick a Salt Flats study tile and say why it matters. The reason is saved with the reference, not lost in a folder.\n\n02\nReview a proposed direction\n\nDeterministic prototype guidance suggests a direction and cites the saved references and reasons it used. Nothing is applied yet.\n\n03\nApprove it \u2014 or decline\n\nApproving changes the poster and records the decision. Declining leaves the artwork untouched.\n\n04\nKeep the decision\n\nThe decision, its sources, and a new version stay with the project, so the work remains explainable later.\n\nREFERENCES GATHERED\noriginal Kresilo design study\nLilac horizon with one figure\none figure gives scale\nIvory note\none figure gives scale, kept as a written note\nTeal / ivory / terracotta patchwork\ngrid rhythm\nCracked pale ground\nground texture\nTerracotta contour lines\nquiet, one warm note\nSALT FLATS \u00b7 ORIGINAL KRESILO DESIGN STUDY / FAITHFUL EDITABLE RECREATION\nThe references are the memory.\n\nEvery reference carries a source and a reason. Prototype guidance reads those reasons, cites the references it used, and returns a patch on a card \u2014 it never repaints the poster on its own.\n\n01\nGather\n\nReferences and their reasons live inside the project \u2014 the culture that feeds the work.\n\n02\nPropose\n\nGuidance returns a patch, a rationale and its citations. Nothing is applied without you.\n\n03\nApprove\n\nApproving writes the poster change, the decision, a new version, and a history entry together. That record is the culture produced.\n\nNo external model, image service or credit is called. Prototype guidance is rule-based and local.\nKRESILO \u00b7 DEMO",
+    "viewport": "768x1024",
+    "status": 200,
+    "console": [],
+    "pageerrors": []
+  },
+  {
+    "label": "demo",
+    "route": "/demo",
+    "viewportWidth": 768,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 1024,
+    "clientHeight": 1024,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [],
+    "buttonCount": 2,
+    "buttonsMinHeight": 17.4,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "Back to homepage",
+        "h": 17.4,
+        "w": 100,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\n\nStorage is not connected to this runtime (503 STORAGE_SETUP_REQUIRED), so nothing can be saved yet. You can open the design preview explicitly \u2014 it is unsaved and in-memory only.\n\nOpen design preview\n\nDesign preview \u2014 changes are not saved. It is never shown as Saved.\n\nBack to homepage",
+    "viewport": "768x1024",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "label": "demo-preview",
+    "route": "/demo (preview)",
+    "viewportWidth": 768,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 1024,
+    "clientHeight": 1024,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": {
+      "wrapperWidth": 168,
+      "posterWidth": 168,
+      "ratioToViewport": 0.219
+    },
+    "svgs": [
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 55,
+        "h": 36
+      },
+      {
+        "w": 98,
+        "h": 65
+      },
+      {
+        "w": 98,
+        "h": 65
+      },
+      {
+        "w": 98,
+        "h": 65
+      }
+    ],
+    "buttonCount": 18,
+    "buttonsMinHeight": 17.8,
+    "toolbarButtons": [
+      {
+        "text": "Publish preview",
+        "h": 44,
+        "w": 123.7,
+        "aria": null
+      },
+      {
+        "text": "Propose",
+        "h": 44,
+        "w": 64.5,
+        "aria": null
+      }
+    ],
+    "buttonsUnder44": [
+      {
+        "text": "Kresilo",
+        "h": 19,
+        "w": 64.5,
+        "aria": null
+      },
+      {
+        "text": "References",
+        "h": 32.9,
+        "w": 71.6,
+        "aria": null
+      },
+      {
+        "text": "Decisions",
+        "h": 32.9,
+        "w": 63.6,
+        "aria": null
+      },
+      {
+        "text": "Versions",
+        "h": 32.9,
+        "w": 58.3,
+        "aria": null
+      },
+      {
+        "text": "terminal",
+        "h": 17.8,
+        "w": 57.6,
+        "aria": null
+      },
+      {
+        "text": "history (1)",
+        "h": 17.8,
+        "w": 74.7,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\nSalt Flats Identity\none project \u00b7 5 references \u00b7 private\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nPublish preview\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nSALT FLATS IDENTITY\n5 ref \u00b7 2 dec\nReferences\nDecisions\nVersions\nLilac horizon with one figure\nSalt Flats study \u2014 reference 1\n\u201cone figure gives scale\u201d\nIvory note\nSalt Flats study \u2014 annotation\n\u201cone figure gives scale, kept as a written note\u201d\nTeal / ivory / terracotta patchwork\nSalt Flats study \u2014 reference 2\n\u201cgrid rhythm\u201d\nCracked pale ground\nSalt Flats study \u2014 reference 3\n\u201cground texture\u201d\nTerracotta contour lines\nSalt Flats study \u2014 reference 4\n\u201cquiet, one warm note\u201d\nAdd reference\nPoster v4 \u00b7 poster v1\n100%\n\n\u201cone figure gives scale\u201d\n\n\u201cone figure gives scale, kept as a written note\u201d\n\n\u201cgrid rhythm\u201d\n\n\u201cground texture\u201d\n\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nWEBSITE PREVIEW \u00b7 PRIVATE\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\n\nSalt Flats Identity\n\nCOMMAND SURFACE\nterminal\nhistory (1)\nKresilo command surface \u2014 `help` for verbs, `status` for state.\nkresilo>\n10 verbs \u00b7 0 open\nCOPILOT\nNO MODEL CALLED\nprototype guidance\nPropose\n\nNo proposals yet. Guidance writes a patch on a card and waits \u2014 it never touches the live poster until you approve.\n\nEXTENSIONS\nFigma\nNot connected\nHiggsfield\nNot connected\nPaper\nNot connected\nClaude\nNot connected",
+    "viewport": "768x1024",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": [],
+    "previewClicked": true
+  },
+  {
+    "label": "home",
+    "route": "/",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 844,
+    "clientHeight": 844,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [
+      {
+        "w": 348,
+        "h": 437
+      },
+      {
+        "w": 167,
+        "h": 111
+      },
+      {
+        "w": 167,
+        "h": 111
+      },
+      {
+        "w": 167,
+        "h": 111
+      },
+      {
+        "w": 167,
+        "h": 111
+      },
+      {
+        "w": 167,
+        "h": 111
+      }
+    ],
+    "buttonCount": 3,
+    "buttonsMinHeight": 15.9,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "Open the Studio",
+        "h": 38.8,
+        "w": 151.8,
+        "aria": null
+      },
+      {
+        "text": "HOW IT WORKS",
+        "h": 15.9,
+        "w": 97.7,
+        "aria": null
+      },
+      {
+        "text": "edit it",
+        "h": 15.9,
+        "w": 46.3,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\nINTERACTIVE PROTOTYPE\nCulture feeds creativity.\nCreativity produces culture.\n\nKresilo is a design workspace that treats references, proposals and decisions as one continuous record. This prototype explores creative continuity: gather with a reason, review a proposed direction, approve it, and keep the decision. Deterministic guidance is labelled truthfully \u2014 no external AI runs here.\n\nOpen the Studio\nHOW IT WORKS\nInteractive prototype\nSingle project\nOriginal Kresilo design study\nWORKING POSTER\nv1 \u00b7 seeded\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nfaithful editable recreation\nedit it\nFrom a reference you love to a decision you can keep.\n01\nGather a reference, with a reason\n\nPick a Salt Flats study tile and say why it matters. The reason is saved with the reference, not lost in a folder.\n\n02\nReview a proposed direction\n\nDeterministic prototype guidance suggests a direction and cites the saved references and reasons it used. Nothing is applied yet.\n\n03\nApprove it \u2014 or decline\n\nApproving changes the poster and records the decision. Declining leaves the artwork untouched.\n\n04\nKeep the decision\n\nThe decision, its sources, and a new version stay with the project, so the work remains explainable later.\n\nREFERENCES GATHERED\noriginal Kresilo design study\nLilac horizon with one figure\none figure gives scale\nIvory note\none figure gives scale, kept as a written note\nTeal / ivory / terracotta patchwork\ngrid rhythm\nCracked pale ground\nground texture\nTerracotta contour lines\nquiet, one warm note\nSALT FLATS \u00b7 ORIGINAL KRESILO DESIGN STUDY / FAITHFUL EDITABLE RECREATION\nThe references are the memory.\n\nEvery reference carries a source and a reason. Prototype guidance reads those reasons, cites the references it used, and returns a patch on a card \u2014 it never repaints the poster on its own.\n\n01\nGather\n\nReferences and their reasons live inside the project \u2014 the culture that feeds the work.\n\n02\nPropose\n\nGuidance returns a patch, a rationale and its citations. Nothing is applied without you.\n\n03\nApprove\n\nApproving writes the poster change, the decision, a new version, and a history entry together. That record is the culture produced.\n\nNo external model, image service or credit is called. Prototype guidance is rule-based and local.\nKRESILO \u00b7 DEMO",
+    "viewport": "390x844",
+    "status": 200,
+    "console": [],
+    "pageerrors": []
+  },
+  {
+    "label": "demo",
+    "route": "/demo",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 844,
+    "clientHeight": 844,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": null,
+    "svgs": [],
+    "buttonCount": 2,
+    "buttonsMinHeight": 17.4,
+    "toolbarButtons": [],
+    "buttonsUnder44": [
+      {
+        "text": "Back to homepage",
+        "h": 17.4,
+        "w": 100,
+        "aria": null
+      }
+    ],
+    "bodyText": "Kresilo\n\nStorage is not connected to this runtime (503 STORAGE_SETUP_REQUIRED), so nothing can be saved yet. You can open the design preview explicitly \u2014 it is unsaved and in-memory only.\n\nOpen design preview\n\nDesign preview \u2014 changes are not saved. It is never shown as Saved.\n\nBack to homepage",
+    "viewport": "390x844",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": []
+  },
+  {
+    "label": "demo-preview",
+    "route": "/demo (preview)",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 844,
+    "clientHeight": 844,
+    "horizontalOverflow": false,
+    "overflowDelta": 0,
+    "poster": {
+      "wrapperWidth": 0,
+      "posterWidth": 0,
+      "ratioToViewport": 0
+    },
+    "svgs": [
+      {
+        "w": 291,
+        "h": 365
+      }
+    ],
+    "buttonCount": 12,
+    "buttonsMinHeight": 16,
+    "toolbarButtons": [
+      {
+        "text": "Publish",
+        "h": 44,
+        "w": 80.3,
+        "aria": null
+      },
+      {
+        "text": "Folder",
+        "h": 49.5,
+        "w": 70,
+        "aria": null
+      },
+      {
+        "text": "Proposals",
+        "h": 49.5,
+        "w": 70,
+        "aria": null
+      },
+      {
+        "text": "Decide",
+        "h": 49.5,
+        "w": 70,
+        "aria": null
+      },
+      {
+        "text": "Command",
+        "h": 49.5,
+        "w": 70,
+        "aria": null
+      },
+      {
+        "text": "History",
+        "h": 49.5,
+        "w": 70,
+        "aria": null
+      },
+      {
+        "text": "Propose",
+        "h": 44,
+        "w": 64.5,
+        "aria": null
+      }
+    ],
+    "buttonsUnder44": [
+      {
+        "text": "",
+        "h": 16,
+        "w": 16,
+        "aria": null
+      }
+    ],
+    "bodyText": "Salt Flats Identity\none project \u00b7 5 references \u00b7 private\nPublish\nDESIGN PREVIEW \u2014 CHANGES ARE NOT SAVED\nDesign preview \u2014 changes are not saved \u2014 this in-memory preview is not a saved project.\nPoster v4 \u00b7 poster v1\n100%\nACTIVE POSTER\nSALT FLATS IDENTITY\nSalt\nSALT FLATS IDENTITY\nPOSTER V4\nFolder\nProposals\nDecide\nCommand\nHistory\nAsk for a change \u2014 guidance writes a proposal card\nPropose\nDesign preview \u2014 changes are not saved",
+    "viewport": "390x844",
+    "status": 200,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 503 (storage not configured)"
+      }
+    ],
+    "pageerrors": [],
+    "previewClicked": true
+  }
+]

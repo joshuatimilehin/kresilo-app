@@ -1,0 +1,47 @@
+# Dependencies and frameworks
+node_modules/
+.next/
+.nuxt/
+.output/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+credentials.json
+service-account*.json
+
+# Local runtime / databases / caches
+*.sqlite
+*.sqlite3
+*.db
+*.log
+.cache/
+.DS_Store
+Thumbs.db
+
+# Raw private asset import staging (only owner-cleared optimized public assets may be tracked)
+assets-private/
+private-assets/
+asset-staging/
+drive-downloads/
+**/.secrets/
+
+# Repository governance runtime
+.venv/
+__pycache__/
+*.pyc
+
+# Temporary working copies made by parallel agents; never part of the repository
+.claude/worktrees/

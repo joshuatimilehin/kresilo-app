@@ -1,0 +1,97 @@
+[
+ {
+  "id": "studio",
+  "name": "Studio",
+  "tagline": "Black canvas with electric-yellow type; high-voltage design studio aesthetic.",
+  "mood": [
+   "electric",
+   "bold",
+   "graphic",
+   "design-led",
+   "high-contrast"
+  ],
+  "palette": [
+   "#1c1c1c",
+   "#242422",
+   "#f5d200"
+  ],
+  "credit": "Template by Zara Zhang (MIT), from Open Design"
+ },
+ {
+  "id": "monochrome",
+  "name": "Monochrome",
+  "tagline": "Ivory ledger paper with all-black type; Lora serif headlines, Jost body, no color at all.",
+  "mood": [
+   "restrained",
+   "literary",
+   "archival",
+   "ledger"
+  ],
+  "palette": [
+   "#fafadf",
+   "#f2f2d2",
+   "#f5f0e4",
+   "#1a1a16",
+   "#5e5e54"
+  ],
+  "credit": "Template by Zara Zhang (MIT), from Open Design"
+ },
+ {
+  "id": "signal",
+  "name": "Signal",
+  "tagline": "Deep navy canvas with bone paper and a single muted-gold accent; institutional with quiet weight.",
+  "mood": [
+   "institutional",
+   "trustworthy",
+   "considered",
+   "weighty"
+  ],
+  "palette": [
+   "#1c2644",
+   "#232f55",
+   "#e2dcd0",
+   "#c8a870",
+   "#f0ece3"
+  ],
+  "credit": "Template by Zara Zhang (MIT), from Open Design"
+ },
+ {
+  "id": "grove",
+  "name": "Grove",
+  "tagline": "Forest-green canvas with cream type, classical Playfair serifs, and a single rust accent.",
+  "mood": [
+   "organic",
+   "considered",
+   "warm",
+   "literary",
+   "natural"
+  ],
+  "palette": [
+   "#192b1b",
+   "#1e3221",
+   "#d4cfbf",
+   "#c8524a",
+   "#e8e4d6"
+  ],
+  "credit": "Template by Zara Zhang (MIT), from Open Design"
+ },
+ {
+  "id": "broadside",
+  "name": "Broadside",
+  "tagline": "Dark editorial canvas with a single fire orange accent and bilingual Latin/Chinese type stack.",
+  "mood": [
+   "editorial",
+   "dramatic",
+   "loud",
+   "newspaper"
+  ],
+  "palette": [
+   "#111111",
+   "#1a1a18",
+   "#f0ece5",
+   "#e85d26",
+   "#282826"
+  ],
+  "credit": "Template by Zara Zhang (MIT), from Open Design"
+ }
+]

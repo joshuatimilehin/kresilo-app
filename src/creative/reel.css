@@ -1,0 +1,564 @@
+/* The work reel: full screen, one work at a time, controls that get out of the way. */
+.reel {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: #0b0c0b;
+  color: #fff;
+}
+body:has(.reel) .theme-toggle,
+body:has(.reel) .mobile-navigation {
+  display: none;
+}
+.reel-scroller {
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.reel-slide {
+  position: relative;
+  height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.reel-row {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.reel-row::-webkit-scrollbar,
+.reel-scroller::-webkit-scrollbar {
+  display: none;
+}
+.reel-card {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+.reel-zoom {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  touch-action: pan-x pan-y;
+}
+.reel-zoom[data-zoomed] {
+  touch-action: none;
+  cursor: grab;
+}
+.reel-zoom-inner {
+  width: min(100vw, calc(100dvh * 0.75));
+  max-height: 100dvh;
+  transform-origin: center;
+  transition: transform 0.08s linear;
+}
+.reel-zoom-inner > *,
+.reel-zoom-inner img,
+.reel-zoom-inner video,
+.reel-zoom-inner svg {
+  width: 100%;
+  max-height: 100dvh;
+  display: block;
+  object-fit: contain;
+}
+.reel-overlay,
+.reel-top {
+  transition: opacity 0.25s ease;
+}
+.reel-overlay[data-shown="false"],
+.reel-top[data-shown="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.reel-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, #000a 0, #0000 34%), linear-gradient(to bottom, #0006 0, #0000 16%);
+}
+.reel-overlay > * {
+  pointer-events: auto;
+}
+.reel-top {
+  position: fixed;
+  top: calc(10px + env(safe-area-inset-top));
+  left: 10px;
+  z-index: 85;
+}
+.reel-icon,
+.reel-rail button {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: #0005;
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+.reel-rail {
+  position: absolute;
+  right: 12px;
+  bottom: calc(96px + env(safe-area-inset-bottom));
+  display: grid;
+  gap: 14px;
+}
+.reel-rail button[aria-pressed="true"] {
+  color: #ff4d6d;
+}
+.reel-byline {
+  position: absolute;
+  left: 16px;
+  right: 84px;
+  bottom: calc(28px + env(safe-area-inset-bottom));
+  display: grid;
+  gap: 6px;
+  text-shadow: 0 1px 6px #0009;
+}
+.reel-maker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.reel-byline strong {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 22px;
+  font-weight: 400;
+}
+.reel-dots {
+  position: absolute;
+  top: calc(18px + env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+.reel-dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #fff6;
+  transition: width 0.2s;
+}
+.reel-dots i[data-story] {
+  background: #d6ff3f88;
+}
+.reel-dots i[data-on] {
+  width: 18px;
+  background: #fff;
+}
+.reel-end {
+  height: 1px;
+}
+.reel-info {
+  position: fixed;
+  z-index: 90;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  max-height: 60dvh;
+  overflow: auto;
+  padding: 18px 18px 22px;
+  border-radius: 22px;
+  background: var(--paper, #161816);
+  color: var(--ink, #fff);
+  border: 1px solid var(--line, #fff2);
+  display: grid;
+  gap: 10px;
+  animation: sx-rise 0.18s ease-out;
+}
+.reel-info h2 {
+  margin: 0;
+  font-size: 28px;
+}
+.reel-info-close {
+  justify-self: end;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  margin-bottom: -46px;
+}
+.reel-collections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+@media (min-width: 851px) {
+  .reel-info {
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+    width: 380px;
+  }
+  .reel-rail {
+    right: calc(50% - min(50vw, 37.5dvh) - 72px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reel-zoom-inner,
+  .reel-overlay,
+  .reel-top {
+    transition: none;
+  }
+}
+.reel-rail button {
+  position: relative;
+}
+.reel-count {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--acid, #d6ff3f);
+  color: #111;
+  font: 600 11px/18px Inter, sans-serif;
+  font-style: normal;
+}
+.reel-comments {
+  gap: 12px;
+}
+.reel-comments header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reel-comments header span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.reel-comments header button,
+.reel-comments li button,
+.reel-comments form button {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+}
+.reel-comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.reel-comments li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.reel-comments li > i {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--ink, #fff) 12%, transparent);
+  font-style: normal;
+  font-size: 14px;
+}
+.reel-comments li > div {
+  flex: 1;
+  min-width: 0;
+}
+.reel-comments li strong {
+  font-size: 14px;
+  margin-right: 8px;
+}
+.reel-comments li time {
+  font-size: 12px;
+  color: var(--muted, #fff9);
+}
+.reel-comments li p {
+  margin: 2px 0 0;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+.reel-comments form {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--line, #fff3);
+  border-radius: 100px;
+  padding: 2px 4px 2px 14px;
+}
+.reel-comments form input,
+html[data-kresilo-theme="dark"] .reel-comments form input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 16px;
+  padding: 8px 0;
+}
+.reel-comments form button:not(:disabled) {
+  background: var(--acid, #d6ff3f);
+  color: #111;
+}
+.reel-who {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.reel-rail .save-toggle[aria-pressed="true"] {
+  color: var(--acid, #c7fe02);
+}
+/* A phone on its side: the action rail packs tighter and sits mid-height so all of it fits. */
+@media (max-height: 500px) {
+  .reel-rail {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    gap: 6px;
+  }
+  .reel-rail button {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* The action rail reads as solid buttons on any picture or on the dark page beside it. */
+.reel-rail button,
+.reel-rail .save-toggle {
+  background: rgb(20 20 20 / 0.55);
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 0.18);
+}
+.reel-rail button:hover,
+.reel-rail .save-toggle:hover {
+  background: rgb(255 255 255 / 0.2);
+}
+/* Swiping through works should never select text. */
+.reel {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.reel :is(input, textarea) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+/* The last card of a project's row: the whole case study, more from the maker, similar projects. */
+.reel-next {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  padding: 88px 20px 140px;
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.reel-next h3 {
+  margin: 0 0 10px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+.reel-next-case {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--acid, #c7fe02);
+  color: #111;
+}
+.reel-next-case b {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+}
+.reel-next-case span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.reel-next-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.reel-next-tile {
+  display: grid;
+  gap: 5px;
+  color: #fff;
+}
+.reel-next-tile b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.reel-next-media {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222;
+}
+.reel-next-media .vis,
+.reel-next-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reel-next-kind {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+@media (min-width: 851px) {
+  .reel-next {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .reel-next-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.reel-comments li > .creator-avatar {
+  width: 32px;
+  height: 32px;
+  flex: none;
+}
+/* A story slide tells its part of the project in a short paragraph under the title. */
+.reel-story-text {
+  display: grid;
+  gap: 4px;
+  max-width: 560px;
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgb(255 255 255 / 0.92);
+  text-shadow: 0 1px 8px rgb(0 0 0 / 0.6);
+}
+.reel-story-text small {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--acid, #c7fe02);
+}
+/* On a wide screen the maker and title line up with the artwork's left edge, not the window's. */
+@media (min-width: 851px) and (min-height: 501px) {
+  .reel-byline {
+    left: max(16px, calc(50% - min(50vw, 37.5dvh) + 16px));
+    right: auto;
+    max-width: min(720px, 75dvh);
+  }
+}
+
+/* The way to the whole project: a round thumbnail of what you are looking at, like a profile picture, ringed in acid. */
+.reel-rail .reel-open {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  display: block;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--acid, #c7fe02), 0 2px 10px #0006;
+}
+.reel-open-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #222;
+}
+.reel-open-thumb .vis,
+.reel-open-thumb img,
+.reel-open-thumb svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.reel-open-badge {
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--acid, #c7fe02);
+  color: #111;
+}
+.reel-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+/* Dark type on the acid card so it reads. */
+.reel-next .reel-next-case,
+.reel-next .reel-next-case * {
+  color: #111;
+}
+.reel-next .reel-next-case .reel-next-kind {
+  color: #111b;
+}
+
+/* The category of the project, on its first slide: Branding, Photography, Editorial... */
+.reel-kind {
+  justify-self: start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #fff2;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* A story slide with no picture of its own: words alone. */
+.reel-textcard {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: 96px 28px 140px;
+  background: radial-gradient(120% 90% at 20% 10%, #1d2412 0, #0b0c0b 70%);
+  color: #fff;
+}
+.reel-textcard small {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--acid, #c7fe02);
+}
+.reel-textcard p {
+  margin: 0;
+  max-width: 28ch;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(28px, 6vw, 44px);
+  line-height: 1.12;
+}

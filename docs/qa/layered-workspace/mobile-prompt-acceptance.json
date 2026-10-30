@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-22",
+  "kind": "Responsive browser observations; native phone hardware untested",
+  "checks": [
+    {
+      "controls": [
+        {
+          "label": "Open layers and assets",
+          "right": 64.85000228881836,
+          "width": 44.85000228881836,
+          "x": 20
+        },
+        {
+          "label": "Text",
+          "right": 109.8499984741211,
+          "width": 45,
+          "x": 64.8499984741211
+        },
+        {
+          "label": "Text colour",
+          "right": 178.6374969482422,
+          "width": 68.7874984741211,
+          "x": 109.8499984741211
+        },
+        {
+          "label": "Motion",
+          "right": 232.6999969482422,
+          "width": 54.0625,
+          "x": 178.6374969482422
+        },
+        {
+          "label": "More",
+          "right": 280.79999923706055,
+          "width": 48.10000228881836,
+          "x": 232.6999969482422
+        },
+        {
+          "label": "Switch to light mode",
+          "right": 324.8000183105469,
+          "width": 44,
+          "x": 280.8000183105469
+        }
+      ],
+      "overflow": false,
+      "send": {
+        "height": 44,
+        "uncovered": true,
+        "width": 44
+      },
+      "width": 360
+    },
+    {
+      "controls": [
+        {
+          "label": "Open layers and assets",
+          "right": 69.875,
+          "width": 49.875,
+          "x": 20
+        },
+        {
+          "label": "Text",
+          "right": 119.91250228881836,
+          "width": 50.03750228881836,
+          "x": 69.875
+        },
+        {
+          "label": "Text colour",
+          "right": 197.1875,
+          "width": 77.2750015258789,
+          "x": 119.9124984741211
+        },
+        {
+          "label": "Motion",
+          "right": 257.61249923706055,
+          "width": 60.42499923706055,
+          "x": 197.1875
+        },
+        {
+          "label": "More",
+          "right": 311.2000198364258,
+          "width": 53.587501525878906,
+          "x": 257.6125183105469
+        },
+        {
+          "label": "Switch to light mode",
+          "right": 355.20001220703125,
+          "width": 44,
+          "x": 311.20001220703125
+        }
+      ],
+      "overflow": false,
+      "send": {
+        "height": 44,
+        "uncovered": true,
+        "width": 44
+      },
+      "width": 390
+    },
+    {
+      "controls": [
+        {
+          "label": "Open layers and assets",
+          "right": 73,
+          "width": 53,
+          "x": 20
+        },
+        {
+          "label": "Text",
+          "right": 130.4000015258789,
+          "width": 53.1875,
+          "x": 77.2125015258789
+        },
+        {
+          "label": "Text colour",
+          "right": 217.1625061035156,
+          "width": 82.55000305175781,
+          "x": 134.6125030517578
+        },
+        {
+          "label": "Motion",
+          "right": 285.7624969482422,
+          "width": 64.375,
+          "x": 221.3874969482422
+        },
+        {
+          "label": "More",
+          "right": 346.9875068664551,
+          "width": 57.01250076293945,
+          "x": 289.9750061035156
+        },
+        {
+          "label": "Switch to light mode",
+          "right": 395.2000122070313,
+          "width": 44,
+          "x": 351.20001220703125
+        }
+      ],
+      "overflow": false,
+      "send": {
+        "height": 44,
+        "uncovered": true,
+        "width": 44
+      },
+      "width": 430
+    }
+  ],
+  "drawer": {
+    "opensUpward": true,
+    "iconsAndNames": true,
+    "selectionDismisses": true,
+    "outsideDismisses": true,
+    "closeDismisses": true,
+    "focusReturnsToLauncher": true
+  },
+  "prompt": {
+    "text": "Rotate this layer to 20 degrees and use a cool filter",
+    "target": "Tidal lines",
+    "provider": "ali/qwen3.8-omni-flash",
+    "reportedCostUSD": 0.00001,
+    "inertBeforeApproval": true,
+    "approved": true,
+    "refreshPreservedRotation": 20,
+    "refreshPreservedFilter": "cool",
+    "unrelatedGardenGridUnchanged": true
+  },
+  "themeSwitchesBothWays": true,
+  "desktopSidebarVisible": true
+}

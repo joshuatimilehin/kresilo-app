@@ -1,0 +1,304 @@
+{
+  "manifestVersion": 1,
+  "generatedFrom": "src/models/index.ts",
+  "note": "Generated. Do not edit. Run `pnpm models:manifest`.",
+  "models": [
+    {
+      "name": "ActivityEvent",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 52,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.activity_events"
+      },
+      "file": "src/models/activity-event.ts"
+    },
+    {
+      "name": "Actor",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 41,
+      "storage": {
+        "kind": "embedded",
+        "location": "AuthorshipEvent.actor, ActivityEvent.actor"
+      },
+      "file": "src/models/actor.ts"
+    },
+    {
+      "name": "AiSettings",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 51,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.ai (today: Project.aiApply on a branch)"
+      },
+      "file": "src/models/ai-settings.ts"
+    },
+    {
+      "name": "Asset",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 39,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.assets"
+      },
+      "file": "src/models/asset.ts"
+    },
+    {
+      "name": "AuthorshipEvent",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 50,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.authorship_events"
+      },
+      "file": "src/models/authorship-event.ts"
+    },
+    {
+      "name": "BrandTemplate",
+      "version": "0.2.0",
+      "status": "planned",
+      "issue": 47,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.brand_templates"
+      },
+      "file": "src/models/brand-template.ts"
+    },
+    {
+      "name": "CaseStudy",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 37,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.case_studies"
+      },
+      "file": "src/models/case-study.ts"
+    },
+    {
+      "name": "Collaborator",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 36,
+      "storage": {
+        "kind": "extend-table",
+        "location": "kresilo_demo.creative_members (additive columns)"
+      },
+      "file": "src/models/collaborator.ts"
+    },
+    {
+      "name": "Collection",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 48,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.collections"
+      },
+      "file": "src/models/collection.ts"
+    },
+    {
+      "name": "Comment",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 36,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.comments[]"
+      },
+      "file": "src/models/comment.ts"
+    },
+    {
+      "name": "Credit",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 36,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.credits[]"
+      },
+      "file": "src/models/credit.ts"
+    },
+    {
+      "name": "CulturalContext",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 48,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.cultural_contexts"
+      },
+      "file": "src/models/cultural-context.ts"
+    },
+    {
+      "name": "Deck",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 47,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.decks (slides as jsonb)"
+      },
+      "file": "src/models/deck.ts"
+    },
+    {
+      "name": "FlowState",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 40,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.flow (today: Project.mode)"
+      },
+      "file": "src/models/flow-state.ts"
+    },
+    {
+      "name": "Invitation",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 52,
+      "storage": {
+        "kind": "extend-table",
+        "location": "kresilo_demo.creative_invites (additive columns)"
+      },
+      "file": "src/models/invitation.ts"
+    },
+    {
+      "name": "LayerEffects",
+      "version": "1.0.0",
+      "status": "live",
+      "issue": 53,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.art.layers[] (crop, mask, shadow, blend, flipX, flipY, adjust)"
+      },
+      "file": "src/models/layer-effects.ts"
+    },
+    {
+      "name": "LayerRole",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 53,
+      "storage": {
+        "kind": "project-document",
+        "location": "Project.art.layers[].role and .aiLock"
+      },
+      "file": "src/models/layer-role.ts"
+    },
+    {
+      "name": "LibraryAsset",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 37,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.library_assets"
+      },
+      "file": "src/models/library-asset.ts"
+    },
+    {
+      "name": "LineageEdge",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 39,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.lineage_edges"
+      },
+      "file": "src/models/lineage-edge.ts"
+    },
+    {
+      "name": "LocaleString",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 49,
+      "storage": {
+        "kind": "embedded",
+        "location": "Story, CulturalContext, Maker and Deck text fields"
+      },
+      "file": "src/models/locale-string.ts"
+    },
+    {
+      "name": "Maker",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 38,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.makers"
+      },
+      "file": "src/models/maker.ts"
+    },
+    {
+      "name": "ShareCard",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 43,
+      "storage": {
+        "kind": "publication-document",
+        "location": "Publication.shareCards[]"
+      },
+      "file": "src/models/share-card.ts"
+    },
+    {
+      "name": "Short",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 37,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.shorts"
+      },
+      "file": "src/models/short.ts"
+    },
+    {
+      "name": "Story",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 37,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.stories (slides as jsonb)"
+      },
+      "file": "src/models/story.ts"
+    },
+    {
+      "name": "StyleGuide",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 47,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.style_guides"
+      },
+      "file": "src/models/style-guide.ts"
+    },
+    {
+      "name": "TasteProfile",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 51,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.taste_profiles"
+      },
+      "file": "src/models/taste-profile.ts"
+    },
+    {
+      "name": "UsageEvent",
+      "version": "0.1.0",
+      "status": "planned",
+      "issue": 52,
+      "storage": {
+        "kind": "new-table",
+        "location": "kresilo_demo.usage_events"
+      },
+      "file": "src/models/usage-event.ts"
+    }
+  ]
+}

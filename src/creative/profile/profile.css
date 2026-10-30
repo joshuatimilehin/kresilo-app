@@ -1,0 +1,586 @@
+/* Maker profile: story cover, Posts | Stories | Shorts switch and their panels.
+   The page sits on the dark creator surface (#141612); colours are explicit so
+   the cover reads the same in either theme. */
+.maker-profile {
+  --maker-teal: #1f4a47;
+  --maker-paper: #f3f2e9;
+  --maker-soft: #c4d6cf;
+  --maker-line: #3a3d34;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 3.9vw 110px;
+}
+
+/* ---------- Cover: see the maker hero rules at the end of this file ---------- */
+
+/* ---------- Controls ---------- */
+.maker-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 28px;
+  margin: 36px 0 34px;
+}
+.maker-tablist {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid var(--maker-line);
+  border-radius: 999px;
+  background: #1c1f1a;
+}
+.maker-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  min-width: 44px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #dcdcd2;
+  font: 500 15px/1 Inter, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+.maker-tab:hover {
+  color: #fff;
+}
+.maker-tab[aria-selected="true"] {
+  background: var(--acid);
+  color: #121610;
+}
+.maker-tab-count {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+.maker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+.creator-page .pill.maker-follow {
+  background: transparent;
+  color: var(--maker-paper) !important;
+  border: 1px solid #6b6f62;
+}
+.creator-page .pill.maker-follow[aria-pressed="true"] {
+  border-color: var(--acid);
+}
+.creator-page .pill.maker-follow:not([aria-pressed="true"]) {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: #111 !important;
+}
+.maker-keep {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: var(--maker-paper);
+  font: 500 14px/1 Inter, Arial, sans-serif;
+  border-bottom: 2px solid var(--acid);
+  border-radius: 0;
+}
+.maker-sample {
+  font-size: 11px;
+  color: #b4b8aa;
+}
+.creator-page .maker-tab:focus-visible,
+.creator-page .maker-keep:focus-visible,
+.creator-page .maker-follow:focus-visible,
+.creator-page .maker-panel:focus-visible,
+.creator-page .maker-cover-open:focus-visible,
+.creator-page .maker-story-card:focus-visible,
+.creator-page .maker-short-toggle:focus-visible,
+.creator-page .maker-post a:focus-visible,
+.creator-page .maker-short figcaption a:focus-visible {
+  outline: 3px solid var(--acid);
+  outline-offset: 3px;
+}
+.maker-panel:focus-visible {
+  border-radius: 6px;
+}
+.maker-empty {
+  padding: 56px 0;
+  font-size: 17px;
+  color: #b4b8aa;
+}
+
+/* ---------- Posts ---------- */
+.maker-posts,
+.maker-stories,
+.maker-shorts,
+.maker-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.maker-posts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px 28px;
+}
+.maker-posts[data-count="2"] {
+  grid-template-columns: 2fr 1fr;
+}
+.maker-posts[data-count="1"] {
+  grid-template-columns: minmax(0, 760px);
+}
+.maker-post {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.maker-posts[data-count="3"] .maker-post.lead,
+.maker-posts[data-count="2"] .maker-post.lead {
+  grid-column: span 2;
+}
+.maker-posts[data-count="3"] .maker-post.lead {
+  grid-row: span 2;
+}
+.maker-post-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #1c1f1a;
+}
+.maker-post.lead .maker-post-media {
+  flex: 1;
+  aspect-ratio: auto;
+  min-height: 340px;
+}
+.maker-posts[data-count="1"] .maker-post.lead .maker-post-media {
+  aspect-ratio: 4 / 3;
+  flex: none;
+}
+.maker-post-media > img,
+.maker-post-media > .creative-artwork {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: auto;
+}
+.maker-post-media > img {
+  transition: transform 0.5s ease;
+}
+.maker-post-media:hover > img {
+  transform: scale(1.03);
+}
+.maker-post-motion {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #111311cc;
+  color: var(--maker-paper);
+  font-size: 11px;
+  font-weight: 500;
+}
+.maker-post-copy h3 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+.maker-post.lead .maker-post-copy h3 {
+  font-size: 40px;
+}
+.maker-post-copy h3 a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 4px 0;
+}
+.maker-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: -6px;
+}
+.maker-tags li {
+  padding: 5px 12px;
+  border: 1px solid #5b5f53;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #d2d4c9;
+}
+.maker-post-lineage {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #b4b8aa;
+}
+
+/* ---------- Stories ---------- */
+.maker-stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr));
+  gap: 28px;
+  max-width: 940px;
+}
+.maker-story-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #1c1f1a;
+  color: var(--maker-paper);
+}
+.maker-story-card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.maker-story-card:hover > img {
+  transform: scale(1.03);
+}
+.maker-story-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #11131055 0%, #11131000 35%, #111310ea 100%);
+}
+.maker-story-bars {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  gap: 5px;
+}
+.maker-story-bars i {
+  flex: 1;
+  height: 3px;
+  border-radius: 3px;
+  background: #ffffff66;
+}
+.maker-story-bars i.on {
+  background: var(--acid);
+}
+.maker-story-copy {
+  position: absolute;
+  z-index: 1;
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.maker-story-copy small {
+  font-size: 12px;
+  color: #e2e4da;
+}
+.maker-story-copy strong {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+.maker-story-copy > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--acid);
+}
+
+/* ---------- Shorts ---------- */
+.maker-shorts {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 14px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+.maker-shorts > li {
+  flex: 0 0 min(270px, 72vw);
+  scroll-snap-align: start;
+}
+.maker-short {
+  margin: 0;
+}
+.maker-short-frame {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #1c1f1a;
+}
+.maker-short-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.maker-short-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff66;
+  border-radius: 50%;
+  background: #111311cc;
+  color: #fff;
+}
+.maker-short figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 12px;
+  font-size: 12px;
+  color: #b4b8aa;
+}
+.maker-short figcaption a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 26px;
+  color: var(--maker-paper);
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 900px) {
+}
+@media (max-width: 640px) {
+  .maker-profile {
+    padding: 14px 16px 80px;
+  }
+  .maker-controls {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 24px 0 24px;
+    gap: 16px;
+  }
+  .maker-tablist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 0;
+    max-width: 100%;
+  }
+  .maker-tab {
+    justify-content: center;
+    gap: 7px;
+    padding: 0 8px;
+    min-height: 48px;
+    font-size: 14px;
+  }
+  .maker-actions {
+    justify-content: space-between;
+  }
+  .maker-sample {
+    flex-basis: 100%;
+  }
+  .maker-posts,
+  .maker-posts[data-count="2"],
+  .maker-posts[data-count="3"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 14px;
+  }
+  .maker-posts[data-count="1"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .maker-posts .maker-post.lead {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+  .maker-post.lead .maker-post-media {
+    flex: none;
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+  }
+  .maker-post-copy h3,
+  .maker-post.lead .maker-post-copy h3 {
+    font-size: 26px;
+  }
+  .maker-post-copy h3 a {
+    min-height: 44px;
+  }
+  .maker-tags li {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+  .maker-shorts {
+    margin-right: -16px;
+    padding-right: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maker-post-media > img,
+  .maker-story-card > img {
+    transition: none;
+  }
+  .maker-post-media:hover > img,
+  .maker-story-card:hover > img {
+    transform: none;
+  }
+}
+
+/* ---------- Maker hero: a human portrait beside the name, no overlapping layers ---------- */
+.maker-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 40px;
+  padding: 44px 48px;
+  border-radius: 28px;
+  background: var(--maker-teal);
+  color: var(--maker-paper);
+  align-items: stretch;
+}
+.maker-hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  min-width: 0;
+}
+.maker-hero-name {
+  display: flex;
+  flex-direction: column;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(60px, 8.6vw, 140px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.maker-hero-name span {
+  font-style: normal;
+}
+.maker-hero-name em {
+  font-style: italic;
+}
+.maker-hero-bio p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 44ch;
+}
+.maker-hero-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-top: 16px !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--maker-soft);
+}
+.maker-hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: var(--maker-soft);
+}
+.maker-hero-facts strong {
+  color: var(--maker-paper);
+  font-weight: 600;
+}
+.maker-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+.maker-hero-figure {
+  position: relative;
+  min-height: 420px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #284f4b;
+}
+.maker-hero-figure > img,
+.maker-hero-figure > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+@media (max-width: 900px) {
+  .maker-hero {
+    grid-template-columns: 1fr;
+    padding: 28px 22px 24px;
+    gap: 22px;
+    border-radius: 22px;
+  }
+  .maker-hero-figure {
+    order: -1;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .maker-hero-name {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 0.22em;
+    font-size: clamp(54px, 16vw, 96px);
+  }
+}
+/* Five tabs: scroll sideways on a phone rather than squeeze. */
+.maker-tablist {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+@media (max-width: 640px) {
+  .maker-tablist {
+    display: flex !important;
+    grid-template-columns: none !important;
+  }
+  .maker-tab {
+    flex: 0 0 auto;
+    padding: 0 14px !important;
+  }
+}
+
+.maker-sample {
+  flex-wrap: wrap;
+  white-space: normal;
+}
+/* A phone on its side: portrait and name side by side, so the name is on screen at once. */
+@media (max-height: 500px) and (orientation: landscape) {
+  .maker-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    padding: 18px;
+    gap: 18px;
+  }
+  .maker-hero-figure {
+    order: 1;
+    aspect-ratio: auto;
+    min-height: 0;
+    height: calc(100svh - 120px);
+  }
+}

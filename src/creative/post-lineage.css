@@ -1,0 +1,431 @@
+/* Published post: made by, lineage, decisions and the authorship strip.
+   Colours come from the theme variables so light and dark both work. */
+.published-post .published-page {
+  align-items: start;
+}
+.post-made-by {
+  display: grid;
+  gap: 10px;
+}
+.post-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.post-person small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.post-initial {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+}
+.post-sections {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 7vw 110px;
+  display: grid;
+  gap: 70px;
+}
+.post-section {
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+.post-section h2 {
+  font-size: clamp(34px, 4vw, 54px);
+  letter-spacing: -1px;
+}
+.post-section h3 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+.post-muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+.post-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.post-chip {
+  display: inline-block;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.post-also {
+  font-size: 13px;
+  color: var(--muted);
+}
+.post-also a,
+.post-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.post-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  font-size: 13px;
+}
+ul.lineage-list,
+ol.decision-list,
+ul.decision-list,
+ol.authorship-strip,
+ul.authorship-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lineage-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 18px;
+}
+.lineage-card {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  align-items: start;
+}
+.lineage-card img {
+  width: 110px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--line);
+}
+.lineage-card strong {
+  display: block;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.05;
+}
+.lineage-card small {
+  color: var(--muted);
+  font-size: 12px;
+}
+.lineage-card p {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.decision-list {
+  display: grid;
+  gap: 0;
+  counter-reset: decision;
+}
+.decision-list li {
+  display: grid;
+  gap: 6px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  max-width: 70ch;
+}
+.decision-list li strong {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+.decision-list li p {
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.decision-list small {
+  color: var(--muted);
+  font-size: 12px;
+}
+.decision-list.declined li {
+  opacity: 0.85;
+}
+.authorship-summary {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+.authorship-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  font-size: 12px;
+}
+.authorship-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.authorship-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(210px, 1fr);
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+}
+.authorship-strip li {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-top-width: 6px;
+  border-radius: 6px;
+  min-width: 0;
+}
+.authorship-strip li strong {
+  font-size: 14px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.authorship-strip li small {
+  font-size: 12px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.authorship-origin {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* Three origins, told apart by label, letter and border style, not colour alone. */
+.authorship-mark,
+.authorship-legend li > span {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid var(--ink);
+}
+.authorship-strip li.origin-hand {
+  border-top-color: var(--ink);
+  border-top-style: solid;
+}
+.authorship-strip li.origin-ai-assisted {
+  border-top-color: #8aa800;
+  border-top-style: double;
+  border-top-width: 6px;
+}
+.authorship-strip li.origin-ai-generated {
+  border-top-color: var(--ink);
+  border-top-style: dashed;
+}
+.origin-hand .authorship-mark,
+.authorship-legend .origin-hand > span {
+  background: var(--ink);
+  color: var(--paper);
+}
+.origin-ai-assisted .authorship-mark,
+.authorship-legend .origin-ai-assisted > span {
+  background: var(--acid);
+  color: #111311;
+  border-color: #111311;
+}
+.origin-ai-generated .authorship-mark,
+.authorship-legend .origin-ai-generated > span {
+  background: transparent;
+  border-style: dashed;
+}
+.authorship-basis summary {
+  cursor: pointer;
+  font-size: 13px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.authorship-basis p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 62ch;
+  line-height: 1.6;
+}
+@media (max-width: 850px) {
+  .post-sections {
+    padding: 0 25px 80px;
+    gap: 50px;
+  }
+  .lineage-card {
+    grid-template-columns: 84px 1fr;
+  }
+  .lineage-card img {
+    width: 84px;
+  }
+  .authorship-strip {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow-x: visible;
+  }
+}
+
+/* Parts of the final artwork by origin: one bar, sized by count. */
+.authorship-parts {
+  display: flex;
+  gap: 3px;
+  height: 28px;
+  margin: 14px 0 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  font: 600 12px/28px Inter, sans-serif;
+}
+.authorship-parts span {
+  min-width: 34px;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+.authorship-parts .origin-hand {
+  background: var(--ink);
+  color: var(--paper);
+}
+.authorship-parts .origin-ai-assisted {
+  background: #8aa800;
+  color: #111;
+}
+.authorship-parts .origin-ai-generated {
+  background: repeating-linear-gradient(135deg, var(--line) 0 6px, transparent 6px 12px);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+
+/* Publish preview: a plain description box, icon toggles, credits with a reason eye. */
+.publish-copy .publish-description {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 84px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.publish-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.publish-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.publish-toggle[aria-pressed="true"] {
+  border-color: var(--acid, #c7fe02);
+  background: color-mix(in srgb, var(--acid, #c7fe02) 14%, transparent);
+  color: var(--ink);
+}
+.publish-toggle:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+ul.publish-credits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+.publish-credits li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.publish-credits li > a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 13px;
+}
+.publish-credits li .icon-button {
+  color: var(--muted);
+}
+.publish-credits li .icon-button[aria-pressed="true"] {
+  color: var(--ink);
+}
+
+/* Published post: share, save and the maker's own controls in one row each. */
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+.post-actions .share-rail {
+  margin: 0;
+}
+.post-person .follow-toggle {
+  margin-inline-start: 4px;
+}
+.post-person a {
+  color: inherit;
+}
+.post-owner {
+  display: flex;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.post-owner .icon-button {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+}
+.post-owner .icon-button[aria-pressed="false"] {
+  color: var(--muted);
+}
+.icon-button.danger,
+.pill.danger {
+  color: #c2410c;
+}
+.pill.danger {
+  border: 1px solid currentColor;
+  background: transparent;
+}
+.post-withdraw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
